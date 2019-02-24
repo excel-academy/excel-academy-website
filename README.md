@@ -1,4 +1,4 @@
-# gatsby-starter-tenet
+# gatsby-starter
 
 A Gatsby starter with a set of strict linting and formatting rules, based on [gatsby-starter-strict](https://github.com/kripod/gatsby-starter-strict) and [gatsby universal starter](https://github.com/fabe/gatsby-universal).
 
@@ -24,28 +24,3 @@ For an overview of the project structure please refer to the [Gatsby documentati
 [airbnb javascript style guide]: https://github.com/airbnb/javascript
 [stylelint-config-recommended-scss]: https://github.com/kristerkari/stylelint-config-recommended-scss
 [stylelint-config-idiomatic-order]: https://github.com/ream88/stylelint-config-idiomatic-order
-
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-
-```sh
-gatsby new gatsby-example-site https://github.com/TenetPartners/gatsby-starter-default
-```
-
-Then you can run it by:
-
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TenetPartners/gatsby-starter-default) [![Greenkeeper badge](https://badges.greenkeeper.io/TenetPartners/gatsby-starter-default.svg)](https://greenkeeper.io/)

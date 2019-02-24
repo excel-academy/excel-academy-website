@@ -2,7 +2,7 @@
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Ernie Bello <ebello@tenetpartners.com>",
+  "author": "Ernie Bello <ernie@bello.nyc>",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "core-js": "^2.6.1",
@@ -99,6 +99,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TenetPartners/gatsby-starter-default"
+    "url": "https://github.com/excel-academy/excel-academy-website"
   }
 }
