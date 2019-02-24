@@ -1,6 +1,6 @@
 import { themeColor } from '../site-config';
 
-const purples = ['#7b79b0'];
+const purples = ['#7b79b0', '#6f6da5'];
 const fontSizes = [12, 14, 16, 18, 20, 24, 30, 38, 62];
 const space = [0, '2rem', '3rem', '4rem', '5rem', '7rem', '32rem', '40rem', '48rem', '56rem', '64rem'];
 export const breakpoints = {

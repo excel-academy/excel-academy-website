@@ -32,15 +32,17 @@ exports.createPages = ({ actions, graphql }) => {
     const pages = markdownResults.data.allMarkdownRemark.edges;
     pages.forEach((edge) => {
       const { id, fields, frontmatter } = edge.node;
-      createPage({
-        path: fields.slug,
-        tags: frontmatter.tags,
-        component: path.resolve(`src/templates/${String(frontmatter.templateKey)}.js`),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      });
+      if (frontmatter.templateKey) {
+        createPage({
+          path: fields.slug,
+          tags: frontmatter.tags,
+          component: path.resolve(`src/templates/${String(frontmatter.templateKey)}.js`),
+          // additional data can be passed via context
+          context: {
+            id,
+          },
+        });
+      }
     });
 
     return resolve();

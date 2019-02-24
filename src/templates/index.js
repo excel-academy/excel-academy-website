@@ -14,7 +14,7 @@ import logo from '../images/Excel-Academy-logo.jpg';
 import theme from '../theme';
 
 export const HomeTemplate = ({
-  title, description, image, intro, programs, programsHeadline, benefitsblock,
+  intro, programs, programsHeadline, benefitsblock, locationsHeadline, locations,
 }) => (
   <>
     <MaxWidthBox
@@ -30,11 +30,11 @@ export const HomeTemplate = ({
     >
       {/* <Box width={{ tablet: 1 / 2 }} mr={{ tablet: }}> */}
       {/* <Box width={{ sm: 1, tablet: 'auto' }}> */}
-      <Box width={{ tablet: 1.35 / 3 }} pr={{ tablet: 1 }} mb={2}>
+      <Box width={{ mobile: 1.35 / 3 }} pr={{ mobile: 1 }} mb={2}>
         <img src={logo} alt="Excel Academy - A DanielCare Affiliate" />
       </Box>
       <Box
-        width={{ tablet: 1.65 / 3 }}
+        width={{ mobile: 1.65 / 3 }}
         css={{
           textAlign: 'center',
         }}
@@ -57,20 +57,14 @@ export const HomeTemplate = ({
         css={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
         }}
       >
         {programs.map(({ node }) => (
           <Box
-            width={{ tablet: 1 / 3 }}
-            pl={{ tablet: 1 }}
+            width={{ tablet: '31%' }}
             mb={2}
             key={node.frontmatter.program}
-            css={{
-              '&:first-child': {
-                paddingLeft: 0,
-              },
-            }}
           >
             <h3>{node.frontmatter.navtitle || node.frontmatter.title}</h3>
             <p>{node.frontmatter.home_description}</p>
@@ -132,11 +126,58 @@ export const HomeTemplate = ({
         </Box>
       </Box>
     </MaxWidthBox>
+    <MaxWidthBox
+      maxWidth={2}
+      p={{ sm: 1, tablet: 3 }}
+      bg="purples.1"
+      color="white"
+      id="locations"
+    >
+      <Text as="h2" textAlign={{ tablet: 'center' }} mb={2}>
+        {locationsHeadline}
+      </Text>
+      <Box
+        css={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+        }}
+      >
+        {locations.map(({ node }) => (
+          <Box
+            width={{ tablet: '31%' }}
+            mb={2}
+            key={node.frontmatter.program}
+          >
+            <Text as="h5" textAlign={{ tablet: 'center' }}>
+              {node.frontmatter.title}
+            </Text>
+            <iframe
+              title={node.frontmatter.title}
+              src={node.frontmatter.googleMap}
+              width="100%"
+              height="150"
+              frameBorder="0"
+              allowFullScreen
+            />
+            <Text bg="purples.0" p={1} fontSize={1} textAlign="center">
+              {node.frontmatter.address}
+              <br />
+              {node.frontmatter.city}
+              ,&nbsp;
+              {node.frontmatter.state}
+              &nbsp;
+              {node.frontmatter.zip}
+            </Text>
+          </Box>
+        ))}
+      </Box>
+    </MaxWidthBox>
   </>
 );
 
 const IndexPage = ({ data }) => {
-  const { markdownRemark: page, logo, programs } = data;
+  const { markdownRemark: page, logo, programs, locations } = data;
   const { frontmatter: metadata } = page;
 
   return (
@@ -150,6 +191,8 @@ const IndexPage = ({ data }) => {
         programsHeadline={metadata.programs_headline}
         programs={programs.edges}
         benefitsblock={metadata.benefitsblock}
+        locationsHeadline={metadata.locations_headline}
+        locations={locations.edges}
       />
     </Layout>
   );
@@ -183,6 +226,7 @@ export const query = graphql`
           description
           benefits
         }
+        locations_headline
       }
     },
     logo: file(relativePath: { eq: "Excel-Academy-logo.jpg" }) {
@@ -207,6 +251,23 @@ export const query = graphql`
           }
           fields {
             slug
+          }
+        }
+      }
+    }
+    locations: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "\/locations\/.+\/" }}},
+      sort: {fields: [frontmatter___weight]}
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            address
+            city
+            state
+            zip
+            googleMap
           }
         }
       }
