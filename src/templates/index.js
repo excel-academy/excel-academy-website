@@ -1,20 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-// import { Heading } from 'rebass';
-// import { rgba } from 'polished';
-// import { themeColor } from '../../site-config';
-import { Flex, Box, Text } from 'rebass';
+import { Box, Text } from 'rebass';
 import { FaCheck } from 'react-icons/fa';
 import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
 import MaxWidthBox from '../components/max-width-box/max-width-box-css';
 import LinkButton from '../components/link-button/link-button-css';
+import { CircleImageBanner } from '../components/banner';
 import logo from '../images/Excel-Academy-logo.jpg';
 import theme from '../theme';
 
 export const HomeTemplate = ({
-  intro, programs, programsHeadline, benefitsblock, locationsHeadline, locations,
+  intro, programs, programsHeadline, benefitsblock, locationsHeadline, locations, cta,
 }) => (
   <>
     <MaxWidthBox
@@ -27,9 +25,8 @@ export const HomeTemplate = ({
       maxWidth={2}
       px={{ sm: 1, tablet: 3 }}
       py={3}
+      bg="white"
     >
-      {/* <Box width={{ tablet: 1 / 2 }} mr={{ tablet: }}> */}
-      {/* <Box width={{ sm: 1, tablet: 'auto' }}> */}
       <Box width={{ mobile: 1.35 / 3 }} pr={{ mobile: 1 }} mb={2}>
         <img src={logo} alt="Excel Academy - A DanielCare Affiliate" />
       </Box>
@@ -147,7 +144,7 @@ export const HomeTemplate = ({
           <Box
             width={{ tablet: '31%' }}
             mb={2}
-            key={node.frontmatter.program}
+            key={node.frontmatter.title}
           >
             <Text as="h5" textAlign={{ tablet: 'center' }}>
               {node.frontmatter.title}
@@ -173,11 +170,54 @@ export const HomeTemplate = ({
         ))}
       </Box>
     </MaxWidthBox>
+    <MaxWidthBox maxWidth={2}>
+      <CircleImageBanner
+        image={cta.image.childImageSharp.fluid}
+        imagedesc="nurse"
+        orient="right"
+        p={{ sm: 1, tablet: 3 }}
+      >
+        <h3>{cta.headline}</h3>
+        <p>{cta.description}</p>
+        <h4>{cta.form_header}</h4>
+        <form name="open-house" method="POST" data-netlify="true">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="submit" value={cta.form_button} />
+        </form>
+      </CircleImageBanner>
+    </MaxWidthBox>
   </>
 );
 
+HomeTemplate.propTypes = {
+  intro: PropTypes.shape({
+    headline: PropTypes.string.isRequired,
+    cta: PropTypes.shape({
+      action: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+  programs: PropTypes.arrayOf(PropTypes.object).isRequired,
+  programsHeadline: PropTypes.string.isRequired,
+  benefitsblock: PropTypes.shape({
+    headline: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    benefits: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+  locationsHeadline: PropTypes.string.isRequired,
+  locations: PropTypes.arrayOf(PropTypes.object).isRequired,
+  cta: PropTypes.shape({
+    headline: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
+    description: PropTypes.string.isRequired,
+    form_header: PropTypes.string.isRequired,
+    form_button: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 const IndexPage = ({ data }) => {
-  const { markdownRemark: page, logo, programs, locations } = data;
+  const { markdownRemark: page, programs, locations } = data;
   const { frontmatter: metadata } = page;
 
   return (
@@ -186,13 +226,13 @@ const IndexPage = ({ data }) => {
       <HomeTemplate
         title={metadata.title}
         content={page.htmlAst}
-        image={logo.childImageSharp.fluid}
         intro={metadata.intro}
         programsHeadline={metadata.programs_headline}
         programs={programs.edges}
         benefitsblock={metadata.benefitsblock}
         locationsHeadline={metadata.locations_headline}
         locations={locations.edges}
+        cta={metadata.cta}
       />
     </Layout>
   );
@@ -227,14 +267,18 @@ export const query = graphql`
           benefits
         }
         locations_headline
-      }
-    },
-    logo: file(relativePath: { eq: "Excel-Academy-logo.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 1400) {
-          ...GatsbyImageSharpFluid_withWebp
+        cta {
+          headline
+          description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
+          form_header
+          form_button
         }
       }
     },

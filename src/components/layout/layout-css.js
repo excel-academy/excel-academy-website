@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import buttonCSS from '../button/button-css';
 import media, { mediamax } from '../../media';
 import { themeColor } from '../../../site-config';
 
@@ -21,7 +22,7 @@ export default createGlobalStyle`
   body {
     font-size: 1rem;
     line-height: 1.65;
-    background-color: #fff;
+    background-color: #f7f7f7;
   }
 
   #___gatsby {
@@ -148,6 +149,46 @@ export default createGlobalStyle`
     font-weight: 300;
     /* border-top: solid 1px #aaa; */
     padding-top: 1rem;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select,
+  textarea {
+    appearance: none;
+    background: rgba(144,144,144,0.075);
+    border-radius: 8px;
+    border: none;
+    border: solid 1px rgba(144,144,144,0.25);
+    box-sizing: border-box;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+
+    &:invalid {
+      box-shadow: none;
+    }
+
+    &:focus {
+      border-color: ${themeColor};
+      box-shadow: 0 0 0 1px ${themeColor};
+    }
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    height: 2.75em;
+    margin-bottom: 1em;
+  }
+
+  input[type="submit"] {
+    ${buttonCSS}
   }
 
   ${mediamax.tablet`

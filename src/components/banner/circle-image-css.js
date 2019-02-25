@@ -8,7 +8,7 @@ export default styled(BannerContainer)`
   flex-direction: row-reverse;
 
   ${Content} {
-    width: 31.5rem;
+    max-width: 31.5rem;
   }
 
   ${Image} {
@@ -23,9 +23,9 @@ export default styled(BannerContainer)`
     flex-direction: column-reverse;
     text-align: center;
 
-    ${Content} {
+    /* ${Content} {
       width: 34rem;
-    }
+    } */
 
     ${Image} {
       margin-right: 0;

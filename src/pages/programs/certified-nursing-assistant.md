@@ -7,7 +7,7 @@ meta_description: >-
   Our program in CNA training uses learning to motivate you to experience personal growth and success. Our mission is to certify students who are prepared to provide the highest quality care to patients, and outstanding service to employers.
 home_description: Get the skills to provide quality health care to residents in nursing homes, assisted living facilities, hospitals, or clients in their own homes.
 intro:
-  image: /test.jpg
+  image_static: /img/medical-staff.jpg
   text: >-
     Our program in CNA training uses learning to motivate you to experience personal growth and success. Our mission is to certify students who are prepared to provide the highest quality care to patients, and outstanding service to employers.
 opportunities:
@@ -23,7 +23,8 @@ opportunities:
 schedule:
   title: Class schedule
   intro: Finish our program in a matter of weeks on a schedule convenient to you.
-  lesson_plan:
+  lesson_plan: >-
+    <p>The CNA training program is divided into two parts.</p><table><tbody><tr><td>Classroom</td><td>64 hours</td></tr><tr><td>Clinical<sup>*</sup></td><td>46 hours</td></tr></tbody><tfoot><tr><td></td><td>110 total instructional hours</td></tr></tfoot></table><p><sup>*</sup>Clinical hours include work in a lab and at a designated clinical facility.</p>
   dates:
     title: Upcoming start dates
     intro: Begin your training within a month of signing up.
