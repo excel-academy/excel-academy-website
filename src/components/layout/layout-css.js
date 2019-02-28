@@ -23,6 +23,7 @@ export default createGlobalStyle`
     font-size: 1rem;
     line-height: 1.65;
     background-color: #f7f7f7;
+    color: #4b505c;
   }
 
   #___gatsby {

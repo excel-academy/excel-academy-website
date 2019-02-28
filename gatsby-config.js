@@ -40,6 +40,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-plugin-webpack-bundle-analyzer',
+    'gatsby-transformer-json',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',

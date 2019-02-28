@@ -3,18 +3,16 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Flex, Box, Text } from 'rebass';
 import { FaCheck } from 'react-icons/fa';
-// import { Heading } from 'rebass';
-// import { rgba } from 'polished';
-// import { themeColor } from '../../site-config';
 import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
 import LargeText from '../components/large-text/large-text-css';
 import MaxWidthBox from '../components/max-width-box/max-width-box-css';
+import UpcomingDate from '../components/upcoming-date/upcoming-date';
 import { HTMLContent } from '../components/content/content';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
-  title, description, image, intro, opportunities, schedule,
+  title, description, image, intro, opportunities, schedule, upcomingDates,
 }) => (
   <>
     <MaxWidthBox
@@ -115,6 +113,7 @@ export const ProgramTemplate = ({
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      bg="purples.2"
     >
       <Box
         width={{ tablet: 10 / 12 }}
@@ -128,13 +127,49 @@ export const ProgramTemplate = ({
         <LargeText as="p">{schedule.intro}</LargeText>
       </Box>
       <Flex flexWrap="wrap" justifyContent="space-between">
-        <Box width={{ mobile: 1 / 2 }} pr={{ mobile: 1 }} mb={2}>
+        <Box width={{ tablet: 1 / 2 }} pr={{ tablet: 1 }} mb={2}>
           <h3>Lesson plan</h3>
           <HTMLContent content={schedule.lesson_plan} />
         </Box>
-        <Box width={{ mobile: 1 / 2 }}>
+        <Box width={{ tablet: 1 / 2 }}>
           <h3>{schedule.dates.title}</h3>
           <p>{schedule.dates.intro}</p>
+          <Flex flexWrap="wrap" justifyContent="space-between">
+            <Box fontSize={1} width="31%">
+              <Text as="h4" color="theme" fontSize={1} m={0}>Daytime sessions</Text>
+              <Text as="p" mb="1rem">Four week duration from 8AM-2PM Monday-Friday.</Text>
+              <Box
+                as="ul"
+                css={{
+                  listStyleType: 'none',
+                }}
+                p={0}
+                m={0}
+              >
+                {upcomingDates.daytime.map(date => <UpcomingDate date={date} />)}
+              </Box>
+            </Box>
+            <Box fontSize={1} width="31%">
+              <Text as="h4" color="theme" fontSize={1} m={0}>Evening sessions</Text>
+              <Text as="p" mb="1rem">Five week duration from 4:30-9:30PM Monday-Thursday.</Text>
+              <Box
+                as="ul"
+                css={{
+                  listStyleType: 'none',
+                }}
+                p={0}
+                m={0}
+              >
+                {upcomingDates.evening.map(date => <UpcomingDate date={date} />)}
+              </Box>
+            </Box>
+            <Box fontSize={1} width="31%">
+              <Text as="h4" color="theme" fontSize={1} m={0}>Weekend sessions</Text>
+              <Text as="p" mb="1rem">Nine week duration from 8AM-2PM Saturday-Sunday.</Text>
+              <Text as="p" mb="1rem">New classes begin every Saturday, call for details.</Text>
+              <Text as="p" mb="1rem">(203) 691-7989</Text>
+            </Box>
+          </Flex>
         </Box>
       </Flex>
     </MaxWidthBox>
@@ -142,8 +177,10 @@ export const ProgramTemplate = ({
 );
 
 const ProgramPage = ({ data }) => {
-  const { markdownRemark: page } = data;
+  const { markdownRemark: page, schedules } = data;
   const { frontmatter: metadata } = page;
+  const { program } = metadata;
+  const upcomingDates = schedules.childrenSchedulesJson.find(s => s.program === program);
 
   return (
     <Layout>
@@ -153,6 +190,7 @@ const ProgramPage = ({ data }) => {
         intro={metadata.intro}
         opportunities={metadata.opportunities}
         schedule={metadata.schedule}
+        upcomingDates={upcomingDates}
       />
     </Layout>
   );
@@ -170,6 +208,7 @@ export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        program
         title
         meta_description
         intro {
@@ -192,6 +231,13 @@ export const query = graphql`
             intro
           }
         }
+      }
+    },
+    schedules: file(relativePath: { eq: "schedules.json" }) {
+      childrenSchedulesJson {
+        program
+        daytime
+        evening
       }
     }
   }
