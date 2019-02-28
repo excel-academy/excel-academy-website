@@ -192,6 +192,49 @@ export default createGlobalStyle`
     ${buttonCSS}
   }
 
+  table {
+    margin: 0 0 2em 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    tbody {
+      tr {
+        border: solid 1px rgba(144,144,144,0.25);
+        border-left: 0;
+        border-right: 0;
+
+        &:nth-child(2n + 1) {
+          background-color: rgba(144,144,144,0.075);
+          td {
+            border-top-width: 1px;
+          }
+        }
+
+        td {
+          border: solid 1px rgba(144,144,144,0.25);
+          border-left-width: 0;
+          border-top-width: 0;
+
+          &:first-child {
+            border-left-width: 1px;
+          }
+        }
+      }
+    }
+
+    td {
+      padding: 0.75em 0.75em;
+    }
+
+    th {
+      color: #3d424f;
+      font-size: 0.9em;
+      font-weight: 600;
+      padding: 0 0.75em 0.75em 0.75em;
+      text-align: left;
+    }
+  }
+
   ${mediamax.tablet`
     p {
       &.major {

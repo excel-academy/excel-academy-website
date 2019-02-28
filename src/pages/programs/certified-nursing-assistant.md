@@ -24,7 +24,7 @@ schedule:
   title: Class schedule
   intro: Finish our program in a matter of weeks on a schedule convenient to you.
   lesson_plan: >-
-    <p>The CNA training program is divided into two parts.</p><table><tbody><tr><td>Classroom</td><td>64 hours</td></tr><tr><td>Clinical<sup>*</sup></td><td>46 hours</td></tr></tbody><tfoot><tr><td></td><td>110 total instructional hours</td></tr></tfoot></table><p><sup>*</sup>Clinical hours include work in a lab and at a designated clinical facility.</p>
+    <p>The CNA training program is divided into two parts.</p><table><tbody><tr><td>Classroom</td><td>64 hours</td></tr><tr><td>Clinical<sup>*</sup></td><td>46 hours</td></tr></tbody><tfoot><tr><td></td><td>110 total instructional hours</td></tr></tfoot></table><small><sup>*</sup>Clinical hours include work in a lab and at a designated clinical facility.</small>
   dates:
     title: Upcoming start dates
     intro: Begin your training within a month of signing up.

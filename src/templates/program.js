@@ -126,13 +126,22 @@ export const ProgramTemplate = ({
         </Text>
         <LargeText as="p">{schedule.intro}</LargeText>
       </Box>
-      <Flex flexWrap="wrap" justifyContent="space-between">
+      <Flex
+        flexWrap="wrap"
+        justifyContent="space-between"
+        fontSize={2}
+        css={{
+          'tbody td': {
+            backgroundColor: 'rgba(251, 251, 253, 1)',
+          }
+        }}
+      >
         <Box width={{ tablet: 1 / 2 }} pr={{ tablet: 1 }} mb={2}>
-          <h3>Lesson plan</h3>
+          <Text as="h3" m={0} fontSize={3}>Lesson plan</Text>
           <HTMLContent content={schedule.lesson_plan} />
         </Box>
         <Box width={{ tablet: 1 / 2 }}>
-          <h3>{schedule.dates.title}</h3>
+          <Text as="h3" m={0} fontSize={3}>{schedule.dates.title}</Text>
           <p>{schedule.dates.intro}</p>
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box fontSize={1} width="31%">
@@ -167,7 +176,7 @@ export const ProgramTemplate = ({
               <Text as="h4" color="theme" fontSize={1} m={0}>Weekend sessions</Text>
               <Text as="p" mb="1rem">Nine week duration from 8AM-2PM Saturday-Sunday.</Text>
               <Text as="p" mb="1rem">New classes begin every Saturday, call for details.</Text>
-              <Text as="p" mb="1rem">(203) 691-7989</Text>
+              <p>(203) 691-7989</p>
             </Box>
           </Flex>
         </Box>
