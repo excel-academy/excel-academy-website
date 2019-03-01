@@ -26,6 +26,26 @@ export default createGlobalStyle`
     color: #4b505c;
   }
 
+  ::-webkit-input-placeholder {
+    color: #bbb;
+    opacity: 1.0;
+  }
+
+  :-moz-placeholder {
+    color: #bbb;
+    opacity: 1.0;
+  }
+
+  ::-moz-placeholder {
+    color: #bbb;
+    opacity: 1.0;
+  }
+
+  :-ms-input-placeholder {
+    color: #bbb;
+    opacity: 1.0;
+  }
+
   #___gatsby {
     background-color: inherit;
     & > [role="group"] {
@@ -232,6 +252,12 @@ export default createGlobalStyle`
       font-weight: 600;
       padding: 0 0.75em 0.75em 0.75em;
       text-align: left;
+    }
+
+    tfoot {
+      td {
+        font-weight: bold;
+      }
     }
   }
 

@@ -1,18 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Flex, Box, Text } from 'rebass';
-import { FaCheck } from 'react-icons/fa';
+import { Flex, Box, Text, Card } from 'rebass';
+import {
+  FaCheck, FaBriefcaseMedical, FaRegCalendar, FaDollarSign, FaGraduationCap,
+} from 'react-icons/fa';
 import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
 import LargeText from '../components/large-text/large-text-css';
+import TitleIntro from '../components/title-intro/title-intro';
 import MaxWidthBox from '../components/max-width-box/max-width-box-css';
 import UpcomingDate from '../components/upcoming-date/upcoming-date';
 import { HTMLContent } from '../components/content/content';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
-  title, description, image, intro, opportunities, schedule, upcomingDates,
+  title, description, image, intro, opportunities, schedule, upcomingDates, tuition, graduation, cta, locations, admissionPolicy,
 }) => (
   <>
     <MaxWidthBox
@@ -29,8 +32,9 @@ export const ProgramTemplate = ({
     >
       <Box
         width={{ mobile: 1.65 / 3 }}
+        pr={1}
       >
-        <h1>{title}</h1>
+        <Text as="h1" color="theme">{title}</Text>
         <p>{intro.text}</p>
         {/* <LinkButton to={intro.cta.url}>{intro.cta.action}</LinkButton> */}
       </Box>
@@ -57,17 +61,11 @@ export const ProgramTemplate = ({
         alignItems: 'center',
       }}
     >
-      <Box
-        width={{ tablet: 10 / 12 }}
-        css={{
-          textAlign: 'center',
-        }}
-      >
-        <Text as="h1" mb={2}>
-          {opportunities.title}
-        </Text>
-        <LargeText as="p">{opportunities.intro}</LargeText>
-      </Box>
+      <TitleIntro
+        title={opportunities.title}
+        intro={opportunities.intro}
+        icon={<FaBriefcaseMedical />}
+      />
       <Box
         as="ul"
         css={{
@@ -99,7 +97,7 @@ export const ProgramTemplate = ({
         ))}
       </Box>
       <Box width={{ mobile: 8 / 12 }}>
-        <Text as="p">{opportunities.content}</Text>
+        <Text as="p">{opportunities.text}</Text>
         <Text as="p" fontSize={0} bg="#eee" color="#999" p="1em">{opportunities.disclaimer}</Text>
       </Box>
     </MaxWidthBox>
@@ -115,17 +113,11 @@ export const ProgramTemplate = ({
       }}
       bg="purples.2"
     >
-      <Box
-        width={{ tablet: 10 / 12 }}
-        css={{
-          textAlign: 'center',
-        }}
-      >
-        <Text as="h1" mb={2}>
-          {schedule.title}
-        </Text>
-        <LargeText as="p">{schedule.intro}</LargeText>
-      </Box>
+      <TitleIntro
+        title={schedule.title}
+        intro={schedule.intro}
+        icon={<FaRegCalendar />}
+      />
       <Flex
         flexWrap="wrap"
         justifyContent="space-between"
@@ -136,11 +128,16 @@ export const ProgramTemplate = ({
           }
         }}
       >
-        <Box width={{ tablet: 1 / 2 }} pr={{ tablet: 1 }} mb={2}>
+        <Card
+          width={{ desktop: 1 / 2 }}
+          pr={{ desktop: 1 }}
+          mb={2}
+          borderRight={{ desktop: 'solid 1px #ebebeb' }}
+        >
           <Text as="h3" m={0} fontSize={3}>Lesson plan</Text>
           <HTMLContent content={schedule.lesson_plan} />
-        </Box>
-        <Box width={{ tablet: 1 / 2 }}>
+        </Card>
+        <Box width={{ desktop: 1 / 2 }} pl={{ desktop: 1 }}>
           <Text as="h3" m={0} fontSize={3}>{schedule.dates.title}</Text>
           <p>{schedule.dates.intro}</p>
           <Flex flexWrap="wrap" justifyContent="space-between">
@@ -182,24 +179,202 @@ export const ProgramTemplate = ({
         </Box>
       </Flex>
     </MaxWidthBox>
+    <MaxWidthBox
+      maxWidth={2}
+      p={{ sm: 1, tablet: 3 }}
+      css={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <TitleIntro
+        title={tuition.title}
+        intro={tuition.intro}
+        icon={<FaDollarSign />}
+      />
+      <Box width={{ mobile: 7 / 12 }}>
+        <HTMLContent content={tuition.text} />
+      </Box>
+    </MaxWidthBox>
+    <MaxWidthBox
+      maxWidth={2}
+      p={{ sm: 1, tablet: 3 }}
+      css={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+      bg="purples.2"
+    >
+      <TitleIntro
+        title={graduation.title}
+        intro={graduation.intro}
+        cols={7}
+        icon={<FaGraduationCap size="1.2em" />}
+      />
+      <Box
+        as="ol"
+        css={{
+          listStyleType: 'none',
+          counterReset: 'grad-counter',
+          paddingLeft: '2em',
+        }}
+        p={0}
+        m={0}
+      >
+        {graduation.steps.map(step => (
+          <Box
+            as="li"
+            key={step}
+            css={{
+              position: 'relative',
+              counterIncrement: 'grad-counter',
+              padding: '0 0 1em 1em',
+              '--size': '50px',
+              lineHeight: 'var(--size)',
+              '&:before': {
+                content: 'counter(grad-counter)',
+                color: `${theme.colors.theme}`,
+                fontSize: '1.6rem',
+                fontWeight: 'bold',
+                position: 'absolute',
+                left: 'calc(-1 * var(--size) - 10px)',
+                lineHeight: 'calc(var(--size) - 5px)',
+                width: 'var(--size)',
+                height: 'var(--size)',
+                top: '-5px',
+                border: `solid 5px ${theme.colors.theme}`,
+                borderRadius: '50%',
+                textAlign: 'center',
+              },
+            }}
+            mb="1em"
+          >
+            <span>{step}</span>
+          </Box>
+        ))}
+      </Box>
+      <Box width={{ mobile: 8 / 12 }}>
+        <Text as="p">{graduation.text}</Text>
+      </Box>
+    </MaxWidthBox>
+    <MaxWidthBox
+      maxWidth={2}
+      p={{ sm: 1, tablet: 3 }}
+      bg="theme"
+      color="white"
+      id="locations"
+      css={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <TitleIntro
+        title={cta.title}
+        intro={cta.intro}
+        cols={7}
+        titleColor="#ffffff"
+      />
+      <Box
+        css={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+        }}
+      >
+        {locations.map(({ node }) => (
+          <Box
+            width={{ tablet: '31%' }}
+            mb={2}
+            key={node.frontmatter.title}
+          >
+            <Text as="h5" textAlign={{ tablet: 'center' }} color="#3d424f">
+              {node.frontmatter.title}
+            </Text>
+            <iframe
+              title={node.frontmatter.title}
+              src={node.frontmatter.googleMap}
+              width="100%"
+              height="150"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </Box>
+        ))}
+      </Box>
+      <Box width={{ mobile: 5 / 12 }}>
+        <h4>{cta.form_header}</h4>
+        <form
+          name="open-house"
+          method="POST"
+          data-netlify="true"
+          css={{
+            'input:not([type=submit])': {
+              backgroundColor: '#ffffff',
+              color: '#000',
+            },
+          }}
+        >
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="submit" value={cta.form_button} />
+        </form>
+      </Box>
+    </MaxWidthBox>
+    <MaxWidthBox
+      maxWidth={2}
+      p={{ sm: 1, tablet: 2 }}
+      bg="#eeeeee"
+      color="#777777"
+      css={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+      }}
+    >
+      <Box width={{ tablet: 6 / 12 }} fontSize="0.7em">
+        <Text as="h3" mb={1}>
+          {admissionPolicy.title}
+        </Text>
+        <Box
+          as="ul"
+          pl="1em"
+          m={0}
+        >
+          {admissionPolicy.policies.map(policy => (
+            <li key={policy}>{policy}</li>
+          ))}
+        </Box>
+      </Box>
+    </MaxWidthBox>
   </>
 );
 
 const ProgramPage = ({ data }) => {
-  const { markdownRemark: page, schedules } = data;
+  const { markdownRemark: page, schedules, locations, admissionPolicy } = data;
   const { frontmatter: metadata } = page;
   const { program } = metadata;
   const upcomingDates = schedules.childrenSchedulesJson.find(s => s.program === program);
 
   return (
     <Layout>
-      <Metadata pageData={page.frontmatter} />
+      <Metadata pageData={metadata} />
       <ProgramTemplate
-        title={page.frontmatter.title}
+        title={metadata.title}
         intro={metadata.intro}
         opportunities={metadata.opportunities}
         schedule={metadata.schedule}
         upcomingDates={upcomingDates}
+        tuition={metadata.tuition}
+        graduation={metadata.graduation}
+        cta={metadata.cta}
+        locations={locations.edges}
+        admissionPolicy={admissionPolicy.frontmatter}
       />
     </Layout>
   );
@@ -228,7 +403,7 @@ export const query = graphql`
           title
           intro
           places
-          content
+          text
           disclaimer
         }
         schedule {
@@ -240,6 +415,23 @@ export const query = graphql`
             intro
           }
         }
+        tuition {
+          title
+          intro
+          text
+        }
+        graduation {
+          title
+          intro
+          steps
+          text
+        }
+        cta {
+          title
+          intro
+          form_header
+          form_button
+        }
       }
     },
     schedules: file(relativePath: { eq: "schedules.json" }) {
@@ -247,6 +439,25 @@ export const query = graphql`
         program
         daytime
         evening
+      }
+    },
+    locations: allMarkdownRemark(
+      filter: { fields: { slug: { regex: "\/locations\/.+\/" }}},
+      sort: {fields: [frontmatter___weight]}
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            googleMap
+          }
+        }
+      }
+    },
+    admissionPolicy: markdownRemark(fields: { slug: { eq: "/admission-policy/" } }) {
+      frontmatter {
+        title
+        policies
       }
     }
   }

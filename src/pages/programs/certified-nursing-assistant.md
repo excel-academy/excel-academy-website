@@ -18,7 +18,7 @@ opportunities:
     - Assisted living facilities
     - Hospitals
     - Clients in their own homes
-  content: Job growth for nursing assistants in general is expected to be at a rate of 21% and is expected to create 312,200 new jobs over the 2012-2022 decade according to the U.S. Bureau of Labor Statistics.
+  text: Job growth for nursing assistants in general is expected to be at a rate of 21% and is expected to create 312,200 new jobs over the 2012-2022 decade according to the U.S. Bureau of Labor Statistics.
   disclaimer: To obtain employment, potential employers may require a background check, driving record check, and/or drug testing.
 schedule:
   title: Class schedule
@@ -28,4 +28,23 @@ schedule:
   dates:
     title: Upcoming start dates
     intro: Begin your training within a month of signing up.
+tuition:
+  title: Tuition and fees
+  intro: See how affordable it is to invest in your career.
+  text: >-
+    <table><tbody><tr><td>Registration (non-refundable)</td><td>$200</td></tr><tr><td>Tuition</td><td>$900</td></tr><tr><td>Books and uniform</td><td>$100</td></tr></tbody><tfoot><tr><td>Total</td><td>$1,200</td></tr></tfoot></table>
+graduation:
+  title: Graduation
+  intro: There are just three requirements to graduate and get started on your career in healthcare.
+  steps:
+    - Complete required course hours
+    - Maintain a grade of at least 70%
+    - Pay in full all course fees/tuition
+  text: >-
+    When these requirements have been satisfied, a Certificate of Completion and official transcript will be issued. We will then arrange and notify you of testing dates for the State of Connecticut CNA Licensing Exam.
+cta:
+  title: Kickstart your career
+  intro: Call us at (203) 691-7989 or visit one of our campuses to get more information on our courses with no obligations.
+  form_header: Come to an open house
+  form_button: Sign up
 ---
