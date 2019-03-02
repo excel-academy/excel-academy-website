@@ -94,6 +94,9 @@ export default createGlobalStyle`
 
   a {
     color: ${themeColor};
+    &.button {
+      ${buttonCSS}
+    }
   }
 
   sub {

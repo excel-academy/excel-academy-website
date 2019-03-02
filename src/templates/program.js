@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Flex, Box, Text, Card } from 'rebass';
+import {
+  Flex, Box, Text, Card, Link,
+} from 'rebass';
 import {
   FaCheck, FaBriefcaseMedical, FaRegCalendar, FaDollarSign, FaGraduationCap,
 } from 'react-icons/fa';
 import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
-import LargeText from '../components/large-text/large-text-css';
 import TitleIntro from '../components/title-intro/title-intro';
 import MaxWidthBox from '../components/max-width-box/max-width-box-css';
 import UpcomingDate from '../components/upcoming-date/upcoming-date';
@@ -15,7 +16,7 @@ import { HTMLContent } from '../components/content/content';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
-  title, description, image, intro, opportunities, schedule, upcomingDates, tuition, graduation, cta, locations, admissionPolicy,
+  title, description, image, intro, nav, opportunities, schedule, upcomingDates, tuition, graduation, cta, locations, admissionPolicy,
 }) => (
   <>
     <MaxWidthBox
@@ -24,11 +25,11 @@ export const ProgramTemplate = ({
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100vh',
       }}
       maxWidth={2}
       px={{ sm: 1, tablet: 3 }}
       py={3}
-      bg="white"
     >
       <Box
         width={{ mobile: 1.65 / 3 }}
@@ -42,15 +43,49 @@ export const ProgramTemplate = ({
         <img src={intro.image_static} alt="" />
       </Box>
     </MaxWidthBox>
-    <nav class="page-nav">
-      <ul>
-        <li><a href="#opportunities">Career opportunities</a></li>
-        <li><a href="#schedules">Class schedule</a></li>
-        <li><a href="#tuition">Tuition</a></li>
-        <li><a href="#graduation">Graduation</a></li>
-        <li><a href="#start">Start a career</a></li>
-      </ul>
-    </nav>
+    <Box
+      as="nav"
+      bg="greens.0"
+      px={3}
+      css={{
+        position: 'sticky',
+        top: 0,
+        bottom: 0,
+        zIndex: 11,
+      }}
+    >
+      <Box
+        as="ul"
+        p={0}
+        m={0}
+        css={{
+          display: 'flex',
+          listStyle: 'none',
+          justifyContent: 'space-between',
+        }}
+      >
+        {nav.map(({ id, title }) => (
+          <li key={id}>
+            <Link
+              href={`#${id}`}
+              color="greens.1"
+              fontSize={2}
+              py="1em"
+              css={{
+                textDecoration: 'none',
+                textTransform: 'uppercase',
+                display: 'inline-block',
+                '&:hover': {
+                  color: theme.colors.theme,
+                },
+              }}
+            >
+              {title}
+            </Link>
+          </li>
+        ))}
+      </Box>
+    </Box>
     <MaxWidthBox
       maxWidth={2}
       p={{ sm: 1, tablet: 3 }}
@@ -60,6 +95,7 @@ export const ProgramTemplate = ({
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      id="opportunities"
     >
       <TitleIntro
         title={opportunities.title}
@@ -112,6 +148,7 @@ export const ProgramTemplate = ({
         alignItems: 'center',
       }}
       bg="purples.2"
+      id="schedules"
     >
       <TitleIntro
         title={schedule.title}
@@ -152,7 +189,7 @@ export const ProgramTemplate = ({
                 p={0}
                 m={0}
               >
-                {upcomingDates.daytime.map(date => <UpcomingDate date={date} />)}
+                {upcomingDates.daytime.map(date => <UpcomingDate key={date} date={date} />)}
               </Box>
             </Box>
             <Box fontSize={1} width="31%">
@@ -166,7 +203,7 @@ export const ProgramTemplate = ({
                 p={0}
                 m={0}
               >
-                {upcomingDates.evening.map(date => <UpcomingDate date={date} />)}
+                {upcomingDates.evening.map(date => <UpcomingDate key={date} date={date} />)}
               </Box>
             </Box>
             <Box fontSize={1} width="31%">
@@ -188,6 +225,7 @@ export const ProgramTemplate = ({
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      id="tuition"
     >
       <TitleIntro
         title={tuition.title}
@@ -208,6 +246,7 @@ export const ProgramTemplate = ({
         alignItems: 'center',
       }}
       bg="purples.2"
+      id="graduation"
     >
       <TitleIntro
         title={graduation.title}
@@ -266,13 +305,13 @@ export const ProgramTemplate = ({
       p={{ sm: 1, tablet: 3 }}
       bg="theme"
       color="white"
-      id="locations"
       css={{
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      id="start"
     >
       <TitleIntro
         title={cta.title}
@@ -286,6 +325,7 @@ export const ProgramTemplate = ({
           flexWrap: 'wrap',
           justifyContent: 'space-between',
         }}
+        id="locations"
       >
         {locations.map(({ node }) => (
           <Box
@@ -367,6 +407,7 @@ const ProgramPage = ({ data }) => {
       <ProgramTemplate
         title={metadata.title}
         intro={metadata.intro}
+        nav={metadata.nav}
         opportunities={metadata.opportunities}
         schedule={metadata.schedule}
         upcomingDates={upcomingDates}
@@ -398,6 +439,10 @@ export const query = graphql`
         intro {
           image_static
           text
+        }
+        nav {
+          id
+          title
         }
         opportunities {
           title

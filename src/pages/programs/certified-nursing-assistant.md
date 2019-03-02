@@ -10,6 +10,17 @@ intro:
   image_static: /img/medical-staff.jpg
   text: >-
     Our program in CNA training uses learning to motivate you to experience personal growth and success. Our mission is to certify students who are prepared to provide the highest quality care to patients, and outstanding service to employers.
+nav:
+  - id: opportunities
+    title: Career opportunities
+  - id: schedules
+    title: Class schedule
+  - id: tuition
+    title: Tuition
+  - id: graduation
+    title: Graduation
+  - id: start
+    title: Start a career
 opportunities:
   title: Career opportunities
   intro: Demand for your skills to provide quality health care in many situations.

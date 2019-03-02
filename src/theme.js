@@ -1,6 +1,7 @@
 import { themeColor } from '../site-config';
 
 const purples = ['#7b79b0', '#6f6da5', '#f4f4f8', '#1c2070'];
+const greens = ['#d2eced', '#132c2d'];
 const fontSizes = [12, 14, 16, 18, 20, 24, 30, 38, 62];
 const space = [0, '2rem', '3rem', '4rem', '5rem', '7rem', '32rem', '40rem', '48rem', '56rem', '64rem'];
 export const breakpoints = {
@@ -20,6 +21,7 @@ export default {
   colors: {
     theme: themeColor,
     purples,
+    greens,
   },
   buttons: {
     primary: {

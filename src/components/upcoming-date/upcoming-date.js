@@ -14,7 +14,6 @@ const UpcomingDate = ({ date }) => {
       {isFutureDate(date) && (
         <Box
           as="li"
-          key={date}
           mb="0.3em"
         >
           <FaRegCalendarCheck

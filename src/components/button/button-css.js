@@ -23,7 +23,7 @@ export default css`
   line-height: 2.85em;
   border-radius: 8px;
   font-weight: 600;
-  letter-spacing: 0.125em;
+  /* letter-spacing: 0.125em; */
   text-align: center;
   text-decoration: none;
   overflow: hidden;

@@ -13,7 +13,7 @@ const Layout = ({ data, children }) => (
     <Normalize />
     <LayoutStyle />
     <Metadata />
-    {/* <Header siteTitle={data.site.siteMetadata.siteTitle} /> */}
+    <Header siteTitle={data.site.siteMetadata.siteTitle} />
     {children}
   </>
 );

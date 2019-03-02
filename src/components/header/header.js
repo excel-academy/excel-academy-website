@@ -1,30 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import HeaderContainer from './header-css';
-// import MainMenu from '../mainmenu/mainmenu';
+import { Link, StaticQuery, graphql } from 'gatsby';
+import HeaderContainer, { HomeLink, HeaderNav } from './header-css';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, programs }) => (
   <HeaderContainer>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+    <HomeLink>
+      <Link to="/">{siteTitle}</Link>
+    </HomeLink>
+    <HeaderNav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li>
+          <a href="#">Programs</a>
+          <ul>
+            {programs.map(({ node }) => (
+              <li>
+                <Link
+                  key={node.frontmatter.program}
+                  to={node.fields.slug}
+                >
+                  <span>{node.frontmatter.title}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#start" className="button">Start a career</a></li>
+      </ul>
+    </HeaderNav>
   </HeaderContainer>
 );
 
@@ -32,4 +37,34 @@ Header.propTypes = {
   siteTitle: PropTypes.string.isRequired,
 };
 
-export default Header;
+const HeaderWithQuery = props => (
+  <StaticQuery
+    query={graphql`
+      query HeaderQuery {
+        programs: allMarkdownRemark(
+          filter: { fields: { slug: { regex: "\/programs\/.+\/" }}},
+          sort: {fields: [frontmatter___weight]}
+        ) {
+          edges {
+            node {
+              frontmatter {
+                program
+                title
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Header programs={data.programs.edges} {...props} />}
+  />
+);
+
+HeaderWithQuery.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default HeaderWithQuery;
