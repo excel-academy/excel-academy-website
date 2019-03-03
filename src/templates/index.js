@@ -253,7 +253,6 @@ export const query = graphql`
         title
         meta_description
         intro {
-          image
           headline
           cta {
             action
