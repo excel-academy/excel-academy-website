@@ -13,6 +13,7 @@ import TitleIntro from '../components/title-intro/title-intro';
 import MaxWidthBox from '../components/max-width-box/max-width-box-css';
 import UpcomingDate from '../components/upcoming-date/upcoming-date';
 import { HTMLContent } from '../components/content/content';
+import PageNavBar from '../components/page-nav-bar/page-nav-bar';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
@@ -29,7 +30,7 @@ export const ProgramTemplate = ({
       }}
       maxWidth={2}
       px={{ sm: 1, tablet: 3 }}
-      py={3}
+      py={{ sm: 5, tablet: 3 }}
     >
       <Box
         width={{ mobile: 1.65 / 3 }}
@@ -43,49 +44,7 @@ export const ProgramTemplate = ({
         <img src={intro.image_static} alt="" />
       </Box>
     </MaxWidthBox>
-    <Box
-      as="nav"
-      bg="greens.0"
-      px={3}
-      css={{
-        position: 'sticky',
-        top: 0,
-        bottom: 0,
-        zIndex: 11,
-      }}
-    >
-      <Box
-        as="ul"
-        p={0}
-        m={0}
-        css={{
-          display: 'flex',
-          listStyle: 'none',
-          justifyContent: 'space-between',
-        }}
-      >
-        {nav.map(({ id, title }) => (
-          <li key={id}>
-            <Link
-              href={`#${id}`}
-              color="greens.1"
-              fontSize={2}
-              py="1em"
-              css={{
-                textDecoration: 'none',
-                textTransform: 'uppercase',
-                display: 'inline-block',
-                '&:hover': {
-                  color: theme.colors.theme,
-                },
-              }}
-            >
-              {title}
-            </Link>
-          </li>
-        ))}
-      </Box>
-    </Box>
+    <PageNavBar navItems={nav} />
     <MaxWidthBox
       maxWidth={2}
       p={{ sm: 1, tablet: 3 }}
@@ -162,7 +121,7 @@ export const ProgramTemplate = ({
         css={{
           'tbody td': {
             backgroundColor: 'rgba(251, 251, 253, 1)',
-          }
+          },
         }}
       >
         <Card

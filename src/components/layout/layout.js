@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import Metadata from '../metadata/metadata';
 import Header from '../header/header';
+import Footer from '../footer/footer';
 import theme from '../../theme';
 import LayoutStyle from './layout-css';
 
@@ -15,6 +16,7 @@ const Layout = ({ data, children }) => (
     <Metadata />
     <Header siteTitle={data.site.siteMetadata.siteTitle} />
     {children}
+    <Footer />
   </>
 );
 

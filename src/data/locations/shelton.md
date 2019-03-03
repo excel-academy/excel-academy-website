@@ -1,4 +1,5 @@
 ---
+url: '#locations'
 weight: 3
 title: 'Shelton'
 address: 4 Corporate Drive, Suite 272

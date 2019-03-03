@@ -1,4 +1,5 @@
 ---
+url: '#locations'
 weight: 1
 title: 'New Haven'
 address: 419 Whalley Avenue, Suite 404

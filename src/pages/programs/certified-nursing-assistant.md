@@ -4,7 +4,7 @@ program: CNA
 title: 'Certified Nursing Assistant'
 weight: 1
 meta_description: >-
-  Our program in CNA training uses learning to motivate you to experience personal growth and success. Our mission is to certify students who are prepared to provide the highest quality care to patients, and outstanding service to employers.
+  Our CNA training program uses learning to motivate you to experience personal growth and success. Our mission is to certify students who are prepared to provide the highest quality care to patients, and outstanding service to employers.
 home_description: Get the skills to provide quality health care to residents in nursing homes, assisted living facilities, hospitals, or clients in their own homes.
 intro:
   image_static: /img/medical-staff.jpg

@@ -18,7 +18,7 @@ const UpcomingDate = ({ date }) => {
         >
           <FaRegCalendarCheck
             css={{
-              marginRight: '1em',
+              marginRight: '0.5em',
             }}
           />
           <time dateTime={date}>{formatDate(date)}</time>

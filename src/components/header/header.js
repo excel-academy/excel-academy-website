@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Link, StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import { FaBars } from 'react-icons/fa';
 import classNames from 'classnames';
+import Link from '../gatsby-link/gatsby-link';
 import HeaderContainer, { HomeLink, HeaderNav } from './header-css';
 
 const Header = ({ siteTitle, programs }) => {
@@ -33,9 +34,8 @@ const Header = ({ siteTitle, programs }) => {
             <a href="#">Programs</a>
             <ul>
               {programs.map(({ node }) => (
-                <li>
+                <li key={node.frontmatter.program}>
                   <Link
-                    key={node.frontmatter.program}
                     to={node.fields.slug}
                     onClick={() => setNavIsOpen(false)}
                   >
@@ -55,6 +55,7 @@ const Header = ({ siteTitle, programs }) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string.isRequired,
+  programs: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 const HeaderWithQuery = props => (
@@ -82,9 +83,5 @@ const HeaderWithQuery = props => (
     render={data => <Header programs={data.programs.edges} {...props} />}
   />
 );
-
-HeaderWithQuery.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default HeaderWithQuery;

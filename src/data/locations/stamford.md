@@ -1,4 +1,5 @@
 ---
+url: '#locations'
 weight: 2
 title: 'Stamford'
 address: 482 Summer Street

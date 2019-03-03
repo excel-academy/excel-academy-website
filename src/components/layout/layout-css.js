@@ -46,6 +46,14 @@ export default createGlobalStyle`
     opacity: 1.0;
   }
 
+  /* account for fixed header */
+  :target::before {
+    content: "";
+    display: block;
+    height: 5.4em; /* fixed header height + top padding of section */
+    margin: -3.4em 0 0; /* negative fixed header height */
+  }
+
   #___gatsby {
     background-color: inherit;
     & > [role="group"] {
@@ -264,15 +272,14 @@ export default createGlobalStyle`
     }
   }
 
-  ${mediamax.tablet`
-    /* account for fixed header */
-    :target::before {
-      content: "";
-      display: block;
-      height: 5.4em; /* fixed header height + top padding of section */
-      margin: -3.4em 0 0; /* negative fixed header height */
-    }
+  .major {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.3;
+    letter-spacing: -0.025rem;
+  }
 
+  ${mediamax.tablet`
     p {
       &.major {
         font-size: 1.1rem;
