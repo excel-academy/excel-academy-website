@@ -265,6 +265,14 @@ export default createGlobalStyle`
   }
 
   ${mediamax.tablet`
+    /* account for fixed header */
+    :target::before {
+      content: "";
+      display: block;
+      height: 5.4em; /* fixed header height + top padding of section */
+      margin: -3.4em 0 0; /* negative fixed header height */
+    }
+
     p {
       &.major {
         font-size: 1.1rem;

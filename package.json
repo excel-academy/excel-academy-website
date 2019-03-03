@@ -5,6 +5,7 @@
   "author": "Ernie Bello <ernie@bello.nyc>",
   "dependencies": {
     "@reach/router": "^1.2.1",
+    "classnames": "^2.2.6",
     "core-js": "^2.6.1",
     "gatsby": "^2.1.4",
     "gatsby-cli": "^2.4.8",

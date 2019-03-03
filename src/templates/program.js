@@ -16,7 +16,7 @@ import { HTMLContent } from '../components/content/content';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
-  title, description, image, intro, nav, opportunities, schedule, upcomingDates, tuition, graduation, cta, locations, admissionPolicy,
+  title, description, image, intro, nav, opportunities, schedule, upcomingDates, tuition, graduation, cta, locations, admissionPolicy, program,
 }) => (
   <>
     <MaxWidthBox
@@ -360,6 +360,7 @@ export const ProgramTemplate = ({
             },
           }}
         >
+          <input type="hidden" name="program" id="program" value={program} />
           <input type="text" name="name" id="name" placeholder="Name" />
           <input type="email" name="email" id="email" placeholder="Email" />
           <input type="submit" value={cta.form_button} />
@@ -405,6 +406,7 @@ const ProgramPage = ({ data }) => {
     <Layout>
       <Metadata pageData={metadata} />
       <ProgramTemplate
+        program={program}
         title={metadata.title}
         intro={metadata.intro}
         nav={metadata.nav}
