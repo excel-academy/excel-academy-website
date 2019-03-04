@@ -1,9 +1,9 @@
-import React, { useState, useLayoutEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import ResizeObserver from 'resize-observer-polyfill';
 import { breakpoints } from '../../theme';
 
-const BreakpointResizer = ({ buttonText, program }) => {
+const BreakpointObserver = ({ setBreakpoint }) => {
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -22,44 +22,29 @@ const BreakpointResizer = ({ buttonText, program }) => {
 
   const fontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-  const currentBreakpoint = (width) => {
-    let breakpoint;
-    Object.keys(breakpoints).map((key) => {
-      console.log(key, breakpoints[key]);
+  const determineBreakpoint = (width) => {
+    const validBreakpoints = Object.keys(breakpoints).filter((key) => {
       const emWidth = String(breakpoints[key]).replace('em', '');
       const breakpointPxWidth = parseFloat(emWidth) * fontSize;
-      // console.log(parseFloat(emWidth) * fontSize);
-      if (width > breakpointPxWidth) {
-        breakpoint = key;
-      } else {
-        return breakpoint;
-      }
+      return width > breakpointPxWidth;
     });
-    return breakpoint;
+    return validBreakpoints.pop() || '';
   };
 
   useLayoutEffect(() => {
     resizeObserver.observe(document.body);
+    const breakpoint = determineBreakpoint(windowSize.width);
+    // console.log(breakpoint);
+    setBreakpoint(breakpoint);
 
     return () => resizeObserver.unobserve(document.body);
   }, [windowSize.width]);
 
-  return (
-    <>
-      <div css={{
-        paddingTop: '4em',
-      }}>
-        <p>Font size: {fontSize}</p>
-        <p>{currentBreakpoint(windowSize.width)}</p>
-        <p>Window width: {windowSize.width}</p>
-        <p>Window height: {windowSize.height}</p>
-      </div>
-    </>
-  )
+  return null;
 };
 
-BreakpointResizer.propTypes = {
-
+BreakpointObserver.propTypes = {
+  setBreakpoint: PropTypes.func.isRequired,
 };
 
-export default BreakpointResizer;
+export default BreakpointObserver;

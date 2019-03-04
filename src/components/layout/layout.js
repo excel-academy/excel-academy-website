@@ -6,16 +6,17 @@ import { Normalize } from 'styled-normalize';
 import Metadata from '../metadata/metadata';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import BreakpointObserver from '../breakpoint-observer/breakpoint-observer';
+import BreakpointContext from '../../context/BreakpointContext';
 import theme from '../../theme';
 import LayoutStyle from './layout-css';
-// import BreakpointResizer from '../breakpoint-resizer/breakpoint-resizer';
 
-const Layout = ({ data, children }) => (
+const Layout = ({ data, setBreakpoint, children }) => (
   <>
     <Normalize />
     <LayoutStyle />
     <Metadata />
-    {/* <BreakpointResizer /> */}
+    <BreakpointObserver setBreakpoint={setBreakpoint} />
     <Header siteTitle={data.site.siteMetadata.siteTitle} />
     {children}
     <Footer />
@@ -41,9 +42,13 @@ const LayoutWithQuery = props => (
       }
     `}
     render={data => (
-      <ThemeProvider theme={theme}>
-        <Layout data={data} {...props} />
-      </ThemeProvider>
+      <BreakpointContext.Consumer>
+        {bpctx => (
+          <ThemeProvider theme={theme}>
+            <Layout data={data} setBreakpoint={bpctx.setBreakpoint} {...props} />
+          </ThemeProvider>
+        )}
+      </BreakpointContext.Consumer>
     )}
   />
 );

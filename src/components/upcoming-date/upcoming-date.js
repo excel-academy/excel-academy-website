@@ -2,29 +2,36 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Box } from 'rebass';
 import { FaRegCalendarCheck } from 'react-icons/fa';
-
-const dateTimeFormat = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+import BreakpointContext from '../../context/BreakpointContext';
 
 const UpcomingDate = ({ date }) => {
-  const formatDate = datestr => dateTimeFormat.format(new Date(datestr));
+  const formatDate = (datestr, breakpoint) => {
+    const month = breakpoint === 'sm' ? 'short' : 'long';
+    const options = { month, day: 'numeric', timeZone: 'UTC' };
+    return new Date(datestr).toLocaleDateString('en-US', options);
+  };
   const isFutureDate = datestr => new Date().toISOString().substring(0, 10) < datestr;
 
   return (
-    <>
-      {isFutureDate(date) && (
-        <Box
-          as="li"
-          mb="0.3em"
-        >
-          <FaRegCalendarCheck
-            css={{
-              marginRight: '0.5em',
-            }}
-          />
-          <time dateTime={date}>{formatDate(date)}</time>
-        </Box>
+    <BreakpointContext.Consumer>
+      {bpctx => (
+        <>
+          {isFutureDate(date) && (
+            <Box
+              as="li"
+              mb="0.3em"
+            >
+              <FaRegCalendarCheck
+                css={{
+                  marginRight: '0.5em',
+                }}
+              />
+              <time dateTime={date}>{formatDate(date, bpctx.breakpoint)}</time>
+            </Box>
+          )}
+        </>
       )}
-    </>
+    </BreakpointContext.Consumer>
   );
 };
 

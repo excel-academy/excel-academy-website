@@ -12,7 +12,6 @@ const FormOpenHouse = ({ buttonText, program }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    console.log(formState);
     fetch('/?no-cache=1', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -23,7 +22,7 @@ const FormOpenHouse = ({ buttonText, program }) => {
     })
       .then(() => setFormSubmitted(true))
       .catch(error => setFormError(error));
-  }
+  };
 
   return (
     <>
@@ -65,7 +64,7 @@ const FormOpenHouse = ({ buttonText, program }) => {
         </form>
       )}
     </>
-  )
+  );
 };
 
 FormOpenHouse.propTypes = {
