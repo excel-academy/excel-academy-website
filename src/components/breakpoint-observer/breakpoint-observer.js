@@ -4,10 +4,7 @@ import ResizeObserver from 'resize-observer-polyfill';
 import { breakpoints } from '../../theme';
 
 const BreakpointObserver = ({ setBreakpoint }) => {
-  const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  const [windowSize, setWindowSize] = useState({});
 
   const handleResize = (entry) => {
     const { width, height } = entry.contentRect;
@@ -20,9 +17,7 @@ const BreakpointObserver = ({ setBreakpoint }) => {
 
   const resizeObserver = new ResizeObserver(entries => handleResize(entries[0]));
 
-  const fontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-
-  const determineBreakpoint = (width) => {
+  const determineBreakpoint = (width, fontSize) => {
     const validBreakpoints = Object.keys(breakpoints).filter((key) => {
       const emWidth = String(breakpoints[key]).replace('em', '');
       const breakpointPxWidth = parseFloat(emWidth) * fontSize;
@@ -33,7 +28,8 @@ const BreakpointObserver = ({ setBreakpoint }) => {
 
   useLayoutEffect(() => {
     resizeObserver.observe(document.body);
-    const breakpoint = determineBreakpoint(windowSize.width);
+    const fontSize = parseFloat(window.getComputedStyle(document.documentElement).fontSize);
+    const breakpoint = determineBreakpoint(windowSize.width, fontSize);
     // console.log(breakpoint);
     setBreakpoint(breakpoint);
 
