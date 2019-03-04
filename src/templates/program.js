@@ -307,7 +307,7 @@ export const ProgramTemplate = ({
           </Box>
         ))}
       </Box>
-      <Box width={{ mobile: 5 / 12 }}>
+      <Box width={{ sm: 1, tablet: 5 / 12 }}>
         <h4>{cta.form_header}</h4>
         <FormOpenHouse buttonText={cta.buttonText} program={program} />
       </Box>
@@ -316,7 +316,7 @@ export const ProgramTemplate = ({
       maxWidth={2}
       p={{ sm: 1, tablet: 2 }}
       bg="#eeeeee"
-      color="#777777"
+      color="#444444"
       css={{
         display: 'flex',
         flexWrap: 'wrap',

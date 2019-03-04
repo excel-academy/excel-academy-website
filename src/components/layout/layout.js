@@ -8,12 +8,14 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import theme from '../../theme';
 import LayoutStyle from './layout-css';
+// import BreakpointResizer from '../breakpoint-resizer/breakpoint-resizer';
 
 const Layout = ({ data, children }) => (
   <>
     <Normalize />
     <LayoutStyle />
     <Metadata />
+    {/* <BreakpointResizer /> */}
     <Header siteTitle={data.site.siteMetadata.siteTitle} />
     {children}
     <Footer />
