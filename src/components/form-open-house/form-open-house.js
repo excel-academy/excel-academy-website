@@ -57,8 +57,8 @@ const FormOpenHouse = ({ buttonText, program }) => {
             }}
           />
           <input type="hidden" name="form-name" value="open-house" />
-          <input type="text" name="name" placeholder="Name" onChange={handleChange} />
-          <input type="email" name="email" placeholder="Email" onChange={handleChange} />
+          <input type="text" name="name" placeholder="Name" required onChange={handleChange} />
+          <input type="email" name="email" placeholder="Email" required onChange={handleChange} />
           <input type="hidden" name="program" value={program} />
           <input type="submit" value={buttonText} />
         </form>
