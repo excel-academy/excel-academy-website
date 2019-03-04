@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import {
-  Flex, Box, Text, Card, Link,
+  Flex, Box, Text, Card,
 } from 'rebass';
 import {
   FaCheck, FaBriefcaseMedical, FaRegCalendar, FaDollarSign, FaGraduationCap,
@@ -14,6 +14,7 @@ import MaxWidthBox from '../components/max-width-box/max-width-box-css';
 import UpcomingDate from '../components/upcoming-date/upcoming-date';
 import { HTMLContent } from '../components/content/content';
 import PageNavBar from '../components/page-nav-bar/page-nav-bar';
+import FormOpenHouse from '../components/form-open-house/form-open-house';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
@@ -308,22 +309,7 @@ export const ProgramTemplate = ({
       </Box>
       <Box width={{ mobile: 5 / 12 }}>
         <h4>{cta.form_header}</h4>
-        <form
-          name="open-house"
-          method="POST"
-          data-netlify="true"
-          css={{
-            'input:not([type=submit])': {
-              backgroundColor: '#ffffff',
-              color: '#000',
-            },
-          }}
-        >
-          <input type="hidden" name="program" id="program" value={program} />
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <input type="submit" value={cta.form_button} />
-        </form>
+        <FormOpenHouse buttonText={cta.buttonText} program={program} />
       </Box>
     </MaxWidthBox>
     <MaxWidthBox

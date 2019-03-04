@@ -7,6 +7,7 @@ import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
 import MaxWidthBox from '../components/max-width-box/max-width-box-css';
 import LinkButton from '../components/link-button/link-button-css';
+import FormOpenHouse from '../components/form-open-house/form-open-house';
 import { CircleImageBanner } from '../components/banner';
 import logo from '../images/Excel-Academy-logo.jpg';
 import theme from '../theme';
@@ -180,11 +181,7 @@ export const HomeTemplate = ({
         <h3>{cta.headline}</h3>
         <p>{cta.description}</p>
         <h4>{cta.form_header}</h4>
-        <form name="open-house" method="POST" data-netlify="true">
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <input type="submit" value={cta.form_button} />
-        </form>
+        <FormOpenHouse buttonText={cta.form_button} />
       </CircleImageBanner>
     </MaxWidthBox>
   </>

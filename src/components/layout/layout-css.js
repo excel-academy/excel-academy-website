@@ -189,12 +189,12 @@ export default createGlobalStyle`
   select,
   textarea {
     appearance: none;
-    background: rgba(144,144,144,0.075);
     border-radius: 8px;
     border: none;
     border: solid 1px rgba(144,144,144,0.25);
     box-sizing: border-box;
-    color: inherit;
+    background-color: #fff;
+    color: #000;
     display: block;
     outline: 0;
     padding: 0 1em;
