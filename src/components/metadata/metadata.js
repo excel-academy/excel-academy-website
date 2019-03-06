@@ -11,7 +11,7 @@ const Metadata = ({ pageData, location }) => {
   const isHome = location.pathname === '/';
   const browsertitle = pageData && !isHome
     ? `${pageData.browsertitle || pageData.title} - ${config.siteTitle}` : config.siteTitle;
-  const description = pageData && pageData.description;
+  const description = pageData && pageData.meta_description;
   const canonicalUrl = urljoin(siteURL, location.pathname || '');
   let image = pageData && pageData.image;
   if (image) {
@@ -57,7 +57,12 @@ const Metadata = ({ pageData, location }) => {
   ];
 
   return (
-    <Helmet title={browsertitle}>
+    <Helmet
+      title={browsertitle}
+      htmlAttributes={{
+        lang: 'en',
+      }}
+    >
       {/* General tags */}
       {description && <meta name="description" content={description} />}
       {image && <meta name="image" content={image} />}

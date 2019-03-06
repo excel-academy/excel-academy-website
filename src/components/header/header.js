@@ -16,7 +16,7 @@ const Header = ({ siteTitle, programs }) => {
   return (
     <HeaderContainer className={mobileMenuExpandedClasses}>
       <HomeLink>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/" tabIndex={-1}>{siteTitle}</Link>
       </HomeLink>
       <HeaderNav>
         <span

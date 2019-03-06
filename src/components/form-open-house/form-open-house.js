@@ -57,8 +57,14 @@ const FormOpenHouse = ({ buttonText, program }) => {
             }}
           />
           <input type="hidden" name="form-name" value="open-house" />
-          <input type="text" name="name" placeholder="Name" required onChange={handleChange} />
-          <input type="email" name="email" placeholder="Email" required onChange={handleChange} />
+          <label htmlFor="name">
+            <span className="visuallyhidden">Name</span>
+            <input type="text" name="name" id="name" placeholder="Name" required onChange={handleChange} />
+          </label>
+          <label htmlFor="email">
+            <span className="visuallyhidden">Email</span>
+            <input type="email" name="email" id="email" placeholder="Email" required onChange={handleChange} />
+          </label>
           <input type="hidden" name="program" value={program} />
           <input type="submit" value={buttonText} />
         </form>

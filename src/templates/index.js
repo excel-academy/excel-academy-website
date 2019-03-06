@@ -66,7 +66,7 @@ export const HomeTemplate = ({
           >
             <h3>{node.frontmatter.navtitle || node.frontmatter.title}</h3>
             <p>{node.frontmatter.home_description}</p>
-            <LinkButton to={node.fields.slug}>Learn more</LinkButton>
+            <LinkButton to={node.fields.slug}>View program</LinkButton>
           </Box>
         ))}
       </Box>
