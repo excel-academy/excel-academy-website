@@ -15,19 +15,19 @@ const Header = ({ siteTitle, programs }) => {
 
   return (
     <HeaderContainer className={mobileMenuExpandedClasses}>
-      <span
-        className="mobile-menu-button"
-        role="menu"
-        tabIndex={0}
-        onClick={() => setNavIsOpen(!navIsOpen)}
-        onKeyPress={() => setNavIsOpen(!navIsOpen)}
-      >
-        <FaBars />
-      </span>
       <HomeLink>
         <Link to="/">{siteTitle}</Link>
       </HomeLink>
       <HeaderNav>
+        <span
+          className="mobile-menu-button"
+          role="button"
+          tabIndex={0}
+          onClick={() => setNavIsOpen(!navIsOpen)}
+          onKeyPress={() => setNavIsOpen(!navIsOpen)}
+        >
+          <FaBars />
+        </span>
         <ul>
           <li><Link to="/" onClick={() => setNavIsOpen(false)}>Home</Link></li>
           <li>

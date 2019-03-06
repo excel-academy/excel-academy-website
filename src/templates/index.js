@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Box, Text } from 'rebass';
+import { Box, Text, Flex } from 'rebass';
 import { FaCheck } from 'react-icons/fa';
 import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
@@ -134,15 +134,10 @@ export const HomeTemplate = ({
       <Text as="h2" textAlign={{ tablet: 'center' }} mb={2}>
         {locationsHeadline}
       </Text>
-      <Box
-        css={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-        }}
-      >
+      <Flex flexWrap="wrap" justifyContent="space-between">
         {locations.map(({ node }) => (
-          <Box
+          <Flex
+            flexDirection="column"
             width={{ tablet: '31%' }}
             mb={2}
             key={node.frontmatter.title}
@@ -158,7 +153,15 @@ export const HomeTemplate = ({
               frameBorder="0"
               allowFullScreen
             />
-            <Text bg="purples.0" p={1} fontSize={1} textAlign="center">
+            <Text
+              bg="purples.0"
+              p={1}
+              fontSize={1}
+              textAlign="center"
+              css={{
+                flex: 1,
+              }}
+            >
               {node.frontmatter.address}
               <br />
               {node.frontmatter.city}
@@ -167,9 +170,9 @@ export const HomeTemplate = ({
               &nbsp;
               {node.frontmatter.zip}
             </Text>
-          </Box>
+          </Flex>
         ))}
-      </Box>
+      </Flex>
     </MaxWidthBox>
     <MaxWidthBox maxWidth={2} id="start">
       <CircleImageBanner

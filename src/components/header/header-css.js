@@ -32,13 +32,6 @@ export const HomeLink = styled.h1`
 `;
 
 export const HeaderNav = styled.nav`
-  display: none;
-  border-top: solid 1px rgba(144, 144, 144, 0.25);
-
-  .open & {
-    display: block;
-  }
-
   ul {
     list-style: none;
     margin: 0;
@@ -47,6 +40,8 @@ export const HeaderNav = styled.nav`
   > ul {
     padding-left: 1.5em;
     padding-right: 1.5em;
+    display: none;
+    border-top: solid 1px rgba(144, 144, 144, 0.25);
 
     > li {
       &:first-child {
@@ -68,6 +63,10 @@ export const HeaderNav = styled.nav`
     }
   }
 
+  .open & > ul {
+    display: block;
+  }
+
   a {
     color: #4b505c;
     display: block;
@@ -82,12 +81,12 @@ export const HeaderNav = styled.nav`
     right: 1.25em;
     top: 0;
     vertical-align: middle;
-    display: block;
-    border-top: 0;
 
     > ul {
       padding-left: 0;
       padding-right: 0;
+      display: block;
+      border-top: 0;
 
       > li {
         border-radius: 8px;
