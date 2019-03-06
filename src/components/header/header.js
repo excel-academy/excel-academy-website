@@ -22,6 +22,7 @@ const Header = ({ siteTitle, programs }) => {
         <span
           className="mobile-menu-button"
           role="button"
+          aria-label="Menu"
           tabIndex={0}
           onClick={() => setNavIsOpen(!navIsOpen)}
           onKeyPress={() => setNavIsOpen(!navIsOpen)}
