@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { FaFacebookF, FaEnvelope, FaChevronRight } from 'react-icons/fa';
 import { Box, Text } from 'rebass';
 import Link from '../gatsby-link/gatsby-link';
@@ -58,7 +59,7 @@ const Footer = ({ programs, locations, company }) => (
         <h3>Accreditations</h3>
         <p>Excel Academy is approved by the Connecticut Office of Higher Education and the Connecticut Department of Public Health.</p>
         <SocialContainer>
-          <li><a href="https://www.facebook.com/excelacademyct/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a></li>
+          <li><OutboundLink href="https://www.facebook.com/excelacademyct/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></OutboundLink></li>
           <li><a href={`mailto:${company.email}`} aria-label="Email"><FaEnvelope /></a></li>
         </SocialContainer>
       </section>
