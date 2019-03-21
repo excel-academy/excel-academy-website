@@ -98,7 +98,7 @@
     "prettier": "1.16.4",
     "prettier-eslint-cli": "4.7.1",
     "react-test-renderer": "16.8.1",
-    "react-testing-library": "6.0.0",
+    "react-testing-library": "6.0.1",
     "start-server-and-test": "1.7.12",
     "stylelint": "9.10.1",
     "stylelint-config-idiomatic-order": "6.2.0",
