@@ -151,14 +151,12 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
         }
       />
       <picture>
-        <source
-          sizes="(max-width: 600px) 100vw, 600px"
-          srcSet="some srcSet"
-        />
         <img
           alt="banner"
           onLoad={[Function]}
+          sizes="(max-width: 600px) 100vw, 600px"
           src="test-file-stub"
+          srcSet="some srcSet"
           style={
             Object {
               "height": "100%",
@@ -177,7 +175,7 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
       <noscript
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<picture><source srcSet=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            "__html": "<picture><img sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
         }
       />
@@ -358,14 +356,12 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
         }
       />
       <picture>
-        <source
-          sizes="(max-width: 600px) 100vw, 600px"
-          srcSet="some srcSet"
-        />
         <img
           alt="banner"
           onLoad={[Function]}
+          sizes="(max-width: 600px) 100vw, 600px"
           src="test-file-stub"
+          srcSet="some srcSet"
           style={
             Object {
               "height": "100%",
@@ -384,7 +380,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
       <noscript
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<picture><source srcSet=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            "__html": "<picture><img sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
         }
       />
