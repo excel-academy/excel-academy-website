@@ -3,16 +3,16 @@ import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { Heading } from 'rebass';
 import theme from '../../theme';
-import ContentOverlayBanner from './content-overlay';
+import CircleImageBanner from './circle-image';
 import image from '../../utils/mockBannerImg';
 
-describe('ContentOverlayBanner', () => {
+describe('CircleImageBanner', () => {
   it('renders correctly', () => {
     const component = renderer.create(
       <ThemeProvider theme={theme}>
-        <ContentOverlayBanner image={image.src} imagedesc={image.alt} contentAlign="center" orient="left" imagePosition="center" bg="blue" fullscreen>
+        <CircleImageBanner image={image.src} imagedesc={image.alt} orient="right" p={{ sm: 1, tablet: 3 }}>
           <Heading fontWeight={300} fontSize="5rem" lineHeight={1} mb={1}>Ernie Bello</Heading>
-        </ContentOverlayBanner>
+        </CircleImageBanner>
       </ThemeProvider>,
     );
     const tree = component.toJSON();

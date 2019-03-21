@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SpotlightBanner left orient renders correctly 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 50%;
+  z-index: 1;
+  max-width: 60em;
+  width: 50%;
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.c5 .gatsby-image-wrapper {
+  height: 100%;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+.c1 .c4 img {
+  object-position: right !important;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 .c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:undefined) {
+  .c3 {
+    padding: 7rem;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c3 {
+    width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c3 {
+    width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c5 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c5 {
+    width: 33.33333333333333%;
+  }
+}
+
+<section
+  className="c0 c1"
+  orient="left"
+>
+  <div
+    className="c2 c3"
+    width={
+      Array [
+        0.5,
+        0.5,
+        0.5,
+        0.6666666666666666,
+      ]
+    }
+  >
+    <h2>
+      Title
+    </h2>
+    <p>
+      Description
+    </p>
+  </div>
+  <div
+    className="c4 c5"
+    width={
+      Array [
+        0.5,
+        0.5,
+        0.5,
+        0.3333333333333333,
+      ]
+    }
+  >
+    <div
+      className=" gatsby-image-wrapper"
+      style={
+        Object {
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "66.66666666666667%",
+            "width": "100%",
+          }
+        }
+      />
+      <picture>
+        <source
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcSet="some srcSet"
+        />
+        <img
+          alt="banner"
+          onLoad={[Function]}
+          src="test-file-stub"
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 0.5s",
+              "width": "100%",
+            }
+          }
+        />
+      </picture>
+      <noscript
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<picture><source srcSet=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+          }
+        }
+      />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`SpotlightBanner right orient renders correctly 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 50%;
+  z-index: 1;
+  max-width: 60em;
+  width: 50%;
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.c5 .gatsby-image-wrapper {
+  height: 100%;
+}
+
+.c6 .c4 img {
+  object-position: right !important;
+}
+
+.c1 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+.c1 .c4 img {
+  object-position: left !important;
+}
+
+.c7 .c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0 auto;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c0 .c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:undefined) {
+  .c3 {
+    padding: 7rem;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c3 {
+    width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c3 {
+    width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c5 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:undefined) {
+  .c5 {
+    width: 33.33333333333333%;
+  }
+}
+
+<section
+  className="c0 c1"
+  orient="right"
+>
+  <div
+    className="c2 c3"
+    width={
+      Array [
+        0.5,
+        0.5,
+        0.5,
+        0.6666666666666666,
+      ]
+    }
+  >
+    <h2>
+      Title
+    </h2>
+    <p>
+      Description
+    </p>
+  </div>
+  <div
+    className="c4 c5"
+    width={
+      Array [
+        0.5,
+        0.5,
+        0.5,
+        0.3333333333333333,
+      ]
+    }
+  >
+    <div
+      className=" gatsby-image-wrapper"
+      style={
+        Object {
+          "overflow": "hidden",
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": "66.66666666666667%",
+            "width": "100%",
+          }
+        }
+      />
+      <picture>
+        <source
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcSet="some srcSet"
+        />
+        <img
+          alt="banner"
+          onLoad={[Function]}
+          src="test-file-stub"
+          style={
+            Object {
+              "height": "100%",
+              "left": 0,
+              "objectFit": "cover",
+              "objectPosition": "center",
+              "opacity": 0,
+              "position": "absolute",
+              "top": 0,
+              "transition": "opacity 0.5s",
+              "width": "100%",
+            }
+          }
+        />
+      </picture>
+      <noscript
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<picture><source srcSet=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+          }
+        }
+      />
+    </div>
+  </div>
+</section>
+`;

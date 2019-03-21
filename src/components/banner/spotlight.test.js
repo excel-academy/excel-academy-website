@@ -9,7 +9,7 @@ describe('SpotlightBanner', () => {
   it('left orient renders correctly', () => {
     const component = renderer.create(
       <ThemeProvider theme={theme}>
-        <SpotlightBanner image={image} contentAlign="left" orient="left" imagePosition="right">
+        <SpotlightBanner image={image.src} imagedesc={image.alt} contentAlign="left" orient="left" imagePosition="right">
           <h2>Title</h2>
           <p>Description</p>
         </SpotlightBanner>
@@ -22,7 +22,7 @@ describe('SpotlightBanner', () => {
   it('right orient renders correctly', () => {
     const component = renderer.create(
       <ThemeProvider theme={theme}>
-        <SpotlightBanner image={image} contentAlign="left" orient="right" imagePosition="left">
+        <SpotlightBanner image={image.src} imagedesc={image.alt} contentAlign="left" orient="right" imagePosition="left">
           <h2>Title</h2>
           <p>Description</p>
         </SpotlightBanner>

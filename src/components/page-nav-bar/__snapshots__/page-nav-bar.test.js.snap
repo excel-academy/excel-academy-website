@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageNavBar default renders correctly 1`] = `
+.c0 {
+  box-sizing: border-box;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: #d2eced;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 11;
+  display: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  box-sizing: border-box;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+  color: #132c2d;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.c2:hover {
+  color: #4bb2b6;
+}
+
+@media (min-width:46em) {
+  .c0 {
+    display: block;
+  }
+}
+
+<nav
+  className="c0"
+>
+  <ul
+    className="c1"
+  >
+    <li>
+      <a
+        className="c2"
+        color="greens.1"
+        fontSize="1em"
+        href="#test"
+      >
+        Test
+      </a>
+    </li>
+    <li>
+      <a
+        className="c2"
+        color="greens.1"
+        fontSize="1em"
+        href="#test2"
+      >
+        Test 2
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

@@ -11,17 +11,19 @@ const FormOpenHouse = ({ buttonText, program }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const form = e.target;
-    fetch('/?no-cache=1', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...formState,
-      }),
-    })
-      .then(() => setFormSubmitted(true))
-      .catch(error => setFormError(error));
+    if (formState.name && formState.email) {
+      const form = e.target;
+      fetch('/?no-cache=1', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...formState,
+        }),
+      })
+        .then(() => setFormSubmitted(true))
+        .catch(error => setFormError(error.message));
+    }
   };
 
   return (
