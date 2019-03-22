@@ -14168,7 +14168,7 @@ prompts@^2.0.1:
     kleur "^3.0.2"
     sisteransi "^1.0.0"
 
-prop-types@15.7.2:
+prop-types@15.7.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -17224,7 +17224,15 @@ styled-normalize@8.0.6:
   resolved "https://registry.yarnpkg.com/styled-normalize/-/styled-normalize-8.0.6.tgz#f27f87292f46aa79ad6db6339aff5db529df3c91"
   integrity sha512-tOnAD1+wV04aiVy6chaQA4u/EtkGiGZPlIBYvEfWlZQBrDqRhu9EdPyXlFzLWxpOmANoQelJqSOMlV3QNCDKkw==
 
-styled-system@3.2.1, styled-system@^3.2.1:
+styled-system@4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.0.6.tgz#53f95cd0134fc7ffdb263af720cd826c352bf5b8"
+  integrity sha512-QkZKB2CnmSWe6o/qVHFT3pkKTNzvK2nRKOHPGV4CrlSK3mWyL8VtMEy0RsIzMNjNPtF9d4EEQ/HwkpMJfWpWHg==
+  dependencies:
+    "@babel/runtime" "^7.3.4"
+    prop-types "^15.7.2"
+
+styled-system@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-3.2.1.tgz#491e1e6f88d7ee021f6f49376f12852cde8007cb"
   integrity sha512-ag0Yp7UeVHHc3t+1uM3jvlljaZYzwqpbJ8hMrFvpaKfUd8xsB9JeQXLwMpEsz8iLx8Lz/+9j0coWFZjmw8MogQ==
