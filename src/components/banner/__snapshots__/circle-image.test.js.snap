@@ -88,18 +88,6 @@ exports[`CircleImageBanner renders correctly 1`] = `
   }
 }
 
-@media screen and (min-width:undefined) {
-  .c6 {
-    height: 21rem;
-  }
-}
-
-@media screen and (min-width:undefined) {
-  .c6 {
-    width: 21rem;
-  }
-}
-
 @media screen and (min-width:46em) {
   .c1 {
     padding: 4rem;
