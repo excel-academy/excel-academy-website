@@ -83,18 +83,6 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
 }
 
 @media screen and (min-width:undefined) {
-  .c3 {
-    width: 66.66666666666666%;
-  }
-}
-
-@media screen and (min-width:undefined) {
-  .c5 {
-    width: 33.33333333333333%;
-  }
-}
-
-@media screen and (min-width:undefined) {
   .c5 {
     width: 33.33333333333333%;
   }
@@ -284,18 +272,6 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
 @media screen and (min-width:undefined) {
   .c3 {
     width: 66.66666666666666%;
-  }
-}
-
-@media screen and (min-width:undefined) {
-  .c3 {
-    width: 66.66666666666666%;
-  }
-}
-
-@media screen and (min-width:undefined) {
-  .c5 {
-    width: 33.33333333333333%;
   }
 }
 
