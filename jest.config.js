@@ -12,5 +12,5 @@ module.exports = {
     __PATH_PREFIX__: '',
   },
   setupFiles: ['<rootDir>/setup-loadershim.js'],
-  setupTestFrameworkScriptFile: './setup-tests.js',
+  setupFilesAfterEnv: ['./setup-tests.js'],
 };
