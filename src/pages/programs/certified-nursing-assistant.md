@@ -51,9 +51,7 @@ schedule:
   title: Class schedule
   intro: Finish our program in a matter of weeks on a schedule convenient to you.
   lesson_plan: >-
-    The CNA training program is divided into two parts.
-
-
+    <p>The CNA training program is divided into two parts.</p>
     <table><tbody><tr><td>Classroom</td><td>64
     hours</td></tr><tr><td>Clinical<sup>*</sup></td><td>46
     hours</td></tr></tbody><tfoot><tr><td></td><td>110 total instructional
@@ -88,4 +86,3 @@ cta:
     Call us at (203) 691-7989 or visit one of our campuses to get more
     information on our courses with no obligations.
 ---
-
