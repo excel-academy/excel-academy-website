@@ -29,3 +29,5 @@ CSSInjector.propTypes = {
     PropTypes.node,
   ]).isRequired,
 };
+
+export default CSSInjector;
