@@ -2,5 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "ignoreDeps": ["netlify-cms", "gatsby", "gatsby-plugin-netlify-cms"]
+  "ignoreDeps": ["gatsby", "gatsby-plugin-netlify-cms"]
 }
