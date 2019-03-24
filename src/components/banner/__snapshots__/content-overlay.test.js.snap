@@ -3,7 +3,7 @@
 exports[`ContentOverlayBanner renders correctly 1`] = `
 .c4 {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 2rem;
   font-size: 5rem;
   font-weight: 300;
@@ -71,12 +71,6 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
 
 .c0 .c5 {
   opacity: 0.5;
-}
-
-@media screen and (min-width:undefined) {
-  .c1 {
-    padding: 7rem;
-  }
 }
 
 <section
