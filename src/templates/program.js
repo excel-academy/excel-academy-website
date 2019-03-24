@@ -15,10 +15,12 @@ import UpcomingDate from '../components/upcoming-date/upcoming-date';
 import { HTMLContent } from '../components/content/content';
 import PageNavBar from '../components/page-nav-bar/page-nav-bar';
 import FormOpenHouse from '../components/form-open-house/form-open-house';
+import AdmissionPolicy from '../components/admission-policy/admission-policy';
 import theme from '../theme';
 
 export const ProgramTemplate = ({
-  title, description, image, intro, nav, opportunities, schedule, upcomingDates, tuition, graduation, cta, locations, admissionPolicy, program,
+  title, intro, nav, opportunities, schedule, upcomingDates,
+  tuition, graduation, cta, locations, admissionPolicy, program,
 }) => (
   <>
     <MaxWidthBox
@@ -312,37 +314,81 @@ export const ProgramTemplate = ({
         <FormOpenHouse buttonText={cta.buttonText} program={program} />
       </Box>
     </MaxWidthBox>
-    <MaxWidthBox
-      maxWidth={2}
-      p={{ sm: 1, tablet: 2 }}
-      bg="#eeeeee"
-      color="#444444"
-      css={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-      }}
-    >
-      <Box width={{ tablet: 6 / 12 }} fontSize="0.7em">
-        <Text as="h3" mb={1}>
-          {admissionPolicy.title}
-        </Text>
-        <Box
-          as="ul"
-          pl="1em"
-          m={0}
-        >
-          {admissionPolicy.policies.map(policy => (
-            <li key={policy}>{policy}</li>
-          ))}
-        </Box>
-      </Box>
-    </MaxWidthBox>
+    {admissionPolicy && (
+      <AdmissionPolicy
+        title={admissionPolicy.title}
+        policies={admissionPolicy.policies}
+      />
+    )}
   </>
 );
 
+ProgramTemplate.propTypes = {
+  title: PropTypes.string.isRequired,
+  intro: PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    image_static: PropTypes.string.isRequired,
+  }).isRequired,
+  nav: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  })).isRequired,
+  opportunities: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    disclaimer: PropTypes.string.isRequired,
+    places: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+  schedule: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    lesson_plan: PropTypes.string.isRequired,
+    dates: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      intro: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+  tuition: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  }).isRequired,
+  graduation: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    steps: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+  cta: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    form_header: PropTypes.string.isRequired,
+    form_button: PropTypes.string.isRequired,
+  }).isRequired,
+  locations: PropTypes.arrayOf(PropTypes.object).isRequired,
+  upcomingDates: PropTypes.shape({
+    daytime: PropTypes.arrayOf(PropTypes.string).isRequired,
+    evening: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+  admissionPolicy: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    policies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }),
+  program: PropTypes.string.isRequired,
+};
+
+ProgramTemplate.defaultProps = {
+  admissionPolicy: null,
+};
+
 const ProgramPage = ({ data }) => {
-  const { markdownRemark: page, schedules, locations, admissionPolicy } = data;
+  const {
+    markdownRemark: page,
+    schedules,
+    locations,
+    admissionPolicy,
+  } = data;
   const { frontmatter: metadata } = page;
   const { program } = metadata;
   const upcomingDates = schedules.childrenSchedulesJson.find(s => s.program === program);
