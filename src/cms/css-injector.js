@@ -1,27 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheetManager } from 'styled-components';
 
 // Component used to Enable netlify CMS to apply the styles added through styled-components
-const CSSInjector = ({ children }) => {
-  const [iframeRef, setIframeRef] = useState('');
+class CSSInjector extends React.Component {
+  constructor(props) {
+    super(props);
 
-  useEffect(() => {
+    this.state = {
+      iframeRef: '',
+    };
+  }
+
+  componentDidMount() {
     const iframe = document.querySelector('.nc-previewPane-frame');
     const iframeHeadElem = iframe.contentDocument.head;
-    setIframeRef(iframeHeadElem);
-  });
+    this.setState({ iframeRef: iframeHeadElem });
+  }
 
-  return (
-    <div>
-      { iframeRef && (
-        <StyleSheetManager target={iframeRef}>
-          { children }
-        </StyleSheetManager>
-      )}
-    </div>
-  );
-};
+  render() {
+    const { iframeRef } = this.state;
+    const { children } = this.props;
+    return (
+      <div>
+        { iframeRef && (
+          <StyleSheetManager target={iframeRef}>
+            { children }
+          </StyleSheetManager>
+        )}
+      </div>
+    );
+  }
+}
 
 CSSInjector.propTypes = {
   children: PropTypes.oneOfType([
