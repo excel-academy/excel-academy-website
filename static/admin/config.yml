@@ -6,26 +6,133 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "programs"
+    label: "Programs"
+    label_singular: "Program"
+    folder: "src/pages/programs"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "program"}
+      - {label: "Program Key", name: "program", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "SEO Description", name: "meta_description", widget: "text", required: false}
+      - {label: "Home Page Description", name: "home_description", widget: "text"}
+      - label: "Intro"
+        name: "intro"
+        widget: "object"
+        fields:
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Image", name: "image_static", widget: "image"}
+      - label: "Navigation"
+        name: "nav"
+        widget: "list"
+        fields:
+          - {label: "Link to", name: "id", widget: "string"}
+          - {label: "Label", name: "title", widget: "string"}
+      - label: "Opportunities"
+        name: "opportunities"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Places", name: "places", widget: "list"}
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Disclaimer", name: "disclaimer", widget: "text"}
+      - label: "Schedule"
+        name: "schedule"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Lesson plan", name: "lesson_plan", widget: "markdown"}
+          - label: "Dates"
+            name: "dates"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+      - label: "Tuition"
+        name: "tuition"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Text", name: "text", widget: "markdown"}
+      - label: "Graduation"
+        name: "graduation"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Steps", name: "steps", widget: "list"}
+          - {label: "Text", name: "text", widget: "text"}
+      - label: "Call to action"
+        name: "cta"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "text"}
+          - {label: "Form header", name: "form_header", widget: "string"}
+          - {label: "Form button", name: "form_button", widget: "string"}
   - name: "pages"
     label: "Pages"
+    delete: false
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - name: "home"
+        label: "Home"
+        file: "src/pages/index.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "SEO Description", name: "meta_description", widget: "text", required: false}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Call to action"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "action", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+          - {label: "Programs headline", name: "programs_headline", widget: "string"}
+          - label: "Benefits"
+            name: "benefitsblock"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "intro", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Benefits", name: "benefits", widget: "list"}
+          - {label: "Locations headline", name: "locations_headline", widget: "string"}
+          - label: "Call to action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: "hidden", default: "nurse-excel-academy.jpg"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Form header", name: "form_header", widget: "string"}
+              - {label: "Form button", name: "form_button", widget: "string"}
+      - name: "admission-policy"
+        label: "Admission Policy"
+        file: "src/data/admission-policy.md"
+        fields:
+          - {label: "Title", name: "title", widget: "text"}
+          - {label: "Policies", name: "policies", widget: "list"}
+  - name: "locations"
+    label: "Locations"
+    label_singular: "Location"
+    folder: "src/data/locations"
+    create: true
+    fields:
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Order", name: "weight", widget: "number"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Street Address", name: "address", widget: "text"}
+      - {label: "City", name: "city", widget: "string"}
+      - {label: "State", name: "state", widget: "string"}
+      - {label: "Zip Code", name: "zip", widget: "string"}
+      - {label: "Google Map Embed", name: "googleMap", widget: "text"}
