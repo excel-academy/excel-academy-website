@@ -36,7 +36,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Intro", name: "intro", widget: "text"}
-          - {label: "Places", name: "places", widget: "list"}
+          - {label: "Places", name: "places", widget: "list", field: {label: Place, name: place, widget: string}}
           - {label: "Text", name: "text", widget: "text"}
           - {label: "Disclaimer", name: "disclaimer", widget: "text"}
       - label: "Schedule"
@@ -65,7 +65,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Intro", name: "intro", widget: "text"}
-          - {label: "Steps", name: "steps", widget: "list"}
+          - {label: "Steps", name: "steps", widget: "list", field: {label: Step, name: step, widget: string}}
           - {label: "Text", name: "text", widget: "text"}
       - label: "Call to action"
         name: "cta"
@@ -120,7 +120,7 @@ collections:
         file: "src/data/admission-policy.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Policies", name: "policies", widget: "list"}
+          - {label: "Policies", name: "policies", widget: "list", field: {label: Policy, name: policy, widget: string}}
   - name: "locations"
     label: "Locations"
     label_singular: "Location"
