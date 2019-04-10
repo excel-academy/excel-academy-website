@@ -6,15 +6,24 @@ fields:
   name: templateKey
   label: templateKey
   default: program
+  hidden: true
+  config:
+    required: true
 - type: text
   name: program
   label: program
+  config:
+    required: true
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: number
   name: weight
   label: weight
+  config:
+    min: '1'
 - type: textarea
   name: meta_description
   label: meta_description
