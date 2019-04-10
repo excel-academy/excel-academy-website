@@ -9,6 +9,8 @@ sections:
   label: Programs
   create: all
   match: "**/*"
+  templates:
+  - program
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
