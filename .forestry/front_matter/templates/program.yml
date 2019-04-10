@@ -85,7 +85,7 @@ fields:
     name: lesson_plan
     label: lesson_plan
     config:
-      wysiwyg: true
+      wysiwyg: false
       schema:
         format: html
   - type: field_group
