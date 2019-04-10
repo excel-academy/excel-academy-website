@@ -84,6 +84,10 @@ fields:
   - type: textarea
     name: lesson_plan
     label: lesson_plan
+    config:
+      wysiwyg: true
+      schema:
+        format: html
   - type: field_group
     name: dates
     label: Dates
