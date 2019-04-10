@@ -1,0 +1,129 @@
+---
+label: Program
+hide_body: true
+fields:
+- type: text
+  name: templateKey
+  label: templateKey
+- type: text
+  name: program
+  label: program
+- type: text
+  name: title
+  label: title
+- type: number
+  name: weight
+  label: weight
+- type: textarea
+  name: meta_description
+  label: meta_description
+- type: textarea
+  name: home_description
+  label: home_description
+- type: field_group
+  name: intro
+  label: intro
+  fields:
+  - type: file
+    name: image_static
+    label: image_static
+  - type: textarea
+    name: text
+    label: text
+- type: field_group_list
+  name: nav
+  label: nav
+  fields:
+  - type: text
+    name: id
+    label: id
+  - type: text
+    name: title
+    label: title
+- type: field_group
+  name: opportunities
+  label: opportunities
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: intro
+    label: intro
+  - type: list
+    name: places
+    label: places
+  - type: textarea
+    name: text
+    label: text
+  - type: textarea
+    name: disclaimer
+    label: disclaimer
+- type: field_group
+  name: schedule
+  label: schedule
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: intro
+    label: intro
+  - type: textarea
+    name: lesson_plan
+    label: lesson_plan
+  - type: field_group
+    name: dates
+    label: dates
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: intro
+      label: intro
+- type: field_group
+  name: tuition
+  label: tuition
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: intro
+    label: intro
+  - type: textarea
+    name: text
+    label: text
+- type: field_group
+  name: graduation
+  label: graduation
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: intro
+    label: intro
+  - type: list
+    name: steps
+    label: steps
+  - type: textarea
+    name: text
+    label: text
+- type: field_group
+  name: cta
+  label: cta
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: intro
+    label: intro
+  - type: text
+    name: form_header
+    label: form_header
+  - type: text
+    name: form_button
+    label: form_button
