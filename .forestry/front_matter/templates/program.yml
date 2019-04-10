@@ -32,17 +32,17 @@ fields:
   label: home_description
 - type: field_group
   name: intro
-  label: intro
+  label: Intro
   fields:
   - type: file
     name: image_static
-    label: image_static
+    label: Image
   - type: textarea
     name: text
     label: text
 - type: field_group_list
   name: nav
-  label: nav
+  label: Page Navigation
   fields:
   - type: text
     name: id
@@ -50,9 +50,11 @@ fields:
   - type: text
     name: title
     label: title
+  config:
+    labelField: title
 - type: field_group
   name: opportunities
-  label: opportunities
+  label: Opportunities
   fields:
   - type: text
     name: title
@@ -71,7 +73,7 @@ fields:
     label: disclaimer
 - type: field_group
   name: schedule
-  label: schedule
+  label: Schedule
   fields:
   - type: text
     name: title
@@ -84,7 +86,7 @@ fields:
     label: lesson_plan
   - type: field_group
     name: dates
-    label: dates
+    label: Dates
     fields:
     - type: text
       name: title
@@ -94,7 +96,7 @@ fields:
       label: intro
 - type: field_group
   name: tuition
-  label: tuition
+  label: Tuition
   fields:
   - type: text
     name: title
@@ -107,7 +109,7 @@ fields:
     label: text
 - type: field_group
   name: graduation
-  label: graduation
+  label: Graduation
   fields:
   - type: text
     name: title
@@ -123,7 +125,7 @@ fields:
     label: text
 - type: field_group
   name: cta
-  label: cta
+  label: Call to action
   fields:
   - type: text
     name: title
