@@ -1,0 +1,17 @@
+---
+label: Schedules
+hide_body: true
+fields:
+- type: field_group_list
+  name: Schedules
+  label: Schedules
+  fields:
+  - type: text
+    name: program
+    label: program
+  - type: list
+    name: daytime
+    label: daytime
+  - type: list
+    name: evening
+    label: evening
