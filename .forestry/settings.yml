@@ -10,7 +10,7 @@ sections:
 - type: directory
   path: src/pages/programs
   label: Programs
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - program
@@ -19,6 +19,8 @@ sections:
   label: Locations
   create: documents
   match: "**/*"
+  templates:
+  - location
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
