@@ -1,6 +1,7 @@
 ---
 label: Schedules
 hide_body: true
+display_field: Schedules
 fields:
 - type: field_group_list
   name: Schedules
@@ -9,6 +10,7 @@ fields:
   - type: text
     name: program
     label: program
+    hidden: true
   - type: list
     name: daytime
     label: daytime
