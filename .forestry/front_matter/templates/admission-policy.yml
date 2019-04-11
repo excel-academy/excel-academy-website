@@ -1,0 +1,10 @@
+---
+label: Admission Policy
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: list
+  name: policies
+  label: policies
