@@ -10,7 +10,6 @@ sections:
 - type: document
   path: src/data/schedules.json
   label: Schedules
-  match: "**/*"
 - type: directory
   path: src/pages/programs
   label: Programs
