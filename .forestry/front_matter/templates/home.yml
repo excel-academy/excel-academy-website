@@ -5,19 +5,28 @@ fields:
 - type: text
   name: templateKey
   label: templateKey
+  default: index
+  hidden: true
+  config:
+    required: true
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: textarea
   name: meta_description
   label: meta_description
 - type: field_group
   name: intro
-  label: intro
+  label: Intro
   fields:
+  - type: text
+    name: headline
+    label: headline
   - type: field_group
     name: cta
-    label: cta
+    label: Call to action
     fields:
     - type: text
       name: action
@@ -25,32 +34,35 @@ fields:
     - type: text
       name: url
       label: url
-  - type: text
-    name: headline
-    label: headline
 - type: text
   name: programs_headline
   label: programs_headline
 - type: field_group
   name: benefitsblock
-  label: benefitsblock
+  label: Benefits
   fields:
-  - type: list
-    name: benefits
-    label: benefits
-  - type: textarea
-    name: description
-    label: description
   - type: text
     name: headline
     label: headline
+  - type: textarea
+    name: description
+    label: description
+  - type: list
+    name: benefits
+    label: benefits
 - type: text
   name: locations_headline
   label: locations_headline
 - type: field_group
   name: cta
-  label: cta
+  label: Call to action
   fields:
+  - type: text
+    name: headline
+    label: headline
+  - type: file
+    name: image
+    label: image
   - type: textarea
     name: description
     label: description
@@ -60,9 +72,3 @@ fields:
   - type: text
     name: form_header
     label: form_header
-  - type: text
-    name: headline
-    label: headline
-  - type: file
-    name: image
-    label: image
