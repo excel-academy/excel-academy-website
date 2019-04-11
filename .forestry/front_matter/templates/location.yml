@@ -1,0 +1,28 @@
+---
+label: Location
+hide_body: true
+fields:
+- type: text
+  name: url
+  label: url
+- type: number
+  name: weight
+  label: weight
+- type: text
+  name: title
+  label: title
+- type: text
+  name: address
+  label: address
+- type: text
+  name: city
+  label: city
+- type: text
+  name: state
+  label: state
+- type: text
+  name: zip
+  label: zip
+- type: textarea
+  name: googleMap
+  label: googleMap
