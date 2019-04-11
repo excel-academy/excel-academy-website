@@ -48,7 +48,14 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-webpack-bundle-analyzer',
+    {
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+      options: {
+        analyzerMode: 'static',
+        reportFilename: 'webpack-analyzer-report.html',
+        openAnalyzer: false,
+      },
+    },
     'gatsby-transformer-json',
     'gatsby-transformer-sharp',
     {
@@ -82,12 +89,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline', // must be listed after that the manifest plugin so the manifest file can be included in the service worker
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-netlify-cms',
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/cms.js`,
+    //   },
+    // },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
     'gatsby-plugin-netlify-headers',
   ],

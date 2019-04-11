@@ -1,5 +1,6 @@
 # Generated folders and files
 **/coverage
+webpack-analyzer-report.html
 
 # Project dependencies
 .cache
