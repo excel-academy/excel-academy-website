@@ -14,6 +14,11 @@ sections:
   match: "**/*"
   templates:
   - program
+- type: directory
+  path: src/data/locations
+  label: Locations
+  create: documents
+  match: "**/*"
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
