@@ -8,3 +8,5 @@ fields:
 - type: list
   name: policies
   label: policies
+pages:
+- src/data/admission-policy.md
