@@ -19,3 +19,5 @@ fields:
     label: evening
   config:
     labelField: program
+pages:
+- src/data/schedules.json
