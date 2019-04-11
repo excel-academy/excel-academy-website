@@ -15,3 +15,5 @@ fields:
   - type: list
     name: evening
     label: evening
+  config:
+    labelField: program
