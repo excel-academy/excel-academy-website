@@ -1,0 +1,899 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home template renders correctly 1`] = `
+Array [
+  .c1 {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition-property: background-color,color;
+  transition-property: background-color,color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.85em;
+  line-height: 2.85em;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 2.5em;
+  background-color: #595C68;
+  color: #fff;
+}
+
+.c3:active,
+.c3:hover {
+  background-color: #8b8e9c;
+}
+
+.c3:active {
+  background-color: #2a2b31;
+}
+
+.c3:disabled {
+  pointer-events: none;
+  opacity: 0.25;
+  box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+}
+
+.c0 {
+  box-sizing: border-box;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: white;
+  max-width: 80em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media screen and (min-width:30em) {
+  .c1 {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width:30em) {
+  .c1 {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c0 {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c0 {
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width:30em) {
+  .c2 {
+    width: 54.99999999999999%;
+  }
+}
+
+<div
+    className="c0"
+  >
+    <div
+      className="c1"
+      width={
+        Object {
+          "mobile": 0.45,
+        }
+      }
+    >
+      <img
+        alt="Excel Academy - A DanielCare Affiliate"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="c2"
+      width={
+        Object {
+          "mobile": 0.5499999999999999,
+        }
+      }
+    >
+      <h1>
+        headline home page
+      </h1>
+      <a
+        className="c3"
+        href="#learnmore"
+      >
+        learn more
+      </a>
+    </div>
+  </div>,
+  .c3 {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
+  padding: 2rem;
+  color: white;
+  background-color: #4bb2b6;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition-property: background-color,color;
+  transition-property: background-color,color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.85em;
+  line-height: 2.85em;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 2.5em;
+  background-color: #595C68;
+  color: #fff;
+}
+
+.c4:active,
+.c4:hover {
+  background-color: #8b8e9c;
+}
+
+.c4:active {
+  background-color: #2a2b31;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  opacity: 0.25;
+  box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+}
+
+.c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media screen and (min-width:46em) {
+  .c3 {
+    width: 31%;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c1 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c0 {
+    padding: 4rem;
+  }
+}
+
+<div
+    className="c0"
+    color="white"
+    id="programs"
+  >
+    <h2
+      className="c1"
+    >
+      programs headline
+    </h2>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        width={
+          Object {
+            "tablet": "31%",
+          }
+        }
+      >
+        <h3>
+          program 1
+        </h3>
+        <p>
+          description for home page
+        </p>
+        <a
+          className="c4"
+          href="/pr1"
+        >
+          View program
+        </a>
+      </div>
+      <div
+        className="c3"
+        width={
+          Object {
+            "tablet": "31%",
+          }
+        }
+      >
+        <h3>
+          program 2
+        </h3>
+        <p>
+          description for home page 2
+        </p>
+        <a
+          className="c4"
+          href="/pr2"
+        >
+          View program
+        </a>
+      </div>
+    </div>
+  </div>,
+  .c1 {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.c3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  box-sizing: border-box;
+  padding: 2rem;
+  color: white;
+  background-color: #7b79b0;
+  max-width: 80em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-column-count: 2;
+  column-count: 2;
+  list-style-type: none;
+}
+
+.c5 {
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  -webkit-break-inside: avoid-column;
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+  position: relative;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (min-width:46em) {
+  .c1 {
+    width: 41.66666666666667%;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c3 {
+    width: 54.166666666666664%;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c0 {
+    padding: 4rem;
+  }
+}
+
+<div
+    className="c0"
+    color="white"
+  >
+    <div
+      className="c1"
+      width={
+        Object {
+          "tablet": 0.4166666666666667,
+        }
+      }
+    >
+      <h2
+        className="c2"
+      >
+        benefits headline
+      </h2>
+      <div
+        className="c2"
+      >
+        description for benefits
+      </div>
+    </div>
+    <div
+      className="c3"
+      width={
+        Object {
+          "sm": 1,
+          "tablet": 0.5416666666666666,
+        }
+      }
+    >
+      <ul
+        className="c4"
+      >
+        <li
+          className="c5"
+        >
+          <svg
+            _css7={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
+            className="c6"
+            color="#4bb2b6"
+            fill="currentColor"
+            height="1.5em"
+            size="1.5em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "#4bb2b6",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            />
+          </svg>
+          <span>
+            benefit 1
+          </span>
+        </li>
+        <li
+          className="c5"
+        >
+          <svg
+            _css7={
+              Object {
+                "left": 0,
+                "position": "absolute",
+              }
+            }
+            className="c6"
+            color="#4bb2b6"
+            fill="currentColor"
+            height="1.5em"
+            size="1.5em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": "#4bb2b6",
+              }
+            }
+            viewBox="0 0 512 512"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            />
+          </svg>
+          <span>
+            benefit 2
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  .c2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c3 {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  box-sizing: border-box;
+  padding: 2rem;
+  color: white;
+  background-color: #6f6da5;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.c5 {
+  box-sizing: border-box;
+  padding: 2rem;
+  font-size: 14px;
+  background-color: #7b79b0;
+  text-align: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (min-width:46em) {
+  .c3 {
+    width: 31%;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c1 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c4 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c0 {
+    padding: 4rem;
+  }
+}
+
+<div
+    className="c0"
+    color="white"
+    id="locations"
+  >
+    <h2
+      className="c1"
+    >
+      locations headline
+    </h2>
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        width={
+          Object {
+            "tablet": "31%",
+          }
+        }
+      >
+        <h5
+          className="c4"
+        >
+          loc 1
+        </h5>
+        <iframe
+          allowFullScreen={true}
+          frameBorder="0"
+          height="150"
+          src="google map source"
+          title="loc 1"
+          width="100%"
+        />
+        <div
+          className="c5"
+          fontSize={1}
+        >
+          loc 1 address
+          <br />
+          loc 1 city
+          , 
+          loc 1 state
+           
+          loc 1 zip
+        </div>
+      </div>
+      <div
+        className="c3"
+        width={
+          Object {
+            "tablet": "31%",
+          }
+        }
+      >
+        <h5
+          className="c4"
+        >
+          loc 2
+        </h5>
+        <iframe
+          allowFullScreen={true}
+          frameBorder="0"
+          height="150"
+          src="google map source 2"
+          title="loc 2"
+          width="100%"
+        />
+        <div
+          className="c5"
+          fontSize={1}
+        >
+          loc 2 address
+          <br />
+          loc 2 city
+          , 
+          loc 2 state
+           
+          loc 2 zip
+        </div>
+      </div>
+    </div>
+  </div>,
+  .c0 {
+  box-sizing: border-box;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.c5 {
+  display: none;
+}
+
+.c4 {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.c7 {
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 15.75rem;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 15.75rem;
+  width: 15.75rem;
+}
+
+.c7 .gatsby-image-wrapper {
+  height: 100%;
+}
+
+.c2 {
+  box-sizing: border-box;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+.c2 .c6 img {
+  object-position: right !important;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c1 .c3 {
+  max-width: 31.5rem;
+}
+
+.c1 .c6 {
+  border-radius: 100%;
+}
+
+.c1 .c6 img {
+  border-radius: 100%;
+}
+
+.c1 .c6 {
+  margin-left: 0;
+}
+
+@media screen and (min-width:46em) {
+  .c2 {
+    padding: 4rem;
+  }
+}
+
+@media screen and (orientation:portrait) {
+  .c1 {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .c1 .c6 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+<div
+    className="c0"
+    id="start"
+  >
+    <section
+      className="c1 c2"
+      orient="right"
+    >
+      <div
+        className="c3 c4"
+      >
+        <h3>
+          Call to action
+        </h3>
+        <p>
+          desc to cta
+        </p>
+        <h4>
+          Form header
+        </h4>
+        <form
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          method="POST"
+          name="open-house"
+          onSubmit={[Function]}
+        >
+          
+          <input
+            className="c5"
+            name="bot-field"
+            onChange={[Function]}
+          />
+          <input
+            name="form-name"
+            type="hidden"
+            value="open-house"
+          />
+          <label
+            htmlFor="name"
+          >
+            <span
+              className="visuallyhidden"
+            >
+              Name
+            </span>
+            <input
+              id="name"
+              name="name"
+              onChange={[Function]}
+              placeholder="Name"
+              required={true}
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="email"
+          >
+            <span
+              className="visuallyhidden"
+            >
+              Email
+            </span>
+            <input
+              id="email"
+              name="email"
+              onChange={[Function]}
+              placeholder="Email"
+              required={true}
+              type="email"
+            />
+          </label>
+          <input
+            name="program"
+            type="hidden"
+            value=""
+          />
+          <input
+            type="submit"
+            value="Submit button"
+          />
+        </form>
+      </div>
+      <div
+        className="c6 c7"
+        height={
+          Array [
+            "15.75rem",
+            "15.75rem",
+            "18.375rem",
+            "21rem",
+          ]
+        }
+        width={
+          Array [
+            "15.75rem",
+            "15.75rem",
+            "18.375rem",
+            "21rem",
+          ]
+        }
+      >
+        <div
+          className=" gatsby-image-wrapper"
+          style={
+            Object {
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "paddingBottom": "66.66666666666667%",
+                "width": "100%",
+              }
+            }
+          />
+          <picture>
+            <img
+              alt="nurse"
+              onLoad={[Function]}
+              sizes="(max-width: 600px) 100vw, 600px"
+              src="test-file-stub"
+              srcSet="some srcSet"
+              style={
+                Object {
+                  "height": "100%",
+                  "left": 0,
+                  "objectFit": "cover",
+                  "objectPosition": "center",
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "opacity 0.5s",
+                  "width": "100%",
+                }
+              }
+            />
+          </picture>
+          <noscript
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<picture><img sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"nurse\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+              }
+            }
+          />
+        </div>
+      </div>
+    </section>
+  </div>,
+]
+`;

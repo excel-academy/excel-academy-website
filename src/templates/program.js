@@ -311,7 +311,7 @@ export const ProgramTemplate = ({
       </Box>
       <Box width={{ sm: 1, tablet: 5 / 12 }}>
         <h4>{cta.form_header}</h4>
-        <FormOpenHouse buttonText={cta.buttonText} program={program} />
+        <FormOpenHouse buttonText={cta.form_button} program={program} />
       </Box>
     </MaxWidthBox>
     {admissionPolicy && (
