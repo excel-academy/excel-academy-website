@@ -5,14 +5,14 @@ module.exports = {
     ...siteConfig,
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Open Sans:300,600'],
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     google: {
+    //       families: ['Open Sans:300,600'],
+    //     },
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
