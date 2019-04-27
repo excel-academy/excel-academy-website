@@ -169,7 +169,7 @@ exports[`CircleImageBanner renders correctly 1`] = `
               "opacity": 0,
               "position": "absolute",
               "top": 0,
-              "transition": "opacity 0.5s",
+              "transition": "opacity 500ms",
               "width": "100%",
             }
           }
