@@ -81,7 +81,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-styled-components": "1.10.0",
     "babel-preset-gatsby": "0.1.11",
-    "cypress": "3.3.0",
+    "cypress": "3.3.1",
     "eslint": "5.16.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-plugin-cypress": "2.2.1",
