@@ -865,6 +865,7 @@ Array [
           <picture>
             <img
               alt="nurse"
+              loading="lazy"
               onLoad={[Function]}
               sizes="(max-width: 600px) 100vw, 600px"
               src="test-file-stub"

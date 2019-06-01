@@ -111,6 +111,7 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
       <picture>
         <img
           alt="banner"
+          loading="lazy"
           onLoad={[Function]}
           sizes="(max-width: 600px) 100vw, 600px"
           src="test-file-stub"
