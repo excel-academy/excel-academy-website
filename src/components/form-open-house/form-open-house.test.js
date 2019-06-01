@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import {
   render, fireEvent, act, waitForElement,
-} from 'react-testing-library';
+} from '@testing-library/react';
 import FormOpenHouse from './form-open-house';
 
 describe('FormOpenHouse', () => {
