@@ -669,8 +669,6 @@ Array [
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  height: 15.75rem;
-  width: 15.75rem;
 }
 
 .c7 .gatsby-image-wrapper {
@@ -721,6 +719,18 @@ Array [
 
 .c1 .c6 {
   margin-left: 0;
+}
+
+@media screen and (min-width:46em) {
+  .c7 {
+    width: 18.375rem;
+  }
+}
+
+@media screen and (min-width:61.25em) {
+  .c7 {
+    width: 21rem;
+  }
 }
 
 @media screen and (min-width:46em) {
@@ -829,20 +839,18 @@ Array [
       <div
         className="c6 c7"
         height={
-          Array [
-            "15.75rem",
-            "15.75rem",
-            "18.375rem",
-            "21rem",
-          ]
+          Object {
+            "_": "15.75rem",
+            "desktop": "21rem",
+            "tablet": "18.375rem",
+          }
         }
         width={
-          Array [
-            "15.75rem",
-            "15.75rem",
-            "18.375rem",
-            "21rem",
-          ]
+          Object {
+            "_": "15.75rem",
+            "desktop": "21rem",
+            "tablet": "18.375rem",
+          }
         }
       >
         <div

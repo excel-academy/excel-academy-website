@@ -1,18 +1,13 @@
 import styled, { css } from 'styled-components';
 import { Box } from 'rebass';
-import { maxWidth, height, width } from 'styled-system';
 
 export const Content = styled(Box)`
   z-index: 1;
-  ${maxWidth}
-  ${width}
 `;
 
 export const Image = styled(Box)`
   flex-grow: 0;
   flex-shrink: 0;
-  ${height}
-  ${width}
 
   ${props => props.background && css`
     position: absolute;

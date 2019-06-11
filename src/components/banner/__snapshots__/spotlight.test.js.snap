@@ -6,8 +6,6 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   padding: 2rem;
   width: 50%;
   z-index: 1;
-  max-width: 60em;
-  width: 50%;
 }
 
 .c5 {
@@ -20,7 +18,6 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 50%;
 }
 
 .c5 .gatsby-image-wrapper {
@@ -70,6 +67,18 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
+@media screen and (min-width:61.25em) {
+  .c3 {
+    width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:61.25em) {
+  .c5 {
+    width: 33.33333333333333%;
+  }
+}
+
 <section
   className="c0 c1"
   orient="left"
@@ -77,12 +86,10 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   <div
     className="c2 c3"
     width={
-      Array [
-        0.5,
-        0.5,
-        0.5,
-        0.6666666666666666,
-      ]
+      Object {
+        "_": 0.5,
+        "desktop": 0.6666666666666666,
+      }
     }
   >
     <h2>
@@ -95,12 +102,10 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   <div
     className="c4 c5"
     width={
-      Array [
-        0.5,
-        0.5,
-        0.5,
-        0.3333333333333333,
-      ]
+      Object {
+        "_": 0.5,
+        "desktop": 0.3333333333333333,
+      }
     }
   >
     <div
@@ -161,8 +166,6 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   padding: 2rem;
   width: 50%;
   z-index: 1;
-  max-width: 60em;
-  width: 50%;
 }
 
 .c5 {
@@ -175,7 +178,6 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 50%;
 }
 
 .c5 .gatsby-image-wrapper {
@@ -246,6 +248,18 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
+@media screen and (min-width:61.25em) {
+  .c3 {
+    width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:61.25em) {
+  .c5 {
+    width: 33.33333333333333%;
+  }
+}
+
 <section
   className="c0 c1"
   orient="right"
@@ -253,12 +267,10 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   <div
     className="c2 c3"
     width={
-      Array [
-        0.5,
-        0.5,
-        0.5,
-        0.6666666666666666,
-      ]
+      Object {
+        "_": 0.5,
+        "desktop": 0.6666666666666666,
+      }
     }
   >
     <h2>
@@ -271,12 +283,10 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   <div
     className="c4 c5"
     width={
-      Array [
-        0.5,
-        0.5,
-        0.5,
-        0.3333333333333333,
-      ]
+      Object {
+        "_": 0.5,
+        "desktop": 0.3333333333333333,
+      }
     }
   >
     <div

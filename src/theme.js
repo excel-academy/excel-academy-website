@@ -17,7 +17,7 @@ export default {
   space,
   fontSizes,
   breakpoints,
-  maxWidths: ['48em', '60em', '80em'],
+  sizes: ['48em', '60em', '80em'],
   colors: {
     theme: themeColor,
     purples,
