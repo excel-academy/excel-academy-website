@@ -8,10 +8,10 @@ const SpotlightBanner = ({
   image, imagedesc, children, ...props
 }) => (
   <BannerContainer {...props}>
-    <Content p={[1, 1, 2, 3, 4, 5]} maxWidth={1} width={[1 / 2, 1 / 2, 1 / 2, 2 / 3]}>
+    <Content p={[1, 1, 2, 3, 4, 5]} maxWidth={1} width={{ _: 1 / 2, desktop: 2 / 3 }}>
       {children}
     </Content>
-    <BannerImage image={image} desc={imagedesc} width={[1 / 2, 1 / 2, 1 / 2, 1 / 3]} />
+    <BannerImage image={image} desc={imagedesc} width={{ _: 1 / 2, desktop: 1 / 3 }} />
   </BannerContainer>
 );
 

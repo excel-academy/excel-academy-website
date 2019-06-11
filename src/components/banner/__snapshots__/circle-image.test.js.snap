@@ -28,8 +28,6 @@ exports[`CircleImageBanner renders correctly 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  height: 15.75rem;
-  width: 15.75rem;
 }
 
 .c6 .gatsby-image-wrapper {
@@ -83,6 +81,18 @@ exports[`CircleImageBanner renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
+  .c6 {
+    width: 18.375rem;
+  }
+}
+
+@media screen and (min-width:61.25em) {
+  .c6 {
+    width: 21rem;
+  }
+}
+
+@media screen and (min-width:46em) {
   .c1 {
     padding: 4rem;
   }
@@ -120,20 +130,18 @@ exports[`CircleImageBanner renders correctly 1`] = `
   <div
     className="c5 c6"
     height={
-      Array [
-        "15.75rem",
-        "15.75rem",
-        "18.375rem",
-        "21rem",
-      ]
+      Object {
+        "_": "15.75rem",
+        "desktop": "21rem",
+        "tablet": "18.375rem",
+      }
     }
     width={
-      Array [
-        "15.75rem",
-        "15.75rem",
-        "18.375rem",
-        "21rem",
-      ]
+      Object {
+        "_": "15.75rem",
+        "desktop": "21rem",
+        "tablet": "18.375rem",
+      }
     }
   >
     <div

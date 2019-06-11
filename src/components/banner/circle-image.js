@@ -16,8 +16,8 @@ const CircleImageBanner = ({
       desc={imagedesc}
       mx={2}
       mb={1}
-      width={['15.75rem', '15.75rem', '18.375rem', '21rem']}
-      height={['15.75rem', '15.75rem', '18.375rem', '21rem']}
+      width={{ _: '15.75rem', tablet: '18.375rem', desktop: '21rem' }}
+      height={{ _: '15.75rem', tablet: '18.375rem', desktop: '21rem' }}
     />
   </BannerContainer>
 );
