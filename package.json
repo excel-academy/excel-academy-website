@@ -80,7 +80,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
-    "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-styled-components": "1.10.1",
     "babel-preset-gatsby": "0.1.11",
     "cypress": "3.3.1",
     "eslint": "5.16.0",
