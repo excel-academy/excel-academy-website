@@ -126,6 +126,10 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
         }
       />
       <picture>
+        <source
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcSet="some srcSet"
+        />
         <img
           alt="banner"
           loading="lazy"
@@ -151,7 +155,7 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
       <noscript
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<picture><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            "__html": "<picture><source srcset=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
         }
       />
@@ -307,6 +311,10 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
         }
       />
       <picture>
+        <source
+          sizes="(max-width: 600px) 100vw, 600px"
+          srcSet="some srcSet"
+        />
         <img
           alt="banner"
           loading="lazy"
@@ -332,7 +340,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
       <noscript
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<picture><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            "__html": "<picture><source srcset=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
         }
       />
