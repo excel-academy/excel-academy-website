@@ -64,23 +64,8 @@ Array [
 @media screen and (min-width:46em) {
   .c0 {
     padding-top: 4rem;
-  }
-}
-
-@media screen and (min-width:46em) {
-  .c0 {
     padding-bottom: 4rem;
-  }
-}
-
-@media screen and (min-width:46em) {
-  .c0 {
     padding-left: 4rem;
-  }
-}
-
-@media screen and (min-width:46em) {
-  .c0 {
     padding-right: 4rem;
   }
 }
@@ -613,11 +598,6 @@ Array [
 @media screen and (min-width:46em) {
   .c0 {
     padding-left: 4rem;
-  }
-}
-
-@media screen and (min-width:46em) {
-  .c0 {
     padding-right: 4rem;
   }
 }

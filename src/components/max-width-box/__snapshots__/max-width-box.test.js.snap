@@ -46,11 +46,6 @@ exports[`MaxWidthBox styled system renders correctly 1`] = `
 @media screen and (min-width:46em) {
   .c0 {
     padding-left: 4rem;
-  }
-}
-
-@media screen and (min-width:46em) {
-  .c0 {
     padding-right: 4rem;
   }
 }
