@@ -46,6 +46,21 @@ const LinkList = ({ title, links }) => (
   </section>
 );
 
+LinkList.propTypes = {
+  title: PropTypes.string.isRequired,
+  links: PropTypes.shape({
+    node: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        url: PropTypes.string,
+      }).isRequired,
+      fields: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+};
+
 const Footer = ({ programs, locations, company }) => (
   <MaxWidthBox
     as="footer"
@@ -57,7 +72,10 @@ const Footer = ({ programs, locations, company }) => (
     <FooterWrapper>
       <section>
         <h3>Accreditations</h3>
-        <p>Excel Academy is approved by the Connecticut Office of Higher Education and the Connecticut Department of Public Health.</p>
+        <p>
+          Excel Academy is approved by the Connecticut Office of
+          Higher Education and the Connecticut Department of Public Health.
+        </p>
         <SocialContainer>
           <li><OutboundLink href="https://www.facebook.com/excelacademyct/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></OutboundLink></li>
           <li><a href={`mailto:${company.email}`} aria-label="Email"><FaEnvelope /></a></li>
@@ -67,11 +85,17 @@ const Footer = ({ programs, locations, company }) => (
       <LinkList title="Locations" links={locations} />
       <section>
         <h3>Call today</h3>
-        <p>We are ready to help with your enrollment process or answer any questions you may have.</p>
+        <p>
+          We are ready to help with your enrollment process or answer any questions you may have.
+        </p>
         <p><a href="tel:203-691-7989" className="major">(203) 691-7989</a></p>
       </section>
     </FooterWrapper>
-    <Text textAlign={{ tablet: 'center' }} fontSize="0.9em">&copy; {company.legalName}. All rights reserved.</Text>
+    <Text textAlign={{ tablet: 'center' }} fontSize="0.9em">
+      &copy;&nbsp;
+      {company.legalName}
+      . All rights reserved.
+    </Text>
   </MaxWidthBox>
 );
 

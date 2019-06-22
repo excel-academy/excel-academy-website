@@ -112,9 +112,9 @@ Array [
   background-color: #d2eced;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 11;
   top: 0;
   bottom: 0;
-  z-index: 11;
   display: none;
 }
 
@@ -1102,18 +1102,18 @@ Array [
 }
 
 .c6:before {
-  content: counter(grad-counter);
-  color: #4bb2b6;
-  font-size: 1.6rem;
-  font-weight: bold;
   position: absolute;
+  top: -5px;
   left: calc(-1 * var(--size) - 10px);
-  line-height: calc(var(--size) - 5px);
   width: var(--size);
   height: var(--size);
-  top: -5px;
   border: solid 5px #4bb2b6;
   border-radius: 50%;
+  color: #4bb2b6;
+  content: counter(grad-counter);
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: calc(var(--size) - 5px);
   text-align: center;
 }
 

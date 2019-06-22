@@ -28,6 +28,7 @@ Layout.propTypes = {
     site: PropTypes.object.isRequired,
   }).isRequired,
   children: PropTypes.node.isRequired,
+  setBreakpoint: PropTypes.func.isRequired,
 };
 
 const LayoutWithQuery = props => (

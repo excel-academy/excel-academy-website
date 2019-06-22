@@ -32,7 +32,7 @@ const Header = ({ siteTitle, programs }) => {
         <ul>
           <li><Link to="/" onClick={() => setNavIsOpen(false)}>Home</Link></li>
           <li>
-            <a href="#">Programs</a>
+            <a href="/#programs">Programs</a>
             <ul>
               {programs.map(({ node }) => (
                 <li key={node.frontmatter.program}>

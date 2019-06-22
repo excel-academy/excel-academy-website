@@ -3,9 +3,9 @@ import BannerContainer from './banner';
 import { Content, Image } from './banner-css';
 
 export default styled(BannerContainer)`
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  flex-direction: row-reverse;
 
   ${Content} {
     max-width: 31.5rem;

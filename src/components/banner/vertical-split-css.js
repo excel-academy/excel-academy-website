@@ -7,9 +7,9 @@ export default styled(BannerContainer)`
   justify-content: flex-end;
 
   ${Content} {
-    align-self: center;
     flex-grow: 1;
     flex-shrink: 1;
+    align-self: center;
     margin: 0 auto;
   }
 
@@ -19,15 +19,15 @@ export default styled(BannerContainer)`
 
     ${Content} {
       display: flex;
+      width: 100%;
+      max-width: 100%;
       flex-direction: column;
       justify-content: center;
-      max-width: 100%;
-      width: 100%;
     }
 
     ${Image} {
-      height: 45vh;
       width: 100%;
+      height: 45vh;
     }
   }
 

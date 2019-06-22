@@ -63,8 +63,8 @@
     "cy:open": "cypress open",
     "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
     "lint:es": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
-    "lint:style": "stylelint \"src/**/*.scss\"",
-    "lint": "npm run lint:es && npm run lint:style",
+    "lint:css": "stylelint --ignore-path .gitignore \"**/*.{js,jsx}\"",
+    "lint": "npm run lint:es && npm run lint:css",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook -c .storybook -o public/docs",
     "build-storybook": "build-storybook"

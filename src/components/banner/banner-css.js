@@ -11,10 +11,10 @@ export const Image = styled(Box)`
 
   ${props => props.background && css`
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
   `}
 
   .gatsby-image-wrapper {
@@ -23,8 +23,8 @@ export const Image = styled(Box)`
 `;
 
 export default styled(Box)`
-  display: flex;
   position: relative;
+  display: flex;
   overflow-x: hidden;
   text-align: ${props => props.contentAlign};
 

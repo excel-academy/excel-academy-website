@@ -7,8 +7,8 @@ export default styled(BannerContainer)`
   justify-content: center;
 
   ${Content} {
-    background-color: inherit;
     width: 40rem;
+    background-color: inherit;
     border-radius: 0.5rem;
   }
 
@@ -17,8 +17,8 @@ export default styled(BannerContainer)`
     padding-left: 0 !important;
 
     ${Content} {
-      border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
   `}
 
@@ -27,8 +27,8 @@ export default styled(BannerContainer)`
     padding-right: 0 !important;
 
     ${Content} {
-      border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
     }
   `}
 `;

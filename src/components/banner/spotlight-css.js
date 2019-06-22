@@ -4,14 +4,14 @@ import { Content, Image } from './banner-css';
 import { mediamax } from '../../media';
 
 export default styled(BannerContainer)`
+  flex-direction: row;
   align-items: stretch;
   justify-content: flex-end;
-  flex-direction: row;
 
   ${Content} {
-    align-self: center;
     flex-grow: 1;
     flex-shrink: 1;
+    align-self: center;
     margin: 0 auto;
   }
 

@@ -23,9 +23,9 @@ export default createGlobalStyle`
   }
 
   html {
-    scroll-behavior: smooth;
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 11pt;
+    scroll-behavior: smooth;
     ${media.tablet`
       font-size: 12pt;
     `}
@@ -38,10 +38,10 @@ export default createGlobalStyle`
   }
 
   body {
-    font-size: 1rem;
-    line-height: 1.65;
     background-color: #f7f7f7;
     color: #4b505c;
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   ::-webkit-input-placeholder {
@@ -49,12 +49,12 @@ export default createGlobalStyle`
     opacity: 1.0;
   }
 
-  :-moz-placeholder {
+  ::-moz-placeholder {
     color: #bbb;
     opacity: 1.0;
   }
 
-  ::-moz-placeholder {
+  :-moz-placeholder {
     color: #bbb;
     opacity: 1.0;
   }
@@ -66,10 +66,10 @@ export default createGlobalStyle`
 
   /* account for fixed header */
   :target::before {
-    content: "";
     display: block;
     height: 5.4em; /* fixed header height + top padding of section */
     margin: -3.4em 0 0; /* negative fixed header height */
+    content: "";
   }
 
   #___gatsby {
@@ -79,13 +79,20 @@ export default createGlobalStyle`
     }
   }
 
+  a {
+    color: ${themeColor};
+    &.button {
+      ${buttonCSS}
+    }
+  }
+
   p {
     margin: 0 0 2rem 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.5;
     margin: 0 0 1rem 0;
+    line-height: 1.5;
 
     a {
       color: inherit;
@@ -118,49 +125,42 @@ export default createGlobalStyle`
     font-size: 0.7rem;
   }
 
-  a {
-    color: ${themeColor};
-    &.button {
-      ${buttonCSS}
-    }
-  }
-
   sub {
-    font-size: 0.8rem;
     position: relative;
     top: 0.5rem;
+    font-size: 0.8rem;
   }
 
   sup {
-    font-size: 0.8rem;
     position: relative;
     top: -0.5rem;
+    font-size: 0.8rem;
   }
 
   blockquote {
-    border-left: solid 4px;
-    font-style: italic;
-    margin: 0 0 2rem 0;
     padding: 0.5rem 0 0.5rem 2rem;
+    border-left: solid 4px;
+    margin: 0 0 2rem 0;
+    font-style: italic;
   }
 
   code {
+    padding: 0.25rem 0.325rem;
+    background-color: rgba(220, 220, 220, 0.5);
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.9em;
-    padding: 0.25rem 0.325rem;
-    background-color: rgba(220, 220, 220, 0.5);
   }
 
   pre {
+    margin: 0 0 2rem 0;
     font-family: monospace;
     font-size: 0.9em;
-    margin: 0 0 2rem 0;
 
     code {
       display: block;
-      line-height: 1.5;
       padding: 0.75rem 1rem;
+      line-height: 1.5;
       overflow-x: auto;
     }
   }
@@ -185,20 +185,26 @@ export default createGlobalStyle`
 
     > p,
     > video {
-      /* box-shadow: 2px 2px 18px 4px rgba(138, 43, 226, 0.1); */
-      box-shadow: 2px 2px 18px 4px rgba(0, 0, 0, 0.1);
-      margin: 0;
       display: block;
+      margin: 0;
+      box-shadow: 2px 2px 18px 4px rgba(0, 0, 0, 0.1);
     }
   }
 
   figcaption {
-    text-align: center;
+    padding-top: 1rem;
     font-size: 0.9rem;
     font-style: italic;
     font-weight: 300;
-    /* border-top: solid 1px #aaa; */
-    padding-top: 1rem;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  select {
+    height: 2.75em;
+    margin-bottom: 1em;
   }
 
   input[type="text"],
@@ -206,18 +212,17 @@ export default createGlobalStyle`
   input[type="email"],
   select,
   textarea {
-    appearance: none;
-    border-radius: 8px;
-    border: none;
-    border: solid 1px rgba(144,144,144,0.25);
-    box-sizing: border-box;
-    background-color: #fff;
-    color: #000;
     display: block;
-    outline: 0;
-    padding: 0 1em;
-    text-decoration: none;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 1em;
+    border: solid 1px rgba(144,144,144,0.25);
+    appearance: none;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+    outline: 0;
+    text-decoration: none;
 
     &:invalid {
       box-shadow: none;
@@ -229,58 +234,17 @@ export default createGlobalStyle`
     }
   }
 
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  select {
-    height: 2.75em;
-    margin-bottom: 1em;
-  }
-
   input[type="submit"] {
     ${buttonCSS}
   }
 
   table {
-    margin: 0 0 2em 0;
     width: 100%;
+    margin: 0 0 2em 0;
     border-collapse: collapse;
-
-    tbody {
-      tr {
-        border: solid 1px rgba(144,144,144,0.25);
-        border-left: 0;
-        border-right: 0;
-
-        &:nth-child(2n + 1) {
-          background-color: rgba(144,144,144,0.075);
-          td {
-            border-top-width: 1px;
-          }
-        }
-
-        td {
-          border: solid 1px rgba(144,144,144,0.25);
-          border-left-width: 0;
-          border-top-width: 0;
-
-          &:first-child {
-            border-left-width: 1px;
-          }
-        }
-      }
-    }
 
     td {
       padding: 0.75em 0.75em;
-    }
-
-    th {
-      color: #3d424f;
-      font-size: 0.9em;
-      font-weight: 600;
-      padding: 0 0.75em 0.75em 0.75em;
-      text-align: left;
     }
 
     tfoot {
@@ -288,25 +252,58 @@ export default createGlobalStyle`
         font-weight: bold;
       }
     }
+
+    tbody {
+      tr {
+        border: solid 1px rgba(144,144,144,0.25);
+        border-right: 0;
+        border-left: 0;
+
+        td {
+          border: solid 1px rgba(144,144,144,0.25);
+          border-top-width: 0;
+          border-left-width: 0;
+
+          &:first-child {
+            border-left-width: 1px;
+          }
+        }
+
+        &:nth-child(2n + 1) {
+          background-color: rgba(144,144,144,0.075);
+          td {
+            border-top-width: 1px;
+          }
+        }
+      }
+    }
+
+    th {
+      padding: 0 0.75em 0.75em 0.75em;
+      color: #3d424f;
+      font-size: 0.9em;
+      font-weight: 600;
+      text-align: left;
+    }
   }
 
   .major {
     font-size: 2em;
     font-weight: 200;
-    line-height: 1.3;
     letter-spacing: -0.025rem;
+    line-height: 1.3;
   }
 
   /* still visible to screen readers */
   .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
+    overflow: hidden;
     width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    clip: rect(0 0 0 0);
   }
 
   ${mediamax.tablet`

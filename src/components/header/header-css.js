@@ -5,23 +5,23 @@ import buttonCSS from '../button/button-css';
 import logo from '../../images/logo-square.png';
 
 export const HomeLink = styled.h1`
+  left: 1.25em;
+  display: inline-block;
+  height: inherit;
+  padding: 0;
+  margin: 0 auto;
   color: #3d424f;
   font-size: 14px;
   font-weight: 600;
-  height: inherit;
-  left: 1.25em;
   line-height: inherit;
-  margin: 0 auto;
-  padding: 0;
-  display: inline-block;
 
   a {
-    background-image: url(${logo});
-    background-size: 25px 25px;
-    background-repeat: no-repeat;
-    background-position: left center;
     display: block;
     padding-left: 35px;
+    background-image: url(${logo});
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
   }
 
   ${media.tablet`
@@ -32,24 +32,25 @@ export const HomeLink = styled.h1`
 `;
 
 export const HeaderNav = styled.nav`
+  a {
+    display: block;
+    border-top: solid 1px rgba(144, 144, 144, 0.2);
+    color: #4b505c;
+    text-decoration: none;
+  }
+
   ul {
-    list-style: none;
     margin: 0;
+    list-style: none;
   }
 
   > ul {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
     display: none;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
     border-top: solid 1px rgba(144, 144, 144, 0.25);
 
     > li {
-      &:first-child {
-        a {
-          border-top: 0;
-        }
-      }
-
       > a {
         font-weight: 600;
       }
@@ -60,18 +61,17 @@ export const HeaderNav = styled.nav`
           padding-left: 1.5em;
         }
       }
+
+      &:first-child {
+        a {
+          border-top: 0;
+        }
+      }
     }
   }
 
   .open & > ul {
     display: block;
-  }
-
-  a {
-    color: #4b505c;
-    display: block;
-    text-decoration: none;
-    border-top: solid 1px rgba(144, 144, 144, 0.2);
   }
 
   ${media.tablet`
@@ -165,27 +165,29 @@ export const HeaderNav = styled.nav`
 `;
 
 export default styled.header`
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+
   background-color: #fff;
   box-shadow: 0px 0.0375em 0.125em 0px rgba(0,0,0,0.05);
-  border-bottom: solid 1px rgba(144, 144, 144, 0.25);
-  left: 0;
   font-size: 14px;
   line-height: 3.4em;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
 
   .mobile-menu-button {
-    display: inline-block;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    border-right: solid 1px rgba(144, 144, 144, 0.25);
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+    display: inline-block;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    border-right: solid 1px rgba(144, 144, 144, 0.25);
   }
 
   ${media.tablet`

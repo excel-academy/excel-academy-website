@@ -6,31 +6,31 @@ import { themeColor } from '../../../site-config';
 const buttonBg = '#595C68';
 
 const disabled = css`
-  pointer-events: none;
-  opacity: 0.25;
   box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+  opacity: 0.25;
+  pointer-events: none;
 `;
 
 export default css`
-  appearance: none;
-  transition-property: background-color, color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  border: 0;
-  cursor: pointer;
   display: inline-block;
+  overflow: hidden;
   height: 2.85em;
-  line-height: 2.85em;
+  padding: 0 2.5em;
+  border: 0;
+  appearance: none;
+  background-color: ${buttonBg};
   border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
   font-weight: 600;
+  line-height: 2.85em;
   /* letter-spacing: 0.125em; */
   text-align: center;
   text-decoration: none;
-  overflow: hidden;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
   white-space: nowrap;
-  padding: 0 2.5em;
-  background-color: ${buttonBg};
-  color: #fff;
   ${space}
 
   &:active,

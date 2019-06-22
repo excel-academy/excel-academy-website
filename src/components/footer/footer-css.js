@@ -5,9 +5,9 @@ import { themeColor } from '../../../site-config';
 export const SocialContainer = styled.ul`
   display: inline-flex;
   justify-content: space-between;
-  list-style-type: none;
   padding: 0;
   margin: 0;
+  list-style-type: none;
   > li:not(:last-child) {
     margin-right: 1em;
   }
