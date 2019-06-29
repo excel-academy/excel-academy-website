@@ -6,7 +6,7 @@
   "dependencies": {
     "@reach/router": "1.2.1",
     "classnames": "2.2.6",
-    "gatsby": "2.11.3",
+    "gatsby": "2.11.4",
     "gatsby-cli": "2.7.6",
     "gatsby-image": "2.2.3",
     "gatsby-plugin-google-analytics": "2.1.1",
@@ -18,7 +18,7 @@
     "gatsby-plugin-react-helmet": "3.1.0",
     "gatsby-plugin-sass": "2.1.0",
     "gatsby-plugin-sharp": "2.2.1",
-    "gatsby-plugin-sitemap": "2.2.0",
+    "gatsby-plugin-sitemap": "2.2.1",
     "gatsby-plugin-styled-components": "3.1.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
