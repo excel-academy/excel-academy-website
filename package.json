@@ -42,7 +42,7 @@
     "resize-observer-polyfill": "1.5.1",
     "styled-components": "4.3.2",
     "styled-normalize": "8.0.6",
-    "styled-system": "5.0.10",
+    "styled-system": "5.0.12",
     "url-join": "4.0.0",
     "webpack": "4.35.0",
     "webpack-bundle-analyzer": "3.3.2"
