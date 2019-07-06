@@ -43,7 +43,7 @@
     "styled-components": "4.3.2",
     "styled-normalize": "8.0.6",
     "styled-system": "5.0.12",
-    "url-join": "4.0.0",
+    "url-join": "4.0.1",
     "webpack": "4.35.0",
     "webpack-bundle-analyzer": "3.3.2"
   },
