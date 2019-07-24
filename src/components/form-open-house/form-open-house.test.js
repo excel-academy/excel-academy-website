@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import {
   render, fireEvent, act, waitForElement,
 } from '@testing-library/react';
@@ -7,27 +6,24 @@ import FormOpenHouse from './form-open-house';
 
 describe('FormOpenHouse', () => {
   it('renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <FormOpenHouse />,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders correctly with button text', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <FormOpenHouse buttonText="Hit the button" />,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders correctly with program', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <FormOpenHouse program="new program" />,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should accept a name', () => {

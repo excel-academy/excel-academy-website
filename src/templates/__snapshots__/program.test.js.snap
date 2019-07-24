@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Program template renders correctly 1`] = `
-Array [
+<DocumentFragment>
   .c1 {
   box-sizing: border-box;
   padding-right: 2rem;
@@ -71,18 +71,14 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "mobile": 0.5499999999999999,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h1
-        className="c2"
+        class="c2"
         color="theme"
       >
         Certified nursing assistant
@@ -92,19 +88,15 @@ Array [
       </p>
     </div>
     <div
-      className="c3"
-      width={
-        Object {
-          "mobile": 0.45,
-        }
-      }
+      class="c3"
+      width="[object Object]"
     >
       <img
         alt=""
         src="/img/medical-staff.jpg"
       />
     </div>
-  </div>,
+  </div>
   .c0 {
   box-sizing: border-box;
   padding-left: 4rem;
@@ -156,16 +148,16 @@ Array [
 }
 
 <nav
-    className="c0"
+    class="c0"
   >
     <ul
-      className="c1"
+      class="c1"
     >
       <li>
         <a
-          className="c2"
+          class="c2"
           color="greens.1"
-          fontSize="1em"
+          font-size="1em"
           href="#opportunities"
         >
           Career opportunities
@@ -173,16 +165,16 @@ Array [
       </li>
       <li>
         <a
-          className="c2"
+          class="c2"
           color="greens.1"
-          fontSize="1em"
+          font-size="1em"
           href="#schedules"
         >
           Schedules
         </a>
       </li>
     </ul>
-  </nav>,
+  </nav>
   .c8 {
   box-sizing: border-box;
 }
@@ -281,34 +273,25 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     id="opportunities"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "tablet": 0.8333333333333334,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h1
-        className="c2"
+        class="c2"
         color="purples.3"
       >
         <span
-          className="c3"
+          class="c3"
         >
           <svg
             fill="currentColor"
             height="1em"
             stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
+            stroke-width="0"
             viewBox="0 0 512 512"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -321,36 +304,26 @@ Array [
         Opportunities
       </h1>
       <p
-        className="c4"
+        class="c4"
       >
         intro to opps
       </p>
     </div>
     <ul
-      className="c5"
+      class="c5"
     >
       <li
-        className="c6"
+        class="c6"
       >
         <svg
-          _css5={
-            Object {
-              "left": 0,
-              "position": "absolute",
-            }
-          }
-          className="c7"
+          _css5="[object Object]"
+          class="c7"
           color="#4bb2b6"
           fill="currentColor"
           height="1.8em"
-          size="1.8em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            Object {
-              "color": "#4bb2b6",
-            }
-          }
+          stroke-width="0"
+          style="color: rgb(75, 178, 182);"
           viewBox="0 0 512 512"
           width="1.8em"
           xmlns="http://www.w3.org/2000/svg"
@@ -364,27 +337,17 @@ Array [
         </span>
       </li>
       <li
-        className="c6"
+        class="c6"
       >
         <svg
-          _css5={
-            Object {
-              "left": 0,
-              "position": "absolute",
-            }
-          }
-          className="c7"
+          _css5="[object Object]"
+          class="c7"
           color="#4bb2b6"
           fill="currentColor"
           height="1.8em"
-          size="1.8em"
           stroke="currentColor"
-          strokeWidth="0"
-          style={
-            Object {
-              "color": "#4bb2b6",
-            }
-          }
+          stroke-width="0"
+          style="color: rgb(75, 178, 182);"
           viewBox="0 0 512 512"
           width="1.8em"
           xmlns="http://www.w3.org/2000/svg"
@@ -399,27 +362,23 @@ Array [
       </li>
     </ul>
     <div
-      className="c8"
-      width={
-        Object {
-          "mobile": 0.6666666666666666,
-        }
-      }
+      class="c8"
+      width="[object Object]"
     >
       <p
-        className="c9"
+        class="c9"
       >
         detail for opps
       </p>
       <p
-        className="c10"
+        class="c10"
         color="#999"
-        fontSize={0}
+        font-size="0"
       >
         disclaimer for opps
       </p>
     </div>
-  </div>,
+  </div>
   .c8 {
   box-sizing: border-box;
 }
@@ -603,34 +562,25 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     id="schedules"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "tablet": 0.8333333333333334,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h1
-        className="c2"
+        class="c2"
         color="purples.3"
       >
         <span
-          className="c3"
+          class="c3"
         >
           <svg
             fill="currentColor"
             height="1em"
             stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
+            stroke-width="0"
             viewBox="0 0 448 512"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -643,48 +593,42 @@ Array [
         Schedule
       </h1>
       <p
-        className="c4"
+        class="c4"
       >
         intro to schedule
       </p>
     </div>
     <div
-      className="c5"
-      fontSize={2}
+      class="c5"
+      font-size="2"
     >
       <div
-        className="c6"
-        width={
-          Object {
-            "desktop": 0.5,
-          }
-        }
+        class="c6"
+        width="[object Object]"
       >
         <h3
-          className="c7"
-          fontSize={3}
+          class="c7"
+          font-size="3"
         >
           Lesson plan
         </h3>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<p>html for <b>lesson</b> plan</p>",
-            }
-          }
-        />
+        <div>
+          <p>
+            html for 
+            <b>
+              lesson
+            </b>
+             plan
+          </p>
+        </div>
       </div>
       <div
-        className="c8"
-        width={
-          Object {
-            "desktop": 0.5,
-          }
-        }
+        class="c8"
+        width="[object Object]"
       >
         <h3
-          className="c7"
-          fontSize={3}
+          class="c7"
+          font-size="3"
         >
           date title
         </h3>
@@ -692,47 +636,38 @@ Array [
           date intro
         </p>
         <div
-          className="c9"
+          class="c9"
         >
           <div
-            className="c10"
-            fontSize={1}
+            class="c10"
+            font-size="1"
             width="31%"
           >
             <h4
-              className="c11"
+              class="c11"
               color="theme"
-              fontSize={1}
+              font-size="1"
             >
               Daytime sessions
             </h4>
             <p
-              className="c12"
+              class="c12"
             >
               Four week duration from 8AM-2PM Monday-Friday.
             </p>
             <ul
-              className="c13"
+              class="c13"
             >
               <li
-                className="c14"
+                class="c14"
               >
                 <svg
-                  _css={
-                    Object {
-                      "marginRight": "0.5em",
-                    }
-                  }
-                  className="c15"
+                  _css="[object Object]"
+                  class="c15"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": undefined,
-                    }
-                  }
+                  stroke-width="0"
                   viewBox="0 0 448 512"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -742,30 +677,21 @@ Array [
                   />
                 </svg>
                 <time
-                  dateTime="2035-01-02"
+                  datetime="2035-01-02"
                 >
                   January 2
                 </time>
               </li>
               <li
-                className="c14"
+                class="c14"
               >
                 <svg
-                  _css={
-                    Object {
-                      "marginRight": "0.5em",
-                    }
-                  }
-                  className="c15"
+                  _css="[object Object]"
+                  class="c15"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": undefined,
-                    }
-                  }
+                  stroke-width="0"
                   viewBox="0 0 448 512"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -775,7 +701,7 @@ Array [
                   />
                 </svg>
                 <time
-                  dateTime="2035-02-03"
+                  datetime="2035-02-03"
                 >
                   February 3
                 </time>
@@ -783,44 +709,35 @@ Array [
             </ul>
           </div>
           <div
-            className="c10"
-            fontSize={1}
+            class="c10"
+            font-size="1"
             width="31%"
           >
             <h4
-              className="c11"
+              class="c11"
               color="theme"
-              fontSize={1}
+              font-size="1"
             >
               Evening sessions
             </h4>
             <p
-              className="c12"
+              class="c12"
             >
               Five week duration from 4:30-9:30PM Monday-Thursday.
             </p>
             <ul
-              className="c16"
+              class="c16"
             >
               <li
-                className="c14"
+                class="c14"
               >
                 <svg
-                  _css={
-                    Object {
-                      "marginRight": "0.5em",
-                    }
-                  }
-                  className="c15"
+                  _css="[object Object]"
+                  class="c15"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": undefined,
-                    }
-                  }
+                  stroke-width="0"
                   viewBox="0 0 448 512"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -830,30 +747,21 @@ Array [
                   />
                 </svg>
                 <time
-                  dateTime="2035-01-03"
+                  datetime="2035-01-03"
                 >
                   January 3
                 </time>
               </li>
               <li
-                className="c14"
+                class="c14"
               >
                 <svg
-                  _css={
-                    Object {
-                      "marginRight": "0.5em",
-                    }
-                  }
-                  className="c15"
+                  _css="[object Object]"
+                  class="c15"
                   fill="currentColor"
                   height="1em"
                   stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": undefined,
-                    }
-                  }
+                  stroke-width="0"
                   viewBox="0 0 448 512"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -863,7 +771,7 @@ Array [
                   />
                 </svg>
                 <time
-                  dateTime="2035-02-04"
+                  datetime="2035-02-04"
                 >
                   February 4
                 </time>
@@ -871,24 +779,24 @@ Array [
             </ul>
           </div>
           <div
-            className="c10"
-            fontSize={1}
+            class="c10"
+            font-size="1"
             width="31%"
           >
             <h4
-              className="c11"
+              class="c11"
               color="theme"
-              fontSize={1}
+              font-size="1"
             >
               Weekend sessions
             </h4>
             <p
-              className="c12"
+              class="c12"
             >
               Nine week duration from 8AM-2PM Saturday-Sunday.
             </p>
             <p
-              className="c12"
+              class="c12"
             >
               New classes begin every Saturday, call for details.
             </p>
@@ -899,7 +807,7 @@ Array [
         </div>
       </div>
     </div>
-  </div>,
+  </div>
   .c5 {
   box-sizing: border-box;
 }
@@ -967,34 +875,25 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     id="tuition"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "tablet": 0.8333333333333334,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h1
-        className="c2"
+        class="c2"
         color="purples.3"
       >
         <span
-          className="c3"
+          class="c3"
         >
           <svg
             fill="currentColor"
             height="1em"
             stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
+            stroke-width="0"
             viewBox="0 0 288 512"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -1007,28 +906,25 @@ Array [
         Tuition
       </h1>
       <p
-        className="c4"
+        class="c4"
       >
         intro to tuition
       </p>
     </div>
     <div
-      className="c5"
-      width={
-        Object {
-          "mobile": 0.5833333333333334,
-        }
-      }
+      class="c5"
+      width="[object Object]"
     >
-      <div
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<p>html for <b>tuition</b></p>",
-          }
-        }
-      />
+      <div>
+        <p>
+          html for 
+          <b>
+            tuition
+          </b>
+        </p>
+      </div>
     </div>
-  </div>,
+  </div>
   .c7 {
   box-sizing: border-box;
 }
@@ -1136,35 +1032,25 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     id="graduation"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "tablet": 0.5833333333333334,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h1
-        className="c2"
+        class="c2"
         color="purples.3"
       >
         <span
-          className="c3"
+          class="c3"
         >
           <svg
             fill="currentColor"
             height="1.2em"
-            size="1.2em"
             stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
+            stroke-width="0"
             viewBox="0 0 640 512"
             width="1.2em"
             xmlns="http://www.w3.org/2000/svg"
@@ -1177,23 +1063,23 @@ Array [
         Graduation
       </h1>
       <p
-        className="c4"
+        class="c4"
       >
         intro to graduation
       </p>
     </div>
     <ol
-      className="c5"
+      class="c5"
     >
       <li
-        className="c6"
+        class="c6"
       >
         <span>
           step 1
         </span>
       </li>
       <li
-        className="c6"
+        class="c6"
       >
         <span>
           step 2
@@ -1201,20 +1087,16 @@ Array [
       </li>
     </ol>
     <div
-      className="c7"
-      width={
-        Object {
-          "mobile": 0.6666666666666666,
-        }
-      }
+      class="c7"
+      width="[object Object]"
     >
       <p
-        className="c8"
+        class="c8"
       >
         detail for graduation
       </p>
     </div>
-  </div>,
+  </div>
   .c5 {
   box-sizing: border-box;
   margin-bottom: 3rem;
@@ -1320,51 +1202,43 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     color="white"
     id="start"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "tablet": 0.5833333333333334,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h1
-        className="c2"
+        class="c2"
         color="#ffffff"
       >
         Call to action
       </h1>
       <p
-        className="c3"
+        class="c3"
       >
         intro to cta
       </p>
     </div>
     <div
-      className="c4"
+      class="c4"
       id="locations"
     >
       <div
-        className="c5"
-        width={
-          Object {
-            "tablet": "31%",
-          }
-        }
+        class="c5"
+        width="[object Object]"
       >
         <h5
-          className="c6"
+          class="c6"
           color="#3d424f"
         >
           loc 1
         </h5>
         <iframe
-          allowFullScreen={true}
-          frameBorder="0"
+          allowfullscreen=""
+          frameborder="0"
           height="150"
           src="google map source"
           title="loc 1"
@@ -1372,22 +1246,18 @@ Array [
         />
       </div>
       <div
-        className="c5"
-        width={
-          Object {
-            "tablet": "31%",
-          }
-        }
+        class="c5"
+        width="[object Object]"
       >
         <h5
-          className="c6"
+          class="c6"
           color="#3d424f"
         >
           loc 2
         </h5>
         <iframe
-          allowFullScreen={true}
-          frameBorder="0"
+          allowfullscreen=""
+          frameborder="0"
           height="150"
           src="google map source 2"
           title="loc 2"
@@ -1396,13 +1266,8 @@ Array [
       </div>
     </div>
     <div
-      className="c7"
-      width={
-        Object {
-          "sm": 1,
-          "tablet": 0.4166666666666667,
-        }
-      }
+      class="c7"
+      width="[object Object]"
     >
       <h4>
         Form header
@@ -1412,13 +1277,10 @@ Array [
         data-netlify-honeypot="bot-field"
         method="POST"
         name="open-house"
-        onSubmit={[Function]}
       >
-        
         <input
-          className="c8"
+          class="c8"
           name="bot-field"
-          onChange={[Function]}
         />
         <input
           name="form-name"
@@ -1426,36 +1288,34 @@ Array [
           value="open-house"
         />
         <label
-          htmlFor="name"
+          for="name"
         >
           <span
-            className="visuallyhidden"
+            class="visuallyhidden"
           >
             Name
           </span>
           <input
             id="name"
             name="name"
-            onChange={[Function]}
             placeholder="Name"
-            required={true}
+            required=""
             type="text"
           />
         </label>
         <label
-          htmlFor="email"
+          for="email"
         >
           <span
-            className="visuallyhidden"
+            class="visuallyhidden"
           >
             Email
           </span>
           <input
             id="email"
             name="email"
-            onChange={[Function]}
             placeholder="Email"
-            required={true}
+            required=""
             type="email"
           />
         </label>
@@ -1470,7 +1330,7 @@ Array [
         />
       </form>
     </div>
-  </div>,
+  </div>
   .c1 {
   box-sizing: border-box;
   font-size: 0.7em;
@@ -1520,25 +1380,21 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     color="#444444"
   >
     <div
-      className="c1"
-      fontSize="0.7em"
-      width={
-        Object {
-          "tablet": 0.5,
-        }
-      }
+      class="c1"
+      font-size="0.7em"
+      width="[object Object]"
     >
       <h3
-        className="c2"
+        class="c2"
       >
         Admission policy
       </h3>
       <ul
-        className="c3"
+        class="c3"
       >
         <li>
           policy 1
@@ -1548,6 +1404,6 @@ Array [
         </li>
       </ul>
     </div>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;

@@ -1,7 +1,311 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<mockConstructor
-  render={[Function]}
-/>
+<DocumentFragment>
+  .c1 {
+  left: 1.25em;
+  display: inline-block;
+  height: inherit;
+  padding: 0;
+  margin: 0 auto;
+  color: #3d424f;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: inherit;
+}
+
+.c1 a {
+  display: block;
+  padding-left: 35px;
+  background-image: url(test-file-stub);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.c2 a {
+  display: block;
+  border-top: solid 1px rgba(144,144,144,0.2);
+  color: #4b505c;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 ul {
+  margin: 0;
+  list-style: none;
+}
+
+.c2 > ul {
+  display: none;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-top: solid 1px rgba(144,144,144,0.25);
+}
+
+.c2 > ul > li > a {
+  font-weight: 600;
+}
+
+.c2 > ul > li > ul {
+  padding: 0;
+}
+
+.c2 > ul > li > ul a {
+  padding-left: 1.5em;
+}
+
+.c2 > ul > li:first-child a {
+  border-top: 0;
+}
+
+.open .c2 > ul {
+  display: block;
+}
+
+.c0 {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: solid 1px rgba(144,144,144,0.25);
+  background-color: #fff;
+  box-shadow: 0px 0.0375em 0.125em 0px rgba(0,0,0,0.05);
+  font-size: 14px;
+  line-height: 3.4em;
+}
+
+.c0 .mobile-menu-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-right: solid 1px rgba(144,144,144,0.25);
+}
+
+@media (min-width:46em) {
+  .c1 {
+    position: absolute;
+    top: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width:46em) {
+  .c2 {
+    height: inherit;
+    line-height: inherit;
+    position: absolute;
+    right: 1.25em;
+    top: 0;
+    vertical-align: middle;
+  }
+
+  .c2 > ul {
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    border-top: 0;
+  }
+
+  .c2 > ul > li {
+    border-radius: 8px;
+    display: inline-block;
+    margin-left: 1.5em;
+    padding-left: 0;
+    position: relative;
+  }
+
+  .c2 > ul > li a {
+    display: inline-block;
+    border-top: 0;
+    font-weight: normal;
+  }
+
+  .c2 > ul > li a:hover {
+    color: #4bb2b6;
+  }
+
+  .c2 > ul > li:first-child {
+    margin-left: 0;
+  }
+
+  .c2 > ul > li:last-child a {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.85em;
+    padding: 0 2.5em;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #595C68;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 2.85em;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: background-color,color;
+    transition-property: background-color,color;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    white-space: nowrap;
+    border-color: rgba(144,144,144,0.25);
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0 1.5em;
+    position: relative;
+    top: -0.075em;
+    vertical-align: middle;
+    height: 2.5em;
+    line-height: 2.5em;
+    color: #fff !important;
+  }
+
+  .c2 > ul > li:last-child a:active,
+  .c2 > ul > li:last-child a:hover {
+    background-color: #8b8e9c;
+  }
+
+  .c2 > ul > li:last-child a:active {
+    background-color: #2a2b31;
+  }
+
+  .c2 > ul > li:last-child a:disabled {
+    box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+    opacity: 0.25;
+    pointer-events: none;
+  }
+
+  .c2 > ul > li:hover > ul {
+    display: block;
+  }
+
+  .c2 > ul > li > ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    min-width: 13em;
+    padding: 0 1em;
+    margin: 0;
+    border-right: solid 1px rgba(0,0,0,0.05);
+    border-bottom: solid 1px rgba(0,0,0,0.05);
+    border-left: solid 1px rgba(0,0,0,0.05);
+  }
+
+  .c2 > ul > li > ul > li {
+    border-top: solid 1px rgba(144,144,144,0.25);
+    padding: 0;
+  }
+
+  .c2 > ul > li > ul > li a {
+    display: block;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    padding-left: 0;
+  }
+
+  .c2 > ul > li > ul > li:first-child {
+    border-top: 0;
+  }
+}
+
+@media (min-width:46em) {
+  .c0 {
+    height: 3.5em;
+    border: 0;
+    display: block;
+  }
+
+  .c0 .mobile-menu-button {
+    display: none;
+  }
+}
+
+<header
+    class="c0"
+  >
+    <h1
+      class="c1"
+    >
+      <a
+        href="/"
+        tabindex="-1"
+      >
+        Hello world
+      </a>
+    </h1>
+    <nav
+      class="c2"
+    >
+      <span
+        aria-label="Menu"
+        class="mobile-menu-button"
+        role="button"
+        tabindex="0"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 448 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+          />
+        </svg>
+      </span>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/#programs"
+          >
+            Programs
+          </a>
+          <ul />
+        </li>
+        <li>
+          <a
+            href="#locations"
+          >
+            Locations
+          </a>
+        </li>
+        <li>
+          <a
+            href="#start"
+          >
+            Start a career
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</DocumentFragment>
 `;

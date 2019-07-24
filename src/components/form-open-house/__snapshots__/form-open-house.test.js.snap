@@ -1,208 +1,199 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormOpenHouse renders correctly 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: none;
 }
 
 <form
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  method="POST"
-  name="open-house"
-  onSubmit={[Function]}
->
-  
-  <input
-    className="c0"
-    name="bot-field"
-    onChange={[Function]}
-  />
-  <input
-    name="form-name"
-    type="hidden"
-    value="open-house"
-  />
-  <label
-    htmlFor="name"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    method="POST"
+    name="open-house"
   >
-    <span
-      className="visuallyhidden"
-    >
-      Name
-    </span>
     <input
-      id="name"
-      name="name"
-      onChange={[Function]}
-      placeholder="Name"
-      required={true}
-      type="text"
+      class="c0"
+      name="bot-field"
     />
-  </label>
-  <label
-    htmlFor="email"
-  >
-    <span
-      className="visuallyhidden"
-    >
-      Email
-    </span>
     <input
-      id="email"
-      name="email"
-      onChange={[Function]}
-      placeholder="Email"
-      required={true}
-      type="email"
+      name="form-name"
+      type="hidden"
+      value="open-house"
     />
-  </label>
-  <input
-    name="program"
-    type="hidden"
-    value=""
-  />
-  <input
-    type="submit"
-    value="Sign up"
-  />
-</form>
+    <label
+      for="name"
+    >
+      <span
+        class="visuallyhidden"
+      >
+        Name
+      </span>
+      <input
+        id="name"
+        name="name"
+        placeholder="Name"
+        required=""
+        type="text"
+      />
+    </label>
+    <label
+      for="email"
+    >
+      <span
+        class="visuallyhidden"
+      >
+        Email
+      </span>
+      <input
+        id="email"
+        name="email"
+        placeholder="Email"
+        required=""
+        type="email"
+      />
+    </label>
+    <input
+      name="program"
+      type="hidden"
+      value=""
+    />
+    <input
+      type="submit"
+      value="Sign up"
+    />
+  </form>
+</DocumentFragment>
 `;
 
 exports[`FormOpenHouse renders correctly with button text 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: none;
 }
 
 <form
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  method="POST"
-  name="open-house"
-  onSubmit={[Function]}
->
-  
-  <input
-    className="c0"
-    name="bot-field"
-    onChange={[Function]}
-  />
-  <input
-    name="form-name"
-    type="hidden"
-    value="open-house"
-  />
-  <label
-    htmlFor="name"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    method="POST"
+    name="open-house"
   >
-    <span
-      className="visuallyhidden"
-    >
-      Name
-    </span>
     <input
-      id="name"
-      name="name"
-      onChange={[Function]}
-      placeholder="Name"
-      required={true}
-      type="text"
+      class="c0"
+      name="bot-field"
     />
-  </label>
-  <label
-    htmlFor="email"
-  >
-    <span
-      className="visuallyhidden"
-    >
-      Email
-    </span>
     <input
-      id="email"
-      name="email"
-      onChange={[Function]}
-      placeholder="Email"
-      required={true}
-      type="email"
+      name="form-name"
+      type="hidden"
+      value="open-house"
     />
-  </label>
-  <input
-    name="program"
-    type="hidden"
-    value=""
-  />
-  <input
-    type="submit"
-    value="Hit the button"
-  />
-</form>
+    <label
+      for="name"
+    >
+      <span
+        class="visuallyhidden"
+      >
+        Name
+      </span>
+      <input
+        id="name"
+        name="name"
+        placeholder="Name"
+        required=""
+        type="text"
+      />
+    </label>
+    <label
+      for="email"
+    >
+      <span
+        class="visuallyhidden"
+      >
+        Email
+      </span>
+      <input
+        id="email"
+        name="email"
+        placeholder="Email"
+        required=""
+        type="email"
+      />
+    </label>
+    <input
+      name="program"
+      type="hidden"
+      value=""
+    />
+    <input
+      type="submit"
+      value="Hit the button"
+    />
+  </form>
+</DocumentFragment>
 `;
 
 exports[`FormOpenHouse renders correctly with program 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: none;
 }
 
 <form
-  data-netlify="true"
-  data-netlify-honeypot="bot-field"
-  method="POST"
-  name="open-house"
-  onSubmit={[Function]}
->
-  
-  <input
-    className="c0"
-    name="bot-field"
-    onChange={[Function]}
-  />
-  <input
-    name="form-name"
-    type="hidden"
-    value="open-house"
-  />
-  <label
-    htmlFor="name"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    method="POST"
+    name="open-house"
   >
-    <span
-      className="visuallyhidden"
-    >
-      Name
-    </span>
     <input
-      id="name"
-      name="name"
-      onChange={[Function]}
-      placeholder="Name"
-      required={true}
-      type="text"
+      class="c0"
+      name="bot-field"
     />
-  </label>
-  <label
-    htmlFor="email"
-  >
-    <span
-      className="visuallyhidden"
-    >
-      Email
-    </span>
     <input
-      id="email"
-      name="email"
-      onChange={[Function]}
-      placeholder="Email"
-      required={true}
-      type="email"
+      name="form-name"
+      type="hidden"
+      value="open-house"
     />
-  </label>
-  <input
-    name="program"
-    type="hidden"
-    value="new program"
-  />
-  <input
-    type="submit"
-    value="Sign up"
-  />
-</form>
+    <label
+      for="name"
+    >
+      <span
+        class="visuallyhidden"
+      >
+        Name
+      </span>
+      <input
+        id="name"
+        name="name"
+        placeholder="Name"
+        required=""
+        type="text"
+      />
+    </label>
+    <label
+      for="email"
+    >
+      <span
+        class="visuallyhidden"
+      >
+        Email
+      </span>
+      <input
+        id="email"
+        name="email"
+        placeholder="Email"
+        required=""
+        type="email"
+      />
+    </label>
+    <input
+      name="program"
+      type="hidden"
+      value="new program"
+    />
+    <input
+      type="submit"
+      value="Sign up"
+    />
+  </form>
+</DocumentFragment>
 `;

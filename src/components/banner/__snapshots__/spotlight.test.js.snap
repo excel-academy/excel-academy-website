@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SpotlightBanner left orient renders correctly 1`] = `
-.c3 {
+<DocumentFragment>
+  .c3 {
   box-sizing: border-box;
   padding: 2rem;
   width: 50%;
@@ -80,92 +81,57 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
 }
 
 <section
-  className="c0 c1"
-  orient="left"
->
-  <div
-    className="c2 c3"
-    width={
-      Object {
-        "_": 0.5,
-        "desktop": 0.6666666666666666,
-      }
-    }
-  >
-    <h2>
-      Title
-    </h2>
-    <p>
-      Description
-    </p>
-  </div>
-  <div
-    className="c4 c5"
-    width={
-      Object {
-        "_": 0.5,
-        "desktop": 0.3333333333333333,
-      }
-    }
+    class="c0 c1"
+    orient="left"
   >
     <div
-      className=" gatsby-image-wrapper"
-      style={
-        Object {
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
+      class="c2 c3"
+      width="[object Object]"
+    >
+      <h2>
+        Title
+      </h2>
+      <p>
+        Description
+      </p>
+    </div>
+    <div
+      class="c4 c5"
+      width="[object Object]"
     >
       <div
-        style={
-          Object {
-            "paddingBottom": "66.66666666666667%",
-            "width": "100%",
-          }
-        }
-      />
-      <picture>
-        <source
-          sizes="(max-width: 600px) 100vw, 600px"
-          srcSet="some srcSet"
+        class=" gatsby-image-wrapper"
+        style="position: relative; overflow: hidden;"
+      >
+        <div
+          style="width: 100%; padding-bottom: 66.66666666666667%;"
         />
-        <img
-          alt="banner"
-          loading="lazy"
-          onLoad={[Function]}
-          sizes="(max-width: 600px) 100vw, 600px"
-          src="test-file-stub"
-          srcSet="some srcSet"
-          style={
-            Object {
-              "height": "100%",
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 0,
-              "position": "absolute",
-              "top": 0,
-              "transition": "opacity 500ms",
-              "width": "100%",
-            }
-          }
-        />
-      </picture>
-      <noscript
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<picture><source srcset=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-          }
-        }
-      />
+        <picture>
+          <source
+            sizes="(max-width: 600px) 100vw, 600px"
+            srcset="some srcSet"
+          />
+          <img
+            alt="banner"
+            loading="lazy"
+            sizes="(max-width: 600px) 100vw, 600px"
+            src="test-file-stub"
+            srcset="some srcSet"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+          />
+        </picture>
+        <noscript>
+          &lt;picture&gt;&lt;source srcset="some srcSet" sizes="(max-width: 600px) 100vw, 600px" /&gt;&lt;img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="some srcSet" src="test-file-stub" alt="banner" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+        </noscript>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</DocumentFragment>
 `;
 
 exports[`SpotlightBanner right orient renders correctly 1`] = `
-.c3 {
+<DocumentFragment>
+  .c3 {
   box-sizing: border-box;
   padding: 2rem;
   width: 50%;
@@ -265,86 +231,50 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
 }
 
 <section
-  className="c0 c1"
-  orient="right"
->
-  <div
-    className="c2 c3"
-    width={
-      Object {
-        "_": 0.5,
-        "desktop": 0.6666666666666666,
-      }
-    }
-  >
-    <h2>
-      Title
-    </h2>
-    <p>
-      Description
-    </p>
-  </div>
-  <div
-    className="c4 c5"
-    width={
-      Object {
-        "_": 0.5,
-        "desktop": 0.3333333333333333,
-      }
-    }
+    class="c0 c1"
+    orient="right"
   >
     <div
-      className=" gatsby-image-wrapper"
-      style={
-        Object {
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
+      class="c2 c3"
+      width="[object Object]"
+    >
+      <h2>
+        Title
+      </h2>
+      <p>
+        Description
+      </p>
+    </div>
+    <div
+      class="c4 c5"
+      width="[object Object]"
     >
       <div
-        style={
-          Object {
-            "paddingBottom": "66.66666666666667%",
-            "width": "100%",
-          }
-        }
-      />
-      <picture>
-        <source
-          sizes="(max-width: 600px) 100vw, 600px"
-          srcSet="some srcSet"
+        class=" gatsby-image-wrapper"
+        style="position: relative; overflow: hidden;"
+      >
+        <div
+          style="width: 100%; padding-bottom: 66.66666666666667%;"
         />
-        <img
-          alt="banner"
-          loading="lazy"
-          onLoad={[Function]}
-          sizes="(max-width: 600px) 100vw, 600px"
-          src="test-file-stub"
-          srcSet="some srcSet"
-          style={
-            Object {
-              "height": "100%",
-              "left": 0,
-              "objectFit": "cover",
-              "objectPosition": "center",
-              "opacity": 0,
-              "position": "absolute",
-              "top": 0,
-              "transition": "opacity 500ms",
-              "width": "100%",
-            }
-          }
-        />
-      </picture>
-      <noscript
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<picture><source srcset=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"banner\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-          }
-        }
-      />
+        <picture>
+          <source
+            sizes="(max-width: 600px) 100vw, 600px"
+            srcset="some srcSet"
+          />
+          <img
+            alt="banner"
+            loading="lazy"
+            sizes="(max-width: 600px) 100vw, 600px"
+            src="test-file-stub"
+            srcset="some srcSet"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
+          />
+        </picture>
+        <noscript>
+          &lt;picture&gt;&lt;source srcset="some srcSet" sizes="(max-width: 600px) 100vw, 600px" /&gt;&lt;img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="some srcSet" src="test-file-stub" alt="banner" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+        </noscript>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</DocumentFragment>
 `;

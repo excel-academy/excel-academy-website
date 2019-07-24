@@ -1,24 +1,23 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../../theme';
 import MaxWidthBox from './max-width-box-css';
 
 describe('MaxWidthBox', () => {
   it('default renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <MaxWidthBox maxWidth={1}>
           <h1>hello world</h1>
         </MaxWidthBox>
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('styled system renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <MaxWidthBox
           css={{
@@ -36,7 +35,6 @@ describe('MaxWidthBox', () => {
         </MaxWidthBox>
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

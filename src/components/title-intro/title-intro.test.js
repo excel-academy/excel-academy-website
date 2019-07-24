@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { FaBriefcaseMedical } from 'react-icons/fa';
 import theme from '../../theme';
@@ -7,7 +7,7 @@ import TitleIntro from './title-intro';
 
 describe('TitleIntro', () => {
   it('default renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <TitleIntro
           title="hello"
@@ -15,12 +15,11 @@ describe('TitleIntro', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('default renders with an icon', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <TitleIntro
           title="hello"
@@ -29,12 +28,11 @@ describe('TitleIntro', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('default renders with different cols', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <TitleIntro
           title="hello"
@@ -43,12 +41,11 @@ describe('TitleIntro', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('default renders with different titleColor', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <TitleIntro
           title="hello"
@@ -57,7 +54,6 @@ describe('TitleIntro', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

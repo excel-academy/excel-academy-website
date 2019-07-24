@@ -1,17 +1,40 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { FaBars } from 'react-icons/fa';
 import classNames from 'classnames';
 import Link from '../gatsby-link/gatsby-link';
 import HeaderContainer, { HomeLink, HeaderNav } from './header-css';
 
-const Header = ({ siteTitle, programs }) => {
+const Header = ({ siteTitle }) => {
   const [navIsOpen, setNavIsOpen] = useState(false);
 
   const mobileMenuExpandedClasses = classNames({
     open: navIsOpen,
   });
+
+  const { allMarkdownRemark } = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(
+          filter: { fields: { slug: { regex: "\/programs\/.+\/" }}},
+          sort: {fields: [frontmatter___weight]}
+        ) {
+          edges {
+            node {
+              frontmatter {
+                program
+                title
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `,
+  );
 
   return (
     <HeaderContainer className={mobileMenuExpandedClasses}>
@@ -34,7 +57,7 @@ const Header = ({ siteTitle, programs }) => {
           <li>
             <a href="/#programs">Programs</a>
             <ul>
-              {programs.map(({ node }) => (
+              {allMarkdownRemark && allMarkdownRemark.edges.map(({ node }) => (
                 <li key={node.frontmatter.program}>
                   <Link
                     to={node.fields.slug}
@@ -56,33 +79,6 @@ const Header = ({ siteTitle, programs }) => {
 
 Header.propTypes = {
   siteTitle: PropTypes.string.isRequired,
-  programs: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-const HeaderWithQuery = props => (
-  <StaticQuery
-    query={graphql`
-      query HeaderQuery {
-        programs: allMarkdownRemark(
-          filter: { fields: { slug: { regex: "\/programs\/.+\/" }}},
-          sort: {fields: [frontmatter___weight]}
-        ) {
-          edges {
-            node {
-              frontmatter {
-                program
-                title
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Header programs={data.programs.edges} {...props} />}
-  />
-);
-
-export default HeaderWithQuery;
+export default Header;

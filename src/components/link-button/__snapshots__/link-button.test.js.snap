@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkButton default renders correctly 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: inline-block;
   overflow: hidden;
   height: 2.85em;
@@ -44,15 +45,17 @@ exports[`LinkButton default renders correctly 1`] = `
 }
 
 <a
-  className="c0"
-  href="/engineering/ux#example-list"
->
-  Get Started
-</a>
+    class="c0"
+    href="/engineering/ux#example-list"
+  >
+    Get Started
+  </a>
+</DocumentFragment>
 `;
 
 exports[`LinkButton large renders correctly 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: inline-block;
   overflow: hidden;
   height: 2.85em;
@@ -97,16 +100,18 @@ exports[`LinkButton large renders correctly 1`] = `
 }
 
 <a
-  className="c0"
-  href="/engineering/ux#example-list"
-  large="true"
->
-  Get Started
-</a>
+    class="c0"
+    href="/engineering/ux#example-list"
+    large="true"
+  >
+    Get Started
+  </a>
+</DocumentFragment>
 `;
 
 exports[`LinkButton primary renders correctly 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: inline-block;
   overflow: hidden;
   height: 2.85em;
@@ -159,16 +164,18 @@ exports[`LinkButton primary renders correctly 1`] = `
 }
 
 <a
-  className="c0"
-  href="/engineering/ux#example-list"
-  primary="true"
->
-  Get Started
-</a>
+    class="c0"
+    href="/engineering/ux#example-list"
+    primary="true"
+  >
+    Get Started
+  </a>
+</DocumentFragment>
 `;
 
 exports[`LinkButton small renders correctly 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: inline-block;
   overflow: hidden;
   height: 2.85em;
@@ -213,10 +220,11 @@ exports[`LinkButton small renders correctly 1`] = `
 }
 
 <a
-  className="c0"
-  href="/engineering/ux#example-list"
-  small="true"
->
-  Get Started
-</a>
+    class="c0"
+    href="/engineering/ux#example-list"
+    small="true"
+  >
+    Get Started
+  </a>
+</DocumentFragment>
 `;

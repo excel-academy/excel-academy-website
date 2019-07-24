@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../theme';
 import { ProgramTemplate } from './program';
@@ -36,7 +36,7 @@ const locations = [
 
 describe('Program template', () => {
   it('renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <ProgramTemplate
           program="CNA"
@@ -91,7 +91,6 @@ describe('Program template', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

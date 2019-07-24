@@ -1,12 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../../theme';
 import PageNavBar from './page-nav-bar';
 
 describe('PageNavBar', () => {
   it('default renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <PageNavBar navItems={[
           { id: 'test', title: 'Test' },
@@ -15,7 +15,6 @@ describe('PageNavBar', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

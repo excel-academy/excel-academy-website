@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home template renders correctly 1`] = `
-Array [
+<DocumentFragment>
   .c1 {
   box-sizing: border-box;
   margin-bottom: 3rem;
@@ -106,15 +106,11 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "mobile": 0.45,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <img
         alt="Excel Academy - A DanielCare Affiliate"
@@ -122,24 +118,20 @@ Array [
       />
     </div>
     <div
-      className="c2"
-      width={
-        Object {
-          "mobile": 0.5499999999999999,
-        }
-      }
+      class="c2"
+      width="[object Object]"
     >
       <h1>
         headline home page
       </h1>
       <a
-        className="c3"
+        class="c3"
         href="#learnmore"
       >
         learn more
       </a>
     </div>
-  </div>,
+  </div>
   .c3 {
   box-sizing: border-box;
   margin-bottom: 3rem;
@@ -235,25 +227,21 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     color="white"
     id="programs"
   >
     <h2
-      className="c1"
+      class="c1"
     >
       programs headline
     </h2>
     <div
-      className="c2"
+      class="c2"
     >
       <div
-        className="c3"
-        width={
-          Object {
-            "tablet": "31%",
-          }
-        }
+        class="c3"
+        width="[object Object]"
       >
         <h3>
           program 1
@@ -262,19 +250,15 @@ Array [
           description for home page
         </p>
         <a
-          className="c4"
+          class="c4"
           href="/pr1"
         >
           View program
         </a>
       </div>
       <div
-        className="c3"
-        width={
-          Object {
-            "tablet": "31%",
-          }
-        }
+        class="c3"
+        width="[object Object]"
       >
         <h3>
           program 2
@@ -283,14 +267,14 @@ Array [
           description for home page 2
         </p>
         <a
-          className="c4"
+          class="c4"
           href="/pr2"
         >
           View program
         </a>
       </div>
     </div>
-  </div>,
+  </div>
   .c1 {
   box-sizing: border-box;
   margin-bottom: 3rem;
@@ -368,62 +352,43 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     color="white"
   >
     <div
-      className="c1"
-      width={
-        Object {
-          "tablet": 0.4166666666666667,
-        }
-      }
+      class="c1"
+      width="[object Object]"
     >
       <h2
-        className="c2"
+        class="c2"
       >
         benefits headline
       </h2>
       <div
-        className="c2"
+        class="c2"
       >
         description for benefits
       </div>
     </div>
     <div
-      className="c3"
-      width={
-        Object {
-          "sm": 1,
-          "tablet": 0.5416666666666666,
-        }
-      }
+      class="c3"
+      width="[object Object]"
     >
       <ul
-        className="c4"
+        class="c4"
       >
         <li
-          className="c5"
+          class="c5"
         >
           <svg
-            _css7={
-              Object {
-                "left": 0,
-                "position": "absolute",
-              }
-            }
-            className="c6"
+            _css7="[object Object]"
+            class="c6"
             color="#4bb2b6"
             fill="currentColor"
             height="1.5em"
-            size="1.5em"
             stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "#4bb2b6",
-              }
-            }
+            stroke-width="0"
+            style="color: rgb(75, 178, 182);"
             viewBox="0 0 512 512"
             width="1.5em"
             xmlns="http://www.w3.org/2000/svg"
@@ -437,27 +402,17 @@ Array [
           </span>
         </li>
         <li
-          className="c5"
+          class="c5"
         >
           <svg
-            _css7={
-              Object {
-                "left": 0,
-                "position": "absolute",
-              }
-            }
-            className="c6"
+            _css7="[object Object]"
+            class="c6"
             color="#4bb2b6"
             fill="currentColor"
             height="1.5em"
-            size="1.5em"
             stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "#4bb2b6",
-              }
-            }
+            stroke-width="0"
+            style="color: rgb(75, 178, 182);"
             viewBox="0 0 512 512"
             width="1.5em"
             xmlns="http://www.w3.org/2000/svg"
@@ -472,7 +427,7 @@ Array [
         </li>
       </ul>
     </div>
-  </div>,
+  </div>
   .c2 {
   box-sizing: border-box;
   display: -webkit-box;
@@ -554,88 +509,72 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     color="white"
     id="locations"
   >
     <h2
-      className="c1"
+      class="c1"
     >
       locations headline
     </h2>
     <div
-      className="c2"
+      class="c2"
     >
       <div
-        className="c3"
-        width={
-          Object {
-            "tablet": "31%",
-          }
-        }
+        class="c3"
+        width="[object Object]"
       >
         <h5
-          className="c4"
+          class="c4"
         >
           loc 1
         </h5>
         <iframe
-          allowFullScreen={true}
-          frameBorder="0"
+          allowfullscreen=""
+          frameborder="0"
           height="150"
           src="google map source"
           title="loc 1"
           width="100%"
         />
         <div
-          className="c5"
-          fontSize={1}
+          class="c5"
+          font-size="1"
         >
           loc 1 address
           <br />
-          loc 1 city
-          , 
-          loc 1 state
-           
-          loc 1 zip
+          loc 1 city, loc 1 state loc 1 zip
         </div>
       </div>
       <div
-        className="c3"
-        width={
-          Object {
-            "tablet": "31%",
-          }
-        }
+        class="c3"
+        width="[object Object]"
       >
         <h5
-          className="c4"
+          class="c4"
         >
           loc 2
         </h5>
         <iframe
-          allowFullScreen={true}
-          frameBorder="0"
+          allowfullscreen=""
+          frameborder="0"
           height="150"
           src="google map source 2"
           title="loc 2"
           width="100%"
         />
         <div
-          className="c5"
-          fontSize={1}
+          class="c5"
+          font-size="1"
         >
           loc 2 address
           <br />
-          loc 2 city
-          , 
-          loc 2 state
-           
-          loc 2 zip
+          loc 2 city, loc 2 state loc 2 zip
         </div>
       </div>
     </div>
-  </div>,
+  </div>
   .c0 {
   box-sizing: border-box;
   max-width: 80em;
@@ -749,15 +688,15 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
     id="start"
   >
     <section
-      className="c1 c2"
+      class="c1 c2"
       orient="right"
     >
       <div
-        className="c3 c4"
+        class="c3 c4"
       >
         <h3>
           Call to action
@@ -773,13 +712,10 @@ Array [
           data-netlify-honeypot="bot-field"
           method="POST"
           name="open-house"
-          onSubmit={[Function]}
         >
-          
           <input
-            className="c5"
+            class="c5"
             name="bot-field"
-            onChange={[Function]}
           />
           <input
             name="form-name"
@@ -787,36 +723,34 @@ Array [
             value="open-house"
           />
           <label
-            htmlFor="name"
+            for="name"
           >
             <span
-              className="visuallyhidden"
+              class="visuallyhidden"
             >
               Name
             </span>
             <input
               id="name"
               name="name"
-              onChange={[Function]}
               placeholder="Name"
-              required={true}
+              required=""
               type="text"
             />
           </label>
           <label
-            htmlFor="email"
+            for="email"
           >
             <span
-              className="visuallyhidden"
+              class="visuallyhidden"
             >
               Email
             </span>
             <input
               id="email"
               name="email"
-              onChange={[Function]}
               placeholder="Email"
-              required={true}
+              required=""
               type="email"
             />
           </label>
@@ -832,76 +766,37 @@ Array [
         </form>
       </div>
       <div
-        className="c6 c7"
-        height={
-          Object {
-            "_": "15.75rem",
-            "desktop": "21rem",
-            "tablet": "18.375rem",
-          }
-        }
-        width={
-          Object {
-            "_": "15.75rem",
-            "desktop": "21rem",
-            "tablet": "18.375rem",
-          }
-        }
+        class="c6 c7"
+        height="[object Object]"
+        width="[object Object]"
       >
         <div
-          className=" gatsby-image-wrapper"
-          style={
-            Object {
-              "overflow": "hidden",
-              "position": "relative",
-            }
-          }
+          class=" gatsby-image-wrapper"
+          style="position: relative; overflow: hidden;"
         >
           <div
-            style={
-              Object {
-                "paddingBottom": "66.66666666666667%",
-                "width": "100%",
-              }
-            }
+            style="width: 100%; padding-bottom: 66.66666666666667%;"
           />
           <picture>
             <source
               sizes="(max-width: 600px) 100vw, 600px"
-              srcSet="some srcSet"
+              srcset="some srcSet"
             />
             <img
               alt="nurse"
               loading="lazy"
-              onLoad={[Function]}
               sizes="(max-width: 600px) 100vw, 600px"
               src="test-file-stub"
-              srcSet="some srcSet"
-              style={
-                Object {
-                  "height": "100%",
-                  "left": 0,
-                  "objectFit": "cover",
-                  "objectPosition": "center",
-                  "opacity": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "transition": "opacity 500ms",
-                  "width": "100%",
-                }
-              }
+              srcset="some srcSet"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; transition: opacity 500ms;"
             />
           </picture>
-          <noscript
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<picture><source srcset=\\"some srcSet\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 600px) 100vw, 600px\\" srcset=\\"some srcSet\\" src=\\"test-file-stub\\" alt=\\"nurse\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-              }
-            }
-          />
+          <noscript>
+            &lt;picture&gt;&lt;source srcset="some srcSet" sizes="(max-width: 600px) 100vw, 600px" /&gt;&lt;img loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="some srcSet" src="test-file-stub" alt="nurse" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
+          </noscript>
         </div>
       </div>
     </section>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import theme from '../theme';
 import { HomeTemplate } from './index';
@@ -61,7 +61,7 @@ const locations = [
 
 describe('Home template', () => {
   it('renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <HomeTemplate
           intro={{
@@ -94,7 +94,6 @@ describe('Home template', () => {
         />
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

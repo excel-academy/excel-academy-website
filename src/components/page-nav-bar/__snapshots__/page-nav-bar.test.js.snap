@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PageNavBar default renders correctly 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   box-sizing: border-box;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -52,31 +53,32 @@ exports[`PageNavBar default renders correctly 1`] = `
 }
 
 <nav
-  className="c0"
->
-  <ul
-    className="c1"
+    class="c0"
   >
-    <li>
-      <a
-        className="c2"
-        color="greens.1"
-        fontSize="1em"
-        href="#test"
-      >
-        Test
-      </a>
-    </li>
-    <li>
-      <a
-        className="c2"
-        color="greens.1"
-        fontSize="1em"
-        href="#test2"
-      >
-        Test 2
-      </a>
-    </li>
-  </ul>
-</nav>
+    <ul
+      class="c1"
+    >
+      <li>
+        <a
+          class="c2"
+          color="greens.1"
+          font-size="1em"
+          href="#test"
+        >
+          Test
+        </a>
+      </li>
+      <li>
+        <a
+          class="c2"
+          color="greens.1"
+          font-size="1em"
+          href="#test2"
+        >
+          Test 2
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
 `;

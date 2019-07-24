@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { Heading } from 'rebass';
 import theme from '../../theme';
@@ -8,14 +8,13 @@ import image from '../../utils/mockBannerImg';
 
 describe('ContentOverlayBanner', () => {
   it('renders correctly', () => {
-    const component = renderer.create(
+    const { asFragment } = render(
       <ThemeProvider theme={theme}>
         <ContentOverlayBanner image={image.src} imagedesc={image.alt} contentAlign="center" orient="left" imagePosition="center" bg="blue" fullscreen>
           <Heading fontWeight={300} fontSize="5rem" lineHeight={1} mb={1}>Ernie Bello</Heading>
         </ContentOverlayBanner>
       </ThemeProvider>,
     );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
