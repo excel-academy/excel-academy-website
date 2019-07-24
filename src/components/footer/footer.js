@@ -48,7 +48,7 @@ const LinkList = ({ title, links }) => (
 
 LinkList.propTypes = {
   title: PropTypes.string.isRequired,
-  links: PropTypes.shape({
+  links: PropTypes.arrayOf(PropTypes.shape({
     node: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
@@ -58,7 +58,7 @@ LinkList.propTypes = {
         slug: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired,
-  }).isRequired,
+  })).isRequired,
 };
 
 const Footer = ({ programs, locations, company }) => (
