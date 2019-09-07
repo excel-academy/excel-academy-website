@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Text } from 'rebass';
+import { Box, Text } from 'rebass/styled-components';
 import LargeText from '../large-text/large-text-css';
 
 const TitleIntro = ({

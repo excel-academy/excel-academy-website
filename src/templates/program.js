@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import {
   Flex, Box, Text, Card,
-} from 'rebass';
+} from 'rebass/styled-components';
 import {
   FaCheck, FaBriefcaseMedical, FaRegCalendar, FaDollarSign, FaGraduationCap,
 } from 'react-icons/fa';
@@ -32,14 +32,14 @@ export const ProgramTemplate = ({
         height: '100vh',
       }}
       maxWidth={2}
-      px={{ sm: 1, tablet: 3 }}
-      py={{ sm: 5, tablet: 3 }}
+      px={{ _: 1, tablet: 3 }}
+      py={{ _: 5, tablet: 3 }}
     >
       <Box
         width={{ mobile: 1.65 / 3 }}
         pr={1}
       >
-        <Text as="h1" color="theme">{title}</Text>
+        <Text as="h1" color="theme" mb="default">{title}</Text>
         <p>{intro.text}</p>
         {/* <LinkButton to={intro.cta.url}>{intro.cta.action}</LinkButton> */}
       </Box>
@@ -50,7 +50,7 @@ export const ProgramTemplate = ({
     <PageNavBar navItems={nav} />
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       css={{
         display: 'flex',
         flexDirection: 'column',
@@ -95,13 +95,13 @@ export const ProgramTemplate = ({
         ))}
       </Box>
       <Box width={{ mobile: 8 / 12 }}>
-        <Text as="p">{opportunities.text}</Text>
-        <Text as="p" fontSize={0} bg="#eee" color="#999" p="1em">{opportunities.disclaimer}</Text>
+        <Text as="p" mb={1}>{opportunities.text}</Text>
+        <Text as="p" fontSize={0} bg="#eee" color="#999" p="1em" mb={1}>{opportunities.disclaimer}</Text>
       </Box>
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      px={{ sm: 1, tablet: 3 }}
+      px={{ _: 1, tablet: 3 }}
       py={3}
       css={{
         display: 'flex',
@@ -142,7 +142,7 @@ export const ProgramTemplate = ({
           <Flex flexWrap="wrap" justifyContent="space-between">
             <Box fontSize={1} width="31%">
               <Text as="h4" color="theme" fontSize={1} m={0}>Daytime sessions</Text>
-              <Text as="p" mb="1rem">Four week duration from 8AM-2PM Monday-Friday.</Text>
+              <Text as="p" mb="default">Four week duration from 8AM-2PM Monday-Friday.</Text>
               <Box
                 as="ul"
                 css={{
@@ -156,7 +156,7 @@ export const ProgramTemplate = ({
             </Box>
             <Box fontSize={1} width="31%">
               <Text as="h4" color="theme" fontSize={1} m={0}>Evening sessions</Text>
-              <Text as="p" mb="1rem">Five week duration from 4:30-9:30PM Monday-Thursday.</Text>
+              <Text as="p" mb="default">Five week duration from 4:30-9:30PM Monday-Thursday.</Text>
               <Box
                 as="ul"
                 css={{
@@ -170,8 +170,8 @@ export const ProgramTemplate = ({
             </Box>
             <Box fontSize={1} width="31%">
               <Text as="h4" color="theme" fontSize={1} m={0}>Weekend sessions</Text>
-              <Text as="p" mb="1rem">Nine week duration from 8AM-2PM Saturday-Sunday.</Text>
-              <Text as="p" mb="1rem">New classes begin every Saturday, call for details.</Text>
+              <Text as="p" mb="default">Nine week duration from 8AM-2PM Saturday-Sunday.</Text>
+              <Text as="p" mb="default">New classes begin every Saturday, call for details.</Text>
               <p>(203) 691-7989</p>
             </Box>
           </Flex>
@@ -180,7 +180,7 @@ export const ProgramTemplate = ({
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       css={{
         display: 'flex',
         flexDirection: 'column',
@@ -200,7 +200,7 @@ export const ProgramTemplate = ({
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       css={{
         display: 'flex',
         flexDirection: 'column',
@@ -259,12 +259,12 @@ export const ProgramTemplate = ({
         ))}
       </Box>
       <Box width={{ mobile: 8 / 12 }}>
-        <Text as="p">{graduation.text}</Text>
+        <Text as="p" mb={1}>{graduation.text}</Text>
       </Box>
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       bg="theme"
       color="white"
       css={{
@@ -295,7 +295,7 @@ export const ProgramTemplate = ({
             mb={2}
             key={node.frontmatter.title}
           >
-            <Text as="h5" textAlign={{ tablet: 'center' }} color="#3d424f">
+            <Text as="h5" textAlign={{ tablet: 'center' }} color="#3d424f" mb="default">
               {node.frontmatter.title}
             </Text>
             <iframe
@@ -309,8 +309,8 @@ export const ProgramTemplate = ({
           </Box>
         ))}
       </Box>
-      <Box width={{ sm: 1, tablet: 5 / 12 }}>
-        <h4>{cta.form_header}</h4>
+      <Box width={{ _: 1, tablet: 5 / 12 }}>
+        <Text as="h4" mb="default">{cta.form_header}</Text>
         <FormOpenHouse buttonText={cta.form_button} program={program} />
       </Box>
     </MaxWidthBox>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Link } from 'rebass';
+import { Box, Link } from 'rebass/styled-components';
 import theme from '../../theme';
 import NavContainer from './page-nav-bar-css';
 

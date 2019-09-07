@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Box } from 'rebass';
+import { Box } from 'rebass/styled-components';
 
 export const Content = styled(Box)`
   z-index: 1;

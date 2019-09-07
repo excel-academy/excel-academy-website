@@ -4,151 +4,16 @@ exports[`Home template renders correctly 1`] = `
 <DocumentFragment>
   .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
 }
 
 .c3 {
-  display: inline-block;
-  overflow: hidden;
-  height: 2.85em;
-  padding: 0 2.5em;
-  border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #595C68;
-  border-radius: 8px;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 2.85em;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: background-color,color;
-  transition-property: background-color,color;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  white-space: nowrap;
-}
-
-.c3:active,
-.c3:hover {
-  background-color: #8b8e9c;
-}
-
-.c3:active {
-  background-color: #2a2b31;
-}
-
-.c3:disabled {
-  box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-.c0 {
   box-sizing: border-box;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: white;
-  max-width: 80em;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  box-sizing: border-box;
-  text-align: center;
-}
-
-@media screen and (min-width:30em) {
-  .c1 {
-    padding-right: 2rem;
-  }
-}
-
-@media screen and (min-width:30em) {
-  .c1 {
-    width: 45%;
-  }
-}
-
-@media screen and (min-width:46em) {
-  .c0 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-
-@media screen and (min-width:30em) {
-  .c2 {
-    width: 54.99999999999999%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="c1"
-      width="[object Object]"
-    >
-      <img
-        alt="Excel Academy - A DanielCare Affiliate"
-        src="test-file-stub"
-      />
-    </div>
-    <div
-      class="c2"
-      width="[object Object]"
-    >
-      <h1>
-        headline home page
-      </h1>
-      <a
-        class="c3"
-        href="#learnmore"
-      >
-        learn more
-      </a>
-    </div>
-  </div>
-  .c3 {
-  box-sizing: border-box;
-  margin-bottom: 3rem;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-bottom: 3rem;
-}
-
-.c0 {
-  box-sizing: border-box;
-  padding: 2rem;
-  color: white;
-  background-color: #4bb2b6;
-  max-width: 80em;
-  margin: 0 auto;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
 }
 
 .c4 {
@@ -193,8 +58,170 @@ exports[`Home template renders correctly 1`] = `
   pointer-events: none;
 }
 
+.c0 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: white;
+  max-width: 80em;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+  max-width: 80em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  text-align: center;
+}
+
+@media screen and (min-width:30em) {
+  .c1 {
+    width: 45%;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c0 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width:30em) {
+  .c2 {
+    width: 54.99999999999999%;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+      width="[object Object]"
+    >
+      <img
+        alt="Excel Academy - A DanielCare Affiliate"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      class="c2"
+      width="[object Object]"
+    >
+      <h1
+        class="c3"
+      >
+        headline home page
+      </h1>
+      <a
+        class="c4"
+        href="#learnmore"
+      >
+        learn more
+      </a>
+    </div>
+  </div>
+  .c4 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
+}
+
+.c3 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: #4bb2b6;
+  color: white;
+  max-width: 80em;
+  padding: 2rem;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.c5 {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.85em;
+  padding: 0 2.5em;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #595C68;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 2.85em;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background-color,color;
+  transition-property: background-color,color;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  white-space: nowrap;
+}
+
+.c5:active,
+.c5:hover {
+  background-color: #8b8e9c;
+}
+
+.c5:active {
+  background-color: #2a2b31;
+}
+
+.c5:disabled {
+  box-shadow: inset 0 -0.15em 0 0 rgba(0,0,0,0.15);
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,14 +236,14 @@ exports[`Home template renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
-  .c3 {
-    width: 31%;
+  .c1 {
+    text-align: center;
   }
 }
 
 @media screen and (min-width:46em) {
-  .c1 {
-    text-align: center;
+  .c3 {
+    width: 31%;
   }
 }
 
@@ -243,14 +270,16 @@ exports[`Home template renders correctly 1`] = `
         class="c3"
         width="[object Object]"
       >
-        <h3>
+        <h3
+          class="c4"
+        >
           program 1
         </h3>
         <p>
           description for home page
         </p>
         <a
-          class="c4"
+          class="c5"
           href="/pr1"
         >
           View program
@@ -260,14 +289,16 @@ exports[`Home template renders correctly 1`] = `
         class="c3"
         width="[object Object]"
       >
-        <h3>
+        <h3
+          class="c4"
+        >
           program 2
         </h3>
         <p>
           description for home page 2
         </p>
         <a
-          class="c4"
+          class="c5"
           href="/pr2"
         >
           View program
@@ -275,25 +306,41 @@ exports[`Home template renders correctly 1`] = `
       </div>
     </div>
   </div>
-  .c1 {
+  .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
 }
 
 .c3 {
   box-sizing: border-box;
-  width: 100%;
+  margin: 0;
+  min-width: 0;
 }
 
-.c2 {
+.c4 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 60em;
 }
 
 .c0 {
   box-sizing: border-box;
-  padding: 2rem;
-  color: white;
+  margin: 0;
+  min-width: 0;
   background-color: #7b79b0;
+  color: white;
+  max-width: 80em;
+  padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
   display: -webkit-box;
@@ -309,26 +356,30 @@ exports[`Home template renders correctly 1`] = `
   justify-content: space-between;
 }
 
-.c4 {
+.c5 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   -webkit-column-count: 2;
   column-count: 2;
   list-style-type: none;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
-  margin-bottom: 2rem;
+  margin: 0;
+  min-width: 0;
   padding-left: 2rem;
+  margin-bottom: 2rem;
   -webkit-break-inside: avoid-column;
   break-inside: avoid-column;
   page-break-inside: avoid;
   position: relative;
 }
 
-.c6 {
+.c7 {
   position: absolute;
   left: 0;
 }
@@ -340,7 +391,7 @@ exports[`Home template renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
-  .c3 {
+  .c4 {
     width: 54.166666666666664%;
   }
 }
@@ -365,24 +416,24 @@ exports[`Home template renders correctly 1`] = `
         benefits headline
       </h2>
       <div
-        class="c2"
+        class="c3"
       >
         description for benefits
       </div>
     </div>
     <div
-      class="c3"
+      class="c4"
       width="[object Object]"
     >
       <ul
-        class="c4"
+        class="c5"
       >
         <li
-          class="c5"
+          class="c6"
         >
           <svg
             _css7="[object Object]"
-            class="c6"
+            class="c7"
             color="#4bb2b6"
             fill="currentColor"
             height="1.5em"
@@ -402,11 +453,11 @@ exports[`Home template renders correctly 1`] = `
           </span>
         </li>
         <li
-          class="c5"
+          class="c6"
         >
           <svg
             _css7="[object Object]"
-            class="c6"
+            class="c7"
             color="#4bb2b6"
             fill="currentColor"
             height="1.5em"
@@ -428,12 +479,34 @@ exports[`Home template renders correctly 1`] = `
       </ul>
     </div>
   </div>
-  .c2 {
+  .c1 {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
+}
+
+.c4 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
+}
+
+.c6 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: #7b79b0;
+  padding: 2rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.c2 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -441,53 +514,42 @@ exports[`Home template renders correctly 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 3rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-bottom: 3rem;
-}
-
-.c4 {
-  box-sizing: border-box;
 }
 
 .c0 {
   box-sizing: border-box;
-  padding: 2rem;
-  color: white;
+  margin: 0;
+  min-width: 0;
   background-color: #6f6da5;
+  color: white;
+  max-width: 80em;
+  padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
 }
 
 .c5 {
-  box-sizing: border-box;
-  padding: 2rem;
-  font-size: 14px;
-  background-color: #7b79b0;
-  text-align: center;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-@media screen and (min-width:46em) {
-  .c3 {
-    width: 31%;
-  }
 }
 
 @media screen and (min-width:46em) {
@@ -499,6 +561,12 @@ exports[`Home template renders correctly 1`] = `
 @media screen and (min-width:46em) {
   .c4 {
     text-align: center;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c3 {
+    width: 31%;
   }
 }
 
@@ -539,7 +607,7 @@ exports[`Home template renders correctly 1`] = `
           width="100%"
         />
         <div
-          class="c5"
+          class="c5 c6"
           font-size="1"
         >
           loc 1 address
@@ -565,7 +633,7 @@ exports[`Home template renders correctly 1`] = `
           width="100%"
         />
         <div
-          class="c5"
+          class="c5 c6"
           font-size="1"
         >
           loc 2 address
@@ -575,23 +643,38 @@ exports[`Home template renders correctly 1`] = `
       </div>
     </div>
   </div>
-  .c0 {
+  .c5 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 80em;
   max-width: 80em;
   margin: 0 auto;
 }
 
-.c5 {
+.c6 {
   display: none;
 }
 
 .c4 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   z-index: 1;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  height: 15.75rem;
   margin-bottom: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -605,12 +688,14 @@ exports[`Home template renders correctly 1`] = `
   flex-shrink: 0;
 }
 
-.c7 .gatsby-image-wrapper {
+.c8 .gatsby-image-wrapper {
   height: 100%;
 }
 
 .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   padding: 2rem;
   position: relative;
   display: -webkit-box;
@@ -621,7 +706,7 @@ exports[`Home template renders correctly 1`] = `
   text-align: left;
 }
 
-.c2 .c6 img {
+.c2 .c7 img {
   object-position: right !important;
 }
 
@@ -643,27 +728,29 @@ exports[`Home template renders correctly 1`] = `
   max-width: 31.5rem;
 }
 
-.c1 .c6 {
+.c1 .c7 {
   border-radius: 100%;
 }
 
-.c1 .c6 img {
+.c1 .c7 img {
   border-radius: 100%;
 }
 
-.c1 .c6 {
+.c1 .c7 {
   margin-left: 0;
 }
 
 @media screen and (min-width:46em) {
-  .c7 {
+  .c8 {
     width: 18.375rem;
+    height: 18.375rem;
   }
 }
 
 @media screen and (min-width:61.25em) {
-  .c7 {
+  .c8 {
     width: 21rem;
+    height: 21rem;
   }
 }
 
@@ -681,7 +768,7 @@ exports[`Home template renders correctly 1`] = `
     text-align: center;
   }
 
-  .c1 .c6 {
+  .c1 .c7 {
     margin-right: 0;
     margin-left: 0;
   }
@@ -698,13 +785,17 @@ exports[`Home template renders correctly 1`] = `
       <div
         class="c3 c4"
       >
-        <h3>
+        <h3
+          class="c5"
+        >
           Call to action
         </h3>
         <p>
           desc to cta
         </p>
-        <h4>
+        <h4
+          class="c5"
+        >
           Form header
         </h4>
         <form
@@ -714,7 +805,7 @@ exports[`Home template renders correctly 1`] = `
           name="open-house"
         >
           <input
-            class="c5"
+            class="c6"
             name="bot-field"
           />
           <input
@@ -766,7 +857,7 @@ exports[`Home template renders correctly 1`] = `
         </form>
       </div>
       <div
-        class="c6 c7"
+        class="c7 c8"
         height="[object Object]"
         width="[object Object]"
       >

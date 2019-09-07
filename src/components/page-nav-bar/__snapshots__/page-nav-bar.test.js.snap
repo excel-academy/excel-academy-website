@@ -2,11 +2,23 @@
 
 exports[`PageNavBar default renders correctly 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: #132c2d;
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: #d2eced;
   padding-left: 4rem;
   padding-right: 4rem;
-  background-color: #d2eced;
   position: -webkit-sticky;
   position: sticky;
   z-index: 11;
@@ -18,7 +30,9 @@ exports[`PageNavBar default renders correctly 1`] = `
 .c1 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,11 +45,6 @@ exports[`PageNavBar default renders correctly 1`] = `
 }
 
 .c2 {
-  box-sizing: border-box;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 1em;
-  color: #132c2d;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -60,7 +69,7 @@ exports[`PageNavBar default renders correctly 1`] = `
     >
       <li>
         <a
-          class="c2"
+          class="c2 c3"
           color="greens.1"
           font-size="1em"
           href="#test"
@@ -70,7 +79,7 @@ exports[`PageNavBar default renders correctly 1`] = `
       </li>
       <li>
         <a
-          class="c2"
+          class="c2 c3"
           color="greens.1"
           font-size="1em"
           href="#test2"

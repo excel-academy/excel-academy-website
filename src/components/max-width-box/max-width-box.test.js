@@ -27,7 +27,7 @@ describe('MaxWidthBox', () => {
             alignItems: 'center',
           }}
           maxWidth={2}
-          px={{ sm: 1, tablet: 3 }}
+          px={{ _: 1, tablet: 3 }}
           py={3}
           bg="white"
         >

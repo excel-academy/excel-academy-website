@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Text } from 'rebass';
+import { Box, Text } from 'rebass/styled-components';
 import MaxWidthBox from '../max-width-box/max-width-box-css';
 
 const AdmissionPolicy = ({ title, policies }) => (
   <MaxWidthBox
     maxWidth={2}
-    p={{ sm: 1, tablet: 2 }}
+    p={{ _: 1, tablet: 2 }}
     bg="#eeeeee"
     color="#444444"
     css={{
