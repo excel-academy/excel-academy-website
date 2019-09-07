@@ -5,20 +5,29 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
   .c4 {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 2rem;
-  font-size: 5rem;
+  min-width: 0;
+  font-size: 20px;
+  font-family: heading;
+  font-weight: heading;
+  line-height: heading;
   font-weight: 300;
+  font-size: 5rem;
   line-height: 1;
+  margin-bottom: 2rem;
 }
 
 .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 2rem;
   z-index: 1;
 }
 
 .c6 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
@@ -39,6 +48,8 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   padding: 2rem;
   background-color: blue;
   position: relative;
@@ -72,6 +83,36 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
 
 .c0 .c5 {
   opacity: 0.5;
+}
+
+@media screen and (min-width:30em) {
+  .c1 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c1 {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width:61.25em) {
+  .c1 {
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width:80em) {
+  .c1 {
+    padding: 5rem;
+  }
+}
+
+@media screen and (min-width:105em) {
+  .c1 {
+    padding: 7rem;
+  }
 }
 
 <section

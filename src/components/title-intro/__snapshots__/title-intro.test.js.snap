@@ -4,6 +4,8 @@ exports[`TitleIntro default renders correctly 1`] = `
 <DocumentFragment>
   .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #1c2070;
 }
@@ -15,6 +17,8 @@ exports[`TitleIntro default renders correctly 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -47,6 +51,8 @@ exports[`TitleIntro default renders with an icon 1`] = `
 <DocumentFragment>
   .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #1c2070;
 }
@@ -58,6 +64,8 @@ exports[`TitleIntro default renders with an icon 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -113,6 +121,8 @@ exports[`TitleIntro default renders with different cols 1`] = `
 <DocumentFragment>
   .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #1c2070;
 }
@@ -124,6 +134,8 @@ exports[`TitleIntro default renders with different cols 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -156,6 +168,8 @@ exports[`TitleIntro default renders with different titleColor 1`] = `
 <DocumentFragment>
   .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: black;
 }
@@ -167,6 +181,8 @@ exports[`TitleIntro default renders with different titleColor 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 

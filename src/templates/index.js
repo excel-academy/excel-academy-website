@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Box, Text, Flex } from 'rebass';
+import { Box, Text, Flex } from 'rebass/styled-components';
 import { FaCheck } from 'react-icons/fa';
 import Layout from '../components/layout/layout';
 import Metadata from '../components/metadata/metadata';
@@ -24,7 +24,7 @@ export const HomeTemplate = ({
         alignItems: 'center',
       }}
       maxWidth={2}
-      px={{ sm: 1, tablet: 3 }}
+      px={{ _: 1, tablet: 3 }}
       py={3}
       bg="white"
     >
@@ -37,13 +37,13 @@ export const HomeTemplate = ({
           textAlign: 'center',
         }}
       >
-        <h1>{intro.headline}</h1>
+        <Text as="h1" mb="default">{intro.headline}</Text>
         <LinkButton to={intro.cta.url}>{intro.cta.action}</LinkButton>
       </Box>
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       bg="theme"
       color="white"
       id="programs"
@@ -64,7 +64,7 @@ export const HomeTemplate = ({
             mb={2}
             key={node.frontmatter.program}
           >
-            <h3>{node.frontmatter.navtitle || node.frontmatter.title}</h3>
+            <Text as="h3" mb="default">{node.frontmatter.navtitle || node.frontmatter.title}</Text>
             <p>{node.frontmatter.home_description}</p>
             <LinkButton to={node.fields.slug}>View program</LinkButton>
           </Box>
@@ -73,7 +73,7 @@ export const HomeTemplate = ({
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       bg="purples.0"
       color="white"
       css={{
@@ -83,12 +83,12 @@ export const HomeTemplate = ({
       }}
     >
       <Box width={{ tablet: 5 / 12 }} mb={2}>
-        <Text as="h2">
+        <Text as="h2" mb="default">
           {benefitsblock.headline}
         </Text>
         <Text>{benefitsblock.description}</Text>
       </Box>
-      <Box width={{ sm: 1, tablet: 6.5 / 12 }}>
+      <Box width={{ _: 1, tablet: 6.5 / 12 }}>
         <Box
           as="ul"
           css={{
@@ -126,7 +126,7 @@ export const HomeTemplate = ({
     </MaxWidthBox>
     <MaxWidthBox
       maxWidth={2}
-      p={{ sm: 1, tablet: 3 }}
+      p={{ _: 1, tablet: 3 }}
       bg="purples.1"
       color="white"
       id="locations"
@@ -142,7 +142,7 @@ export const HomeTemplate = ({
             mb={2}
             key={node.frontmatter.title}
           >
-            <Text as="h5" textAlign={{ tablet: 'center' }}>
+            <Text as="h5" textAlign={{ tablet: 'center' }} mb="default">
               {node.frontmatter.title}
             </Text>
             <iframe
@@ -179,11 +179,11 @@ export const HomeTemplate = ({
         image={cta.image.childImageSharp.fluid}
         imagedesc="nurse"
         orient="right"
-        p={{ sm: 1, tablet: 3 }}
+        p={{ _: 1, tablet: 3 }}
       >
-        <h3>{cta.headline}</h3>
+        <Text as="h3" mb="default">{cta.headline}</Text>
         <p>{cta.description}</p>
-        <h4>{cta.form_header}</h4>
+        <Text as="h4" mb="default">{cta.form_header}</Text>
         <FormOpenHouse buttonText={cta.form_button} />
       </CircleImageBanner>
     </MaxWidthBox>

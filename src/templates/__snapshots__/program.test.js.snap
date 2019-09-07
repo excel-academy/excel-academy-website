@@ -4,25 +4,35 @@ exports[`Program template renders correctly 1`] = `
 <DocumentFragment>
   .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   padding-right: 2rem;
-}
-
-.c3 {
-  box-sizing: border-box;
-  margin-bottom: 3rem;
 }
 
 .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   color: #4bb2b6;
+  margin-bottom: 1rem;
+}
+
+.c3 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
 }
 
 .c0 {
   box-sizing: border-box;
-  padding-top: 7rem;
+  margin: 0;
+  min-width: 0;
+  max-width: 80em;
   padding-bottom: 7rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 7rem;
   max-width: 80em;
   margin: 0 auto;
   display: -webkit-box;
@@ -51,22 +61,17 @@ exports[`Program template renders correctly 1`] = `
 
 @media screen and (min-width:30em) {
   .c3 {
-    padding-right: 2rem;
-  }
-}
-
-@media screen and (min-width:30em) {
-  .c3 {
     width: 45%;
+    padding-right: 2rem;
   }
 }
 
 @media screen and (min-width:46em) {
   .c0 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -97,11 +102,23 @@ exports[`Program template renders correctly 1`] = `
       />
     </div>
   </div>
-  .c0 {
+  .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: #132c2d;
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  background-color: #d2eced;
   padding-left: 4rem;
   padding-right: 4rem;
-  background-color: #d2eced;
   position: -webkit-sticky;
   position: sticky;
   z-index: 11;
@@ -113,7 +130,9 @@ exports[`Program template renders correctly 1`] = `
 .c1 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,11 +145,6 @@ exports[`Program template renders correctly 1`] = `
 }
 
 .c2 {
-  box-sizing: border-box;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 1em;
-  color: #132c2d;
   -webkit-text-decoration: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -155,7 +169,7 @@ exports[`Program template renders correctly 1`] = `
     >
       <li>
         <a
-          class="c2"
+          class="c2 c3"
           color="greens.1"
           font-size="1em"
           href="#opportunities"
@@ -165,7 +179,7 @@ exports[`Program template renders correctly 1`] = `
       </li>
       <li>
         <a
-          class="c2"
+          class="c2 c3"
           color="greens.1"
           font-size="1em"
           href="#schedules"
@@ -175,26 +189,36 @@ exports[`Program template renders correctly 1`] = `
       </li>
     </ul>
   </nav>
-  .c8 {
+  .c2 {
   box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #1c2070;
 }
 
+.c8 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+}
+
 .c9 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 2rem;
 }
 
 .c10 {
   box-sizing: border-box;
-  padding: 1em;
+  margin: 0;
+  min-width: 0;
   font-size: 12px;
-  color: #999;
   background-color: #eee;
+  color: #999;
+  padding: 1em;
+  margin-bottom: 2rem;
 }
 
 .c4 {
@@ -204,6 +228,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -215,6 +241,9 @@ exports[`Program template renders correctly 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 80em;
   padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
@@ -238,14 +267,18 @@ exports[`Program template renders correctly 1`] = `
 .c5 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
 .c6 {
   box-sizing: border-box;
-  margin-bottom: 2rem;
+  margin: 0;
+  min-width: 0;
   padding-left: 3rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -379,27 +412,70 @@ exports[`Program template renders correctly 1`] = `
       </p>
     </div>
   </div>
-  .c8 {
+  .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
+  color: #1c2070;
+}
+
+.c6 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
+}
+
+.c7 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.c8 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
 }
 
 .c10 {
   box-sizing: border-box;
-  width: 31%;
+  margin: 0;
+  min-width: 0;
   font-size: 14px;
+  width: 31%;
+}
+
+.c11 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: #4bb2b6;
+  font-size: 14px;
+  margin: 0;
+}
+
+.c12 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
 }
 
 .c14 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 0.3em;
 }
 
 .c9 {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0;
+  min-width: 0;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -407,35 +483,10 @@ exports[`Program template renders correctly 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.c2 {
-  box-sizing: border-box;
-  margin-bottom: 3rem;
-  color: #1c2070;
-}
-
-.c7 {
-  box-sizing: border-box;
-  margin: 0;
-  font-size: 18px;
-}
-
-.c11 {
-  box-sizing: border-box;
-  margin: 0;
-  font-size: 14px;
-  color: #4bb2b6;
-}
-
-.c12 {
-  box-sizing: border-box;
-  margin-bottom: 1rem;
-}
-
-.c6 {
-  box-sizing: border-box;
-  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c4 {
@@ -445,6 +496,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -460,11 +513,14 @@ exports[`Program template renders correctly 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  padding-top: 4rem;
+  margin: 0;
+  min-width: 0;
+  background-color: #eeeefc;
+  max-width: 80em;
   padding-bottom: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #eeeefc;
+  padding-top: 4rem;
   max-width: 80em;
   margin: 0 auto;
   display: -webkit-box;
@@ -486,11 +542,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c5 {
   box-sizing: border-box;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0;
+  min-width: 0;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -498,6 +551,11 @@ exports[`Program template renders correctly 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c5 tbody td {
@@ -507,44 +565,32 @@ exports[`Program template renders correctly 1`] = `
 .c13 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
 .c16 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
 @media screen and (min-width:61.25em) {
-  .c8 {
-    padding-left: 2rem;
-  }
-}
-
-@media screen and (min-width:61.25em) {
-  .c8 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:61.25em) {
   .c6 {
+    width: 50%;
     padding-right: 2rem;
   }
 }
 
 @media screen and (min-width:61.25em) {
-  .c6 {
+  .c8 {
     width: 50%;
-  }
-}
-
-@media screen and (min-width:61.25em) {
-  .c6 {
-    border-right: solid 1px #ebebeb;
+    padding-left: 2rem;
   }
 }
 
@@ -679,7 +725,7 @@ exports[`Program template renders correctly 1`] = `
                 <time
                   datetime="2035-01-02"
                 >
-                  January 2
+                  Jan 2
                 </time>
               </li>
               <li
@@ -703,7 +749,7 @@ exports[`Program template renders correctly 1`] = `
                 <time
                   datetime="2035-02-03"
                 >
-                  February 3
+                  Feb 3
                 </time>
               </li>
             </ul>
@@ -749,7 +795,7 @@ exports[`Program template renders correctly 1`] = `
                 <time
                   datetime="2035-01-03"
                 >
-                  January 3
+                  Jan 3
                 </time>
               </li>
               <li
@@ -773,7 +819,7 @@ exports[`Program template renders correctly 1`] = `
                 <time
                   datetime="2035-02-04"
                 >
-                  February 4
+                  Feb 4
                 </time>
               </li>
             </ul>
@@ -808,14 +854,18 @@ exports[`Program template renders correctly 1`] = `
       </div>
     </div>
   </div>
-  .c5 {
+  .c2 {
   box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #1c2070;
+}
+
+.c5 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
 }
 
 .c4 {
@@ -825,6 +875,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -836,6 +888,9 @@ exports[`Program template renders correctly 1`] = `
 
 .c0 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 80em;
   padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
@@ -925,18 +980,25 @@ exports[`Program template renders correctly 1`] = `
       </div>
     </div>
   </div>
-  .c7 {
+  .c2 {
   box-sizing: border-box;
-}
-
-.c2 {
-  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #1c2070;
 }
 
+.c7 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+}
+
 .c8 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 2rem;
 }
 
 .c4 {
@@ -946,6 +1008,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
@@ -957,8 +1021,11 @@ exports[`Program template renders correctly 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  padding: 2rem;
+  margin: 0;
+  min-width: 0;
   background-color: #eeeefc;
+  max-width: 80em;
+  padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
   display: -webkit-box;
@@ -981,7 +1048,9 @@ exports[`Program template renders correctly 1`] = `
 .c5 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
   counter-reset: grad-counter;
   padding-left: 2em;
@@ -989,6 +1058,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c6 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 1em;
   position: relative;
   counter-increment: grad-counter;
@@ -1097,25 +1168,41 @@ exports[`Program template renders correctly 1`] = `
       </p>
     </div>
   </div>
-  .c5 {
+  .c8 {
   box-sizing: border-box;
-  margin-bottom: 3rem;
-}
-
-.c7 {
-  box-sizing: border-box;
-  width: 100%;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 1rem;
 }
 
 .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   margin-bottom: 3rem;
   color: #ffffff;
 }
 
+.c5 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 3rem;
+}
+
 .c6 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   color: #3d424f;
+  margin-bottom: 1rem;
+}
+
+.c7 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 60em;
 }
 
 .c3 {
@@ -1125,18 +1212,23 @@ exports[`Program template renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   text-align: center;
 }
 
-.c8 {
+.c9 {
   display: none;
 }
 
 .c0 {
   box-sizing: border-box;
-  padding: 2rem;
-  color: white;
+  margin: 0;
+  min-width: 0;
   background-color: #4bb2b6;
+  color: white;
+  max-width: 80em;
+  padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
   display: -webkit-box;
@@ -1158,6 +1250,8 @@ exports[`Program template renders correctly 1`] = `
 
 .c4 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1178,14 +1272,14 @@ exports[`Program template renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
-  .c7 {
-    width: 41.66666666666667%;
+  .c6 {
+    text-align: center;
   }
 }
 
 @media screen and (min-width:46em) {
-  .c6 {
-    text-align: center;
+  .c7 {
+    width: 41.66666666666667%;
   }
 }
 
@@ -1269,7 +1363,9 @@ exports[`Program template renders correctly 1`] = `
       class="c7"
       width="[object Object]"
     >
-      <h4>
+      <h4
+        class="c8"
+      >
         Form header
       </h4>
       <form
@@ -1279,7 +1375,7 @@ exports[`Program template renders correctly 1`] = `
         name="open-house"
       >
         <input
-          class="c8"
+          class="c9"
           name="bot-field"
         />
         <input
@@ -1331,27 +1427,36 @@ exports[`Program template renders correctly 1`] = `
       </form>
     </div>
   </div>
-  .c1 {
+  .c2 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-bottom: 2rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   font-size: 0.7em;
 }
 
 .c3 {
   box-sizing: border-box;
   margin: 0;
+  min-width: 0;
   padding-left: 1em;
-}
-
-.c2 {
-  box-sizing: border-box;
-  margin-bottom: 2rem;
+  margin: 0;
 }
 
 .c0 {
   box-sizing: border-box;
-  padding: 2rem;
-  color: #444444;
+  margin: 0;
+  min-width: 0;
   background-color: #eeeeee;
+  color: #444444;
+  max-width: 80em;
+  padding: 2rem;
   max-width: 80em;
   margin: 0 auto;
   display: -webkit-box;

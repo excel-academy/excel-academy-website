@@ -4,6 +4,9 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
 <DocumentFragment>
   .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 60em;
   padding: 2rem;
   width: 50%;
   z-index: 1;
@@ -11,6 +14,8 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
 
 .c5 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   width: 50%;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
@@ -27,6 +32,8 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,9 +75,34 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
+@media screen and (min-width:105em) {
+  .c3 {
+    padding: 7rem;
+  }
+}
+
+@media screen and (min-width:30em) {
+  .c3 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c3 {
+    padding: 3rem;
+  }
+}
+
 @media screen and (min-width:61.25em) {
   .c3 {
+    padding: 4rem;
     width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:80em) {
+  .c3 {
+    padding: 5rem;
   }
 }
 
@@ -133,6 +165,9 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
 <DocumentFragment>
   .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 60em;
   padding: 2rem;
   width: 50%;
   z-index: 1;
@@ -140,6 +175,8 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
 
 .c5 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   width: 50%;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
@@ -160,6 +197,8 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -218,9 +257,34 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
+@media screen and (min-width:105em) {
+  .c3 {
+    padding: 7rem;
+  }
+}
+
+@media screen and (min-width:30em) {
+  .c3 {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width:46em) {
+  .c3 {
+    padding: 3rem;
+  }
+}
+
 @media screen and (min-width:61.25em) {
   .c3 {
+    padding: 4rem;
     width: 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:80em) {
+  .c3 {
+    padding: 5rem;
   }
 }
 

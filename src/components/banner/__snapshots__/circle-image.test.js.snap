@@ -5,19 +5,29 @@ exports[`CircleImageBanner renders correctly 1`] = `
   .c4 {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 2rem;
-  font-size: 5rem;
+  min-width: 0;
+  font-size: 20px;
+  font-family: heading;
+  font-weight: heading;
+  line-height: heading;
   font-weight: 300;
+  font-size: 5rem;
   line-height: 1;
+  margin-bottom: 2rem;
 }
 
 .c3 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   z-index: 1;
 }
 
 .c6 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  height: 15.75rem;
   margin-bottom: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -37,6 +47,8 @@ exports[`CircleImageBanner renders correctly 1`] = `
 
 .c1 {
   box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   padding: 2rem;
   position: relative;
   display: -webkit-box;
@@ -84,12 +96,14 @@ exports[`CircleImageBanner renders correctly 1`] = `
 @media screen and (min-width:46em) {
   .c6 {
     width: 18.375rem;
+    height: 18.375rem;
   }
 }
 
 @media screen and (min-width:61.25em) {
   .c6 {
     width: 21rem;
+    height: 21rem;
   }
 }
 

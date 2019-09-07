@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box } from 'rebass';
+import { Box } from 'rebass/styled-components';
 import media from '../../media';
 
 export default styled(Box)`

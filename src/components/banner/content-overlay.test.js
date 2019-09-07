@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { Heading } from 'rebass';
+import { Heading } from 'rebass/styled-components';
 import theme from '../../theme';
 import ContentOverlayBanner from './content-overlay';
 import image from '../../utils/mockBannerImg';

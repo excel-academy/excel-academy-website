@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { FaFacebookF, FaEnvelope, FaChevronRight } from 'react-icons/fa';
-import { Box, Text } from 'rebass';
+import { Box, Text } from 'rebass/styled-components';
 import Link from '../gatsby-link/gatsby-link';
 import MaxWidthBox from '../max-width-box/max-width-box-css';
 import { FooterWrapper, SocialContainer } from './footer-css';
 
 const LinkList = ({ title, links }) => (
   <section className="narrow">
-    <h3>{title}</h3>
+    <Text as="h3" mb="default">{title}</Text>
     <Box
       as="ul"
       css={{
@@ -65,13 +65,13 @@ const Footer = ({ programs, locations, company }) => (
   <MaxWidthBox
     as="footer"
     maxWidth={2}
-    p={{ sm: 1, tablet: 3 }}
+    p={{ _: 1, tablet: 3 }}
     bg="#3d424f"
     color="#cfd0d3"
   >
     <FooterWrapper>
       <section>
-        <h3>Accreditations</h3>
+        <Text as="h3" mb="default">Accreditations</Text>
         <p>
           Excel Academy is approved by the Connecticut Office of
           Higher Education and the Connecticut Department of Public Health.
@@ -84,7 +84,7 @@ const Footer = ({ programs, locations, company }) => (
       <LinkList title="Programs" links={programs} />
       <LinkList title="Locations" links={locations} />
       <section>
-        <h3>Call today</h3>
+        <Text as="h3" mb="default">Call today</Text>
         <p>
           We are ready to help with your enrollment process or answer any questions you may have.
         </p>
