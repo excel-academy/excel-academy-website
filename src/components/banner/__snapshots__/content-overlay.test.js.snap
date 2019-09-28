@@ -46,7 +46,7 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
   height: 100%;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -62,11 +62,11 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
   min-height: 100vh;
 }
 
-.c1 .c5 img {
+.c0 .c5 img {
   object-position: center !important;
 }
 
-.c0 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -77,40 +77,40 @@ exports[`ContentOverlayBanner renders correctly 1`] = `
   justify-content: center;
 }
 
-.c0 .c2 {
+.c1 .c2 {
   width: 40rem;
 }
 
-.c0 .c5 {
+.c1 .c5 {
   opacity: 0.5;
 }
 
 @media screen and (min-width:30em) {
-  .c1 {
+  .c0 {
     padding: 2rem;
   }
 }
 
 @media screen and (min-width:46em) {
-  .c1 {
+  .c0 {
     padding: 3rem;
   }
 }
 
 @media screen and (min-width:61.25em) {
-  .c1 {
+  .c0 {
     padding: 4rem;
   }
 }
 
 @media screen and (min-width:80em) {
-  .c1 {
+  .c0 {
     padding: 5rem;
   }
 }
 
 @media screen and (min-width:105em) {
-  .c1 {
+  .c0 {
     padding: 7rem;
   }
 }

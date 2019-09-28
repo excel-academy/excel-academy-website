@@ -30,7 +30,7 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   height: 100%;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -43,11 +43,11 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   text-align: left;
 }
 
-.c1 .c4 img {
+.c0 .c4 img {
   object-position: right !important;
 }
 
-.c0 {
+.c1 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -61,7 +61,7 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   justify-content: flex-end;
 }
 
-.c0 .c2 {
+.c1 .c2 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -195,7 +195,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   object-position: right !important;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -208,7 +208,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   text-align: left;
 }
 
-.c1 .c4 img {
+.c0 .c4 img {
   object-position: left !important;
 }
 
@@ -226,7 +226,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
-.c0 {
+.c1 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -243,7 +243,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   flex-direction: row-reverse;
 }
 
-.c0 .c2 {
+.c1 .c2 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
