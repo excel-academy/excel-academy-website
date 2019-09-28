@@ -45,7 +45,7 @@ exports[`CircleImageBanner renders correctly 1`] = `
   height: 100%;
 }
 
-.c1 {
+.c0 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -59,11 +59,11 @@ exports[`CircleImageBanner renders correctly 1`] = `
   text-align: left;
 }
 
-.c1 .c5 img {
+.c0 .c5 img {
   object-position: right !important;
 }
 
-.c0 {
+.c1 {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
@@ -77,19 +77,19 @@ exports[`CircleImageBanner renders correctly 1`] = `
   justify-content: center;
 }
 
-.c0 .c2 {
+.c1 .c2 {
   max-width: 31.5rem;
 }
 
-.c0 .c5 {
+.c1 .c5 {
   border-radius: 100%;
 }
 
-.c0 .c5 img {
+.c1 .c5 img {
   border-radius: 100%;
 }
 
-.c0 .c5 {
+.c1 .c5 {
   margin-left: 0;
 }
 
@@ -108,20 +108,20 @@ exports[`CircleImageBanner renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
-  .c1 {
+  .c0 {
     padding: 4rem;
   }
 }
 
 @media screen and (orientation:portrait) {
-  .c0 {
+  .c1 {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .c0 .c5 {
+  .c1 .c5 {
     margin-right: 0;
     margin-left: 0;
   }
