@@ -45,7 +45,7 @@
     "styled-system": "5.1.2",
     "url-join": "4.0.1",
     "webpack": "4.41.0",
-    "webpack-bundle-analyzer": "3.5.1"
+    "webpack-bundle-analyzer": "3.5.2"
   },
   "keywords": [
     "gatsby"
