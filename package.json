@@ -65,7 +65,7 @@
     "lint": "npm run lint:es && npm run lint:css"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
+    "@babel/core": "7.6.4",
     "@testing-library/jest-dom": "4.1.0",
     "@testing-library/react": "9.3.0",
     "babel-jest": "24.9.0",
