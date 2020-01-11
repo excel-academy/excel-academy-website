@@ -30,7 +30,7 @@
     "gatsby-transformer-remark": "2.6.45",
     "gatsby-transformer-sharp": "2.3.9",
     "intersection-observer": "0.7.0",
-    "netlify-cms": "2.10.2",
+    "netlify-cms": "2.10.4",
     "node-sass": "4.13.0",
     "polished": "3.4.2",
     "prop-types": "15.7.2",
