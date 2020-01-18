@@ -136,6 +136,7 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
         style="position: relative; overflow: hidden;"
       >
         <div
+          aria-hidden="true"
           style="width: 100%; padding-bottom: 66.66666666666667%;"
         />
         <picture>
@@ -318,6 +319,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
         style="position: relative; overflow: hidden;"
       >
         <div
+          aria-hidden="true"
           style="width: 100%; padding-bottom: 66.66666666666667%;"
         />
         <picture>
