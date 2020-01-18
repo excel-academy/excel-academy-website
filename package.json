@@ -31,7 +31,7 @@
     "gatsby-transformer-sharp": "2.3.12",
     "intersection-observer": "0.7.0",
     "netlify-cms": "2.10.8",
-    "node-sass": "4.13.0",
+    "node-sass": "4.13.1",
     "polished": "3.4.2",
     "prop-types": "15.7.2",
     "react": "16.12.0",
