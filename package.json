@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Ernie Bello <ernie@bello.nyc>",
   "dependencies": {
-    "@reach/router": "1.3.0",
+    "@reach/router": "1.3.1",
     "classnames": "2.2.6",
     "gatsby": "2.19.12",
     "gatsby-cli": "2.8.29",
