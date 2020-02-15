@@ -44,7 +44,7 @@
     "styled-normalize": "8.0.7",
     "styled-system": "5.1.4",
     "url-join": "4.0.1",
-    "webpack": "4.41.5",
+    "webpack": "4.41.6",
     "webpack-bundle-analyzer": "3.6.0"
   },
   "keywords": [
