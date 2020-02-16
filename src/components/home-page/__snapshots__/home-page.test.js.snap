@@ -102,6 +102,54 @@ exports[`Home template renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:61.25em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (min-width:46em) {
   .c0 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -112,6 +160,10 @@ exports[`Home template renders correctly 1`] = `
   .c2 {
     width: 54.99999999999999%;
   }
+}
+
+@media screen and (min-width:46em) {
+
 }
 
 <div
@@ -235,6 +287,10 @@ exports[`Home template renders correctly 1`] = `
   justify-content: space-between;
 }
 
+@media screen and (min-width:30em) {
+
+}
+
 @media screen and (min-width:46em) {
   .c1 {
     text-align: center;
@@ -248,9 +304,57 @@ exports[`Home template renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
   .c0 {
     padding: 4rem;
   }
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:61.25em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:30em) {
+
+}
+
+@media screen and (min-width:46em) {
+
 }
 
 <div
@@ -384,6 +488,18 @@ exports[`Home template renders correctly 1`] = `
   left: 0;
 }
 
+@media screen and (min-width:30em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
 @media screen and (min-width:46em) {
   .c1 {
     width: 41.66666666666667%;
@@ -394,6 +510,46 @@ exports[`Home template renders correctly 1`] = `
   .c4 {
     width: 54.166666666666664%;
   }
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:61.25em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:30em) {
+
 }
 
 @media screen and (min-width:46em) {
@@ -432,7 +588,6 @@ exports[`Home template renders correctly 1`] = `
           class="c6"
         >
           <svg
-            _css7="[object Object]"
             class="c7"
             color="#4bb2b6"
             fill="currentColor"
@@ -456,7 +611,6 @@ exports[`Home template renders correctly 1`] = `
           class="c6"
         >
           <svg
-            _css7="[object Object]"
             class="c7"
             color="#4bb2b6"
             fill="currentColor"
@@ -552,10 +706,26 @@ exports[`Home template renders correctly 1`] = `
   flex: 1;
 }
 
+@media screen and (min-width:30em) {
+
+}
+
 @media screen and (min-width:46em) {
   .c1 {
     text-align: center;
   }
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
 }
 
 @media screen and (min-width:46em) {
@@ -571,9 +741,41 @@ exports[`Home template renders correctly 1`] = `
 }
 
 @media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
   .c0 {
     padding: 4rem;
   }
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:61.25em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:30em) {
+
+}
+
+@media screen and (min-width:46em) {
+
 }
 
 <div
@@ -740,6 +942,42 @@ exports[`Home template renders correctly 1`] = `
   margin-left: 0;
 }
 
+@media screen and (min-width:30em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:46em) {
+
+}
+
 @media screen and (min-width:46em) {
   .c8 {
     width: 18.375rem;
@@ -772,6 +1010,18 @@ exports[`Home template renders correctly 1`] = `
     margin-right: 0;
     margin-left: 0;
   }
+}
+
+@media screen and (min-width:46em) {
+
+}
+
+@media screen and (min-width:30em) {
+
+}
+
+@media screen and (min-width:46em) {
+
 }
 
 <div

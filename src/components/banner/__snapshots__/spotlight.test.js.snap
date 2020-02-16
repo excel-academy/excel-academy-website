@@ -75,12 +75,6 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
-@media screen and (min-width:105em) {
-  .c3 {
-    padding: 7rem;
-  }
-}
-
 @media screen and (min-width:30em) {
   .c3 {
     padding: 2rem;
@@ -106,18 +100,28 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
   }
 }
 
+@media screen and (min-width:105em) {
+  .c3 {
+    padding: 7rem;
+  }
+}
+
 @media screen and (min-width:61.25em) {
   .c5 {
     width: 33.33333333333333%;
   }
 }
 
+@media (max-width:46em) {
+
+}
+
 <section
-    class="c0 c1"
+    class="sc-AxjAm c0 c1"
     orient="left"
   >
     <div
-      class="c2 c3"
+      class="sc-AxjAm c2 c3"
       width="[object Object]"
     >
       <h2>
@@ -128,7 +132,7 @@ exports[`SpotlightBanner left orient renders correctly 1`] = `
       </p>
     </div>
     <div
-      class="c4 c5"
+      class="sc-AxjAm c4 c5"
       width="[object Object]"
     >
       <div
@@ -192,10 +196,6 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   height: 100%;
 }
 
-.c6 .c4 img {
-  object-position: right !important;
-}
-
 .c0 {
   box-sizing: border-box;
   margin: 0;
@@ -211,20 +211,6 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
 
 .c0 .c4 img {
   object-position: left !important;
-}
-
-.c7 .c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  margin: 0 auto;
 }
 
 .c1 {
@@ -258,12 +244,6 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   margin: 0 auto;
 }
 
-@media screen and (min-width:105em) {
-  .c3 {
-    padding: 7rem;
-  }
-}
-
 @media screen and (min-width:30em) {
   .c3 {
     padding: 2rem;
@@ -289,18 +269,28 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
   }
 }
 
+@media screen and (min-width:105em) {
+  .c3 {
+    padding: 7rem;
+  }
+}
+
 @media screen and (min-width:61.25em) {
   .c5 {
     width: 33.33333333333333%;
   }
 }
 
+@media (max-width:46em) {
+
+}
+
 <section
-    class="c0 c1"
+    class="sc-AxjAm c0 c1"
     orient="right"
   >
     <div
-      class="c2 c3"
+      class="sc-AxjAm c2 c3"
       width="[object Object]"
     >
       <h2>
@@ -311,7 +301,7 @@ exports[`SpotlightBanner right orient renders correctly 1`] = `
       </p>
     </div>
     <div
-      class="c4 c5"
+      class="sc-AxjAm c4 c5"
       width="[object Object]"
     >
       <div

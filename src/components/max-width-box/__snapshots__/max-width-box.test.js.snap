@@ -12,7 +12,7 @@ exports[`MaxWidthBox default renders correctly 1`] = `
 }
 
 <div
-    class="c0"
+    class="sc-AxjAm c0"
   >
     <h1>
       hello world
@@ -60,7 +60,7 @@ exports[`MaxWidthBox styled system renders correctly 1`] = `
 }
 
 <div
-    class="c0"
+    class="sc-AxjAm max-width-box-css-sc-1jttm1i-0 c0"
   >
     <h1>
       hello world

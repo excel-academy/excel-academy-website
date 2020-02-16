@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import theme from '../theme';
-import { HomeTemplate } from './index';
-import image from '../utils/mockBannerImg';
+import theme from '../../theme';
+import HomeTemplate from './home-page';
+import image from '../../utils/mockBannerImg';
 
 const programs = [
   {

@@ -5,14 +5,6 @@ module.exports = {
     ...siteConfig,
   },
   plugins: [
-    // {
-    //   resolve: 'gatsby-plugin-web-font-loader',
-    //   options: {
-    //     google: {
-    //       families: ['Open Sans:300,600'],
-    //     },
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
@@ -44,18 +36,9 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-    'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {
-        analyzerMode: 'static',
-        reportFilename: 'webpack-analyzer-report.html',
-        openAnalyzer: false,
-      },
-    },
     'gatsby-transformer-json',
     'gatsby-transformer-sharp',
     {
