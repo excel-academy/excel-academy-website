@@ -68,7 +68,7 @@
     "eslint-plugin-react": "7.19.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.1.0",
-    "jest-fetch-mock": "3.0.2",
+    "jest-fetch-mock": "3.0.3",
     "jest-styled-components": "7.0.0",
     "stylelint": "13.2.0",
     "stylelint-config-standard": "20.0.0"
