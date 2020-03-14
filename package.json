@@ -70,7 +70,7 @@
     "jest": "25.1.0",
     "jest-fetch-mock": "3.0.3",
     "jest-styled-components": "7.0.0",
-    "stylelint": "13.2.0",
+    "stylelint": "13.2.1",
     "stylelint-config-standard": "20.0.0"
   },
   "repository": {
