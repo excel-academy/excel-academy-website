@@ -57,7 +57,7 @@
     "lint": "yarn lint:es && yarn lint:css"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.1.1",
+    "@testing-library/jest-dom": "5.3.0",
     "@testing-library/react": "9.5.0",
     "babel-jest": "25.1.0",
     "babel-preset-gatsby": "0.3.0",
