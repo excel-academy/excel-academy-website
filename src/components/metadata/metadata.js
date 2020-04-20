@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import urljoin from 'url-join';
 import { Location } from '@reach/router';
 import config from '../../../site-config';
