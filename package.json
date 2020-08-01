@@ -25,7 +25,7 @@
     "gatsby-transformer-remark": "2.7.3",
     "gatsby-transformer-sharp": "2.4.6",
     "intersection-observer": "0.10.0",
-    "netlify-cms": "2.10.45",
+    "netlify-cms": "2.10.55",
     "polished": "3.5.1",
     "prop-types": "15.7.2",
     "react": "16.13.1",
