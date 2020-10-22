@@ -82,7 +82,7 @@ const Footer = ({ programs, locations, company }) => (
         </SocialContainer>
       </section>
       <LinkList title="Programs" links={programs} />
-      <LinkList title="Locations" links={locations} />
+      <LinkList title="Location" links={locations} />
       <section>
         <Text as="h3" mb="default">Call today</Text>
         <p>

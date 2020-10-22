@@ -22,11 +22,10 @@ benefitsblock:
   description: We know you are busy. We provide opportunities to accommodate completing
     your training program on your terms.
   headline: Flexible schedules
-locations_headline: Campuses conveniently located
+locations_headline: Campus conveniently located
 cta:
   description: Our programs are designed for students to graduate with the skills
-    to provide quality health care. Call us at (203) 691-7989 or visit one of our
-    campuses to get more information on our courses with no obligations.
+    to provide quality health care. Call us at (203) 691-7989 to get more information on our courses with no obligation. We now offer online/hybrid courses.
   form_button: Sign up
   form_header: Come to an open house
   headline: Excel Academy will kickstart your career

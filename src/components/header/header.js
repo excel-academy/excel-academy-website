@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => {
               ))}
             </ul>
           </li>
-          <li><a href="#locations" onClick={() => setNavIsOpen(false)}>Locations</a></li>
+          <li><a href="#locations" onClick={() => setNavIsOpen(false)}>Location</a></li>
           <li><a href="#start" onClick={() => setNavIsOpen(false)}>Start a career</a></li>
         </ul>
       </HeaderNav>

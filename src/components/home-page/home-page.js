@@ -131,7 +131,7 @@ const HomeTemplate = ({
       <Text as="h2" textAlign={{ tablet: 'center' }} mb={2}>
         {locationsHeadline}
       </Text>
-      <Flex flexWrap="wrap" justifyContent="space-between">
+      <Flex flexWrap="wrap" justifyContent="center">
         {locations.map(({ node }) => (
           <Flex
             flexDirection="column"
